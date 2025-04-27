@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="bingoplg:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/bingoplg_jar</output-path>
+    <root id="archive" name="bingoplg.jar">
+      <element id="module-output" name="bingoplg" />
+    </root>
+  </artifact>
+</component>
