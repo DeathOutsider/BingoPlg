@@ -1,6 +1,7 @@
 package me.dubovoy.bingoPlg;
 
 import me.dubovoy.bingoPlg.database.BingoDb;
+import me.dubovoy.bingoPlg.handlers.playerJoined;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Listener;
@@ -16,12 +17,12 @@ public final class BingoPlg extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        LogWMsg(">> Привет! DragonPlaguePlugin успешно загружен!");
+        LogWMsg(">> Привет! BingoPlugin успешно загружен!");
 //        InitCommand("myLvl", new CheckOwnInfectionLevel(this));
 //        InitCommand("setDeaths", new SetPlayersDeaths(this));
 
 //        InitCommand("revile", new RevileCommand(this));
-//        InitEvent("dragonPlagueEvents", new DragonPlagueEvents(this));
+        InitEvent("playerJoin event", new playerJoined(this));
         LogWMsg("Команды и События - успешно загружены!");
 
         try{
@@ -90,5 +91,6 @@ public final class BingoPlg extends JavaPlugin {
     }
     public void LogErrorsMsg(Exception e){
         getLogger().severe("Ошибка! " + e.getMessage());
+        getLogger().severe(e.toString());
     }
 }
