@@ -54,4 +54,22 @@ public class BingoDb {
             preparedStatement.executeUpdate();
         }
     }
+
+    public boolean noTeamInDb(Player player) throws SQLException{
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM teams WHERE name = ?")){
+            preparedStatement.setString(1, player.getUniqueId().toString());
+            ResultSet resultSet = preparedStatement.executeQuery();
+            return !resultSet.next();
+        }
+    }
+
+    public void addTeam(String teamName) throws SQLException{
+        try (PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO teams (name) VALUES (?)")){
+            preparedStatement.setString(1, teamName);
+            preparedStatement.executeUpdate();
+        }
+    }
+
+    
+
 }

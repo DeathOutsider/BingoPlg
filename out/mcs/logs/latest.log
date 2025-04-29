@@ -1,0 +1,45 @@
+[02:15:57] [ServerMain/INFO]: [bootstrap] Running Java 23 (Java HotSpot(TM) 64-Bit Server VM 23+37-2369; Oracle Corporation null) on Windows 10 10.0 (amd64)
+[02:15:57] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.5-45-main@a7a76c8 (2025-04-29T13:48:18Z) for Minecraft 1.21.5
+[02:15:57] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[02:15:58] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[02:15:58] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[02:16:01] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[02:16:02] [ServerMain/INFO]: Loaded 1373 recipes
+[02:16:02] [ServerMain/INFO]: Loaded 1484 advancements
+[02:16:03] [Server thread/INFO]: Starting minecraft server version 1.21.5
+[02:16:03] [Server thread/INFO]: Loading properties
+[02:16:03] [Server thread/INFO]: This server is running Paper version 1.21.5-45-main@a7a76c8 (2025-04-29T13:48:18Z) (Implementing API version 1.21.5-R0.1-SNAPSHOT)
+[02:16:03] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[02:16:03] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[02:16:03] [Server thread/INFO]: Using 4 threads for Netty based IO
+[02:16:03] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[02:16:03] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[02:16:03] [Server thread/INFO]: Default game type: SURVIVAL
+[02:16:03] [Server thread/INFO]: Generating keypair
+[02:16:04] [Server thread/INFO]: Starting Minecraft server on *:25565
+[02:16:04] [Server thread/INFO]: Using default channel type
+[02:16:04] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[02:16:04] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[02:16:04] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[02:16:04] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[02:16:04] [Server thread/INFO]: Preparing level "world"
+[02:16:04] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[02:16:04] [Server thread/INFO]: Preparing spawn area: 0%
+[02:16:05] [Server thread/INFO]: Preparing spawn area: 0%
+[02:16:05] [Server thread/INFO]: Time elapsed: 684 ms
+[02:16:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[02:16:05] [Server thread/INFO]: Preparing spawn area: 0%
+[02:16:05] [Server thread/INFO]: Time elapsed: 154 ms
+[02:16:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[02:16:05] [Server thread/INFO]: Preparing spawn area: 0%
+[02:16:05] [Server thread/INFO]: Time elapsed: 133 ms
+[02:16:05] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[02:16:05] [Server thread/WARN]: [BingoPlg] >> Привет! BingoPlugin успешно загружен!
+[02:16:05] [Server thread/INFO]: [BingoPlg] playerJoin event - событие было загружено
+[02:16:05] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[02:16:05] [Server thread/INFO]: [spark] Starting background profiler...
+[02:16:05] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows10/amd64), so the built-in Java engine will be used instead.
+[02:16:05] [Server thread/INFO]: Done preparing level "world" (1.743s)
+[02:16:05] [Server thread/INFO]: Running delayed init tasks
+[02:16:05] [Server thread/INFO]: Done (9.622s)! For help, type "help"
