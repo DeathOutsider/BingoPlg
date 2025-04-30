@@ -1,28 +1,40 @@
 package me.dubovoy.bingoPlg;
 
+import me.dubovoy.bingoPlg.commands.CreateTeam;
+import me.dubovoy.bingoPlg.commands.HealPlayer;
+import me.dubovoy.bingoPlg.commands.JoinTeam;
+import me.dubovoy.bingoPlg.commands.TeleportTeam;
 import me.dubovoy.bingoPlg.database.BingoDb;
-import me.dubovoy.bingoPlg.handlers.playerJoined;
+import me.dubovoy.bingoPlg.events.PlayerJoined;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public final class BingoPlg extends JavaPlugin {
 
     private BingoDb database;
+    public boolean bLog = true;
+
 
     @Override
     public void onEnable() {
         // Plugin startup logic
-        LogWMsg(">> Привет! BingoPlugin успешно загружен!");
-//        InitCommand("myLvl", new CheckOwnInfectionLevel(this));
-//        InitCommand("setDeaths", new SetPlayersDeaths(this));
+        LogWMsg("Привет! BingoPlugin успешно загружен!");
+        InitCommand("Heal", new HealPlayer());
+        InitCommand("CreateTeam", new CreateTeam(this));
+        InitCommand("JoinTeam", new JoinTeam(this));
+        InitCommand("TeleportTeam", new TeleportTeam(this));
 
 //        InitCommand("revile", new RevileCommand(this));
-        InitEvent("playerJoin event", new playerJoined(this));
+
+
+        InitEvent("PlayerJoin event", new PlayerJoined(this));
         LogWMsg("Команды и События - успешно загружены!");
 
         try{
@@ -49,7 +61,7 @@ public final class BingoPlg extends JavaPlugin {
         } catch (SQLException e) {
             LogErrorsMsg(e);
         }
-        LogWMsg(">> Пока-пока( DragonPlaguePlugin успешно отключен!");
+        LogWMsg(">> Пока-пока( BingoPlugin успешно отключен!");
     }
 
     public static BingoPlg getInstance() {
@@ -68,6 +80,12 @@ public final class BingoPlg extends JavaPlugin {
         int min = 0;
         int random = (int) ((Math.random()*(max-min))+min);
         return random <= chance;
+    }
+
+    public Integer RandomCoordinates(){
+        int max = 3000;
+        int min = -3000;
+        return (int) ((Math.random()*(max-min))+min);
     }
 
     public void InitCommand(String command, CommandExecutor commandExec){

@@ -3,3 +3,23 @@ version: '1.0'
 main: me.dubovoy.bingoPlg.BingoPlg
 api-version: '1.21'
 authors: [ Dubovoy6211@gmail.com ]
+commands:
+  heal:
+    description: "Heals player"
+    aliases: [ h ]
+    usage: "/heal"
+
+  createteam:
+    description: ""
+    aliases: [ ct, cteam, crt, crtm ]
+    usage: "/createteam"
+
+  jointeam:
+    description: ""
+    aliases: [ jt, join ]
+    usage: "/jointeam"
+
+  teleportteam:
+    description: ""
+    aliases: [ tpt, tptm]
+    usage: "/teleportteam"

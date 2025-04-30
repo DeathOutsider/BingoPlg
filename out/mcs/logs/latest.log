@@ -1,45 +1,2093 @@
-[02:15:57] [ServerMain/INFO]: [bootstrap] Running Java 23 (Java HotSpot(TM) 64-Bit Server VM 23+37-2369; Oracle Corporation null) on Windows 10 10.0 (amd64)
-[02:15:57] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.5-45-main@a7a76c8 (2025-04-29T13:48:18Z) for Minecraft 1.21.5
-[02:15:57] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[02:15:58] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
-[02:15:58] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+[14:38:22] [ServerMain/INFO]: [bootstrap] Running Java 21 (Java HotSpot(TM) 64-Bit Server VM 21.0.3+7-LTS-152; Oracle Corporation null) on Windows 10 10.0 (amd64)
+[14:38:22] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.5-45-main@a7a76c8 (2025-04-29T13:48:18Z) for Minecraft 1.21.5
+[14:38:23] [ServerMain/WARN]: [oshi.driver.windows.perfmon.PerfmonDisabled] Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[14:38:23] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[14:38:23] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[14:38:24] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 1010ms.
+[14:38:25] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[14:38:25] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
  - BingoPlg (1.0)
-[02:16:01] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[02:16:02] [ServerMain/INFO]: Loaded 1373 recipes
-[02:16:02] [ServerMain/INFO]: Loaded 1484 advancements
-[02:16:03] [Server thread/INFO]: Starting minecraft server version 1.21.5
-[02:16:03] [Server thread/INFO]: Loading properties
-[02:16:03] [Server thread/INFO]: This server is running Paper version 1.21.5-45-main@a7a76c8 (2025-04-29T13:48:18Z) (Implementing API version 1.21.5-R0.1-SNAPSHOT)
-[02:16:03] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[02:16:03] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[02:16:03] [Server thread/INFO]: Using 4 threads for Netty based IO
-[02:16:03] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
-[02:16:03] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[02:16:03] [Server thread/INFO]: Default game type: SURVIVAL
-[02:16:03] [Server thread/INFO]: Generating keypair
-[02:16:04] [Server thread/INFO]: Starting Minecraft server on *:25565
-[02:16:04] [Server thread/INFO]: Using default channel type
-[02:16:04] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[02:16:04] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[02:16:04] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
-[02:16:04] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[02:16:04] [Server thread/INFO]: Preparing level "world"
-[02:16:04] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[02:16:04] [Server thread/INFO]: Preparing spawn area: 0%
-[02:16:05] [Server thread/INFO]: Preparing spawn area: 0%
-[02:16:05] [Server thread/INFO]: Time elapsed: 684 ms
-[02:16:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[02:16:05] [Server thread/INFO]: Preparing spawn area: 0%
-[02:16:05] [Server thread/INFO]: Time elapsed: 154 ms
-[02:16:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[02:16:05] [Server thread/INFO]: Preparing spawn area: 0%
-[02:16:05] [Server thread/INFO]: Time elapsed: 133 ms
-[02:16:05] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
-[02:16:05] [Server thread/WARN]: [BingoPlg] >> Привет! BingoPlugin успешно загружен!
-[02:16:05] [Server thread/INFO]: [BingoPlg] playerJoin event - событие было загружено
-[02:16:05] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
-[02:16:05] [Server thread/INFO]: [spark] Starting background profiler...
-[02:16:05] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows10/amd64), so the built-in Java engine will be used instead.
-[02:16:05] [Server thread/INFO]: Done preparing level "world" (1.743s)
-[02:16:05] [Server thread/INFO]: Running delayed init tasks
-[02:16:05] [Server thread/INFO]: Done (9.622s)! For help, type "help"
+[14:38:32] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[14:38:35] [ServerMain/INFO]: Loaded 1373 recipes
+[14:38:35] [ServerMain/INFO]: Loaded 1484 advancements
+[14:38:35] [Server thread/INFO]: Starting minecraft server version 1.21.5
+[14:38:35] [Server thread/WARN]: ****************************
+[14:38:35] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
+[14:38:35] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
+[14:38:35] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
+[14:38:35] [Server thread/WARN]: ****************************
+[14:38:35] [Server thread/INFO]: Loading properties
+[14:38:35] [Server thread/INFO]: This server is running Paper version 1.21.5-45-main@a7a76c8 (2025-04-29T13:48:18Z) (Implementing API version 1.21.5-R0.1-SNAPSHOT)
+[14:38:35] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[14:38:36] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:38:36] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:38:37] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[14:38:37] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[14:38:37] [Server thread/INFO]: Default game type: SURVIVAL
+[14:38:37] [Server thread/INFO]: Generating keypair
+[14:38:37] [Server thread/INFO]: Starting Minecraft server on *:25565
+[14:38:37] [Server thread/INFO]: Using default channel type
+[14:38:37] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[14:38:37] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[14:38:37] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[14:38:37] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:38:37] [Server thread/INFO]: Preparing level "world"
+[14:38:38] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[14:38:38] [Server thread/INFO]: Preparing spawn area: 0%
+[14:38:39] [Server thread/INFO]: Preparing spawn area: 2%
+[14:38:39] [Server thread/INFO]: Preparing spawn area: 2%
+[14:38:40] [Server thread/INFO]: Preparing spawn area: 2%
+[14:38:40] [Server thread/INFO]: Time elapsed: 1671 ms
+[14:38:40] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[14:38:40] [Server thread/INFO]: Preparing spawn area: 0%
+[14:38:40] [Server thread/INFO]: Time elapsed: 327 ms
+[14:38:40] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[14:38:40] [Server thread/INFO]: Preparing spawn area: 0%
+[14:38:40] [Server thread/INFO]: Time elapsed: 167 ms
+[14:38:40] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[14:38:40] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[14:38:40] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[14:38:40] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[14:38:40] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[14:38:40] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[14:38:40] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[14:38:41] [Server thread/INFO]: [spark] Starting background profiler...
+[14:38:41] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows10/amd64), so the built-in Java engine will be used instead.
+[14:38:41] [Server thread/INFO]: Done preparing level "world" (3.457s)
+[14:38:41] [Server thread/INFO]: Running delayed init tasks
+[14:38:41] [Server thread/INFO]: Done (20.148s)! For help, type "help"
+[14:38:45] [User Authenticator #0/INFO]: UUID of player DFather is d61cbde7-05fd-4f6d-aed3-cbde55803ec9
+[14:38:46] [Server thread/INFO]: [BingoPlg] DFather Is added to Database
+[14:38:46] [Server thread/INFO]: DFather joined the game
+[14:38:46] [Server thread/INFO]: DFather[/127.0.0.1:49377] logged in with entity id 44 at ([world]-551.1950776253149, 67.0, -151.43978657114258)
+[14:38:58] [Server thread/INFO]: DFather issued server command: /ct hell
+[14:38:58] [Server thread/INFO]: [BingoPlg] Team hell Was successfully added in Database
+[14:40:08] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[14:40:08] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[14:40:08] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:40:08] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:40:08] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[14:40:08] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[14:40:08] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[14:40:08] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[14:40:10] [Server thread/INFO]: Loaded 1373 recipes
+[14:40:10] [Server thread/INFO]: Loaded 1484 advancements
+[14:40:10] [Paper Async Command Builder Thread Pool - 1/ERROR]: Caught previously unhandled exception :
+[14:40:10] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[14:40:10] [Paper Async Command Builder Thread Pool - 1/ERROR]: Paper Async Command Builder Thread Pool - 1
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[14:40:10] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[14:40:10] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 250ms.
+[14:40:10] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[14:40:10] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[14:40:10] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[14:40:10] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:40:10] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[14:40:10] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[14:40:10] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[14:40:10] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[14:40:10] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[14:40:10] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[14:40:10] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[14:40:10] [Server thread/INFO]: CONSOLE: Reload complete.
+[14:40:36] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[14:40:36] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[14:40:36] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:40:36] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:40:36] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[14:40:36] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[14:40:36] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[14:40:36] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[14:40:36] [Server thread/INFO]: Loaded 1373 recipes
+[14:40:36] [Server thread/INFO]: Loaded 1484 advancements
+[14:40:36] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[14:40:36] [Paper Async Command Builder Thread Pool - 0/ERROR]: Caught previously unhandled exception :
+[14:40:36] [Paper Async Command Builder Thread Pool - 0/ERROR]: Paper Async Command Builder Thread Pool - 0
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[14:40:37] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[14:40:37] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 180ms.
+[14:40:37] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[14:40:37] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[14:40:37] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[14:40:37] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:40:37] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[14:40:37] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[14:40:37] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[14:40:37] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[14:40:37] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[14:40:37] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[14:40:37] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[14:40:37] [Server thread/INFO]: CONSOLE: Reload complete.
+[14:40:40] [Server thread/INFO]: DFather issued server command: /join hell
+[14:40:43] [Server thread/ERROR]: [BingoPlg] Ошибка! [SQLITE_BUSY] The database file is locked (database is locked)
+[14:40:43] [Server thread/ERROR]: [BingoPlg] org.sqlite.SQLiteException: [SQLITE_BUSY] The database file is locked (database is locked)
+[14:40:43] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3000ms or 60 ticks behind
+[14:40:43] [Server thread/INFO]: DFather issued server command: /join hell
+[14:40:46] [Server thread/ERROR]: [BingoPlg] Ошибка! [SQLITE_BUSY] The database file is locked (database is locked)
+[14:40:46] [Server thread/ERROR]: [BingoPlg] org.sqlite.SQLiteException: [SQLITE_BUSY] The database file is locked (database is locked)
+[14:40:51] [Server thread/INFO]: DFather issued server command: /join hell
+[14:40:51] [Server thread/INFO]: [BingoPlg] Player DFather Was not added in Team hell Case: No TeamName
+[14:40:54] [Server thread/INFO]: DFather issued server command: /ct hell
+[14:40:54] [Server thread/INFO]: [BingoPlg] Team hell Was successfully added in Database
+[14:40:57] [Server thread/INFO]: DFather issued server command: /join hell
+[14:40:57] [Server thread/INFO]: [BingoPlg] Player DFather Was successfully added in Team hell
+[14:43:43] [Server thread/INFO]: DFather issued server command: /join hell
+[14:43:43] [Server thread/INFO]: [BingoPlg] Player DFather Was successfully added in Team hell
+[14:43:50] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[14:43:50] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[14:43:50] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:43:50] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:43:50] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[14:43:50] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[14:43:51] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[14:43:51] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[14:43:52] [Server thread/INFO]: Loaded 1373 recipes
+[14:43:52] [Server thread/INFO]: Loaded 1484 advancements
+[14:43:52] [Paper Async Command Builder Thread Pool - 3/ERROR]: Caught previously unhandled exception :
+[14:43:52] [Paper Async Command Builder Thread Pool - 3/ERROR]: Paper Async Command Builder Thread Pool - 3
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[14:43:52] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[14:43:52] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[14:43:52] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[14:43:52] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[14:43:52] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:43:52] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[14:43:52] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[14:43:52] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[14:43:52] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[14:43:52] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[14:43:52] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[14:43:52] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[14:43:52] [Server thread/INFO]: CONSOLE: Reload complete.
+[14:43:54] [Server thread/INFO]: DFather issued server command: /join hell
+[14:43:54] [Server thread/INFO]: [BingoPlg] Player DFather Was successfully added in Team hell
+[15:32:05] [Server thread/INFO]: DFather issued server command: /join Hell
+[15:32:05] [Server thread/INFO]: [BingoPlg] Player DFather Was not added in Team Hell Case: No TeamName
+[15:32:53] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[15:32:53] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[15:32:53] [Server thread/INFO]: Using 4 threads for Netty based IO
+[15:32:53] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[15:32:53] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[15:32:53] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[15:32:54] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[15:32:54] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[15:32:54] [Server thread/INFO]: Loaded 1373 recipes
+[15:32:54] [Server thread/INFO]: Loaded 1484 advancements
+[15:32:54] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[15:32:54] [Paper Async Command Builder Thread Pool - 2/ERROR]: Caught previously unhandled exception :
+[15:32:54] [Paper Async Command Builder Thread Pool - 2/ERROR]: Paper Async Command Builder Thread Pool - 2
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[15:32:54] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[15:32:55] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 328ms.
+[15:32:55] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[15:32:55] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[15:32:55] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[15:32:55] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:32:55] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[15:32:55] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[15:32:55] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[15:32:55] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[15:32:55] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[15:32:55] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[15:32:55] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[15:32:55] [Server thread/INFO]: CONSOLE: Reload complete.
+[15:33:05] [Server thread/INFO]: DFather issued server command: /crt hell
+[15:33:05] [Server thread/INFO]: [BingoPlg] Team <hell> Is already in Database
+[15:33:14] [Server thread/INFO]: DFather issued server command: /crt Hell
+[15:33:14] [Server thread/INFO]: [BingoPlg] Team <hell> Is already in Database
+[15:33:24] [Server thread/INFO]: DFather issued server command: /jointeam hell
+[15:33:24] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully added in Team hell
+[15:33:27] [Server thread/INFO]: DFather issued server command: /jointeam hell1
+[15:33:27] [Server thread/INFO]: [BingoPlg] Player <DFather> Was not added in Team hell1 Case: No TeamName
+[15:33:31] [Server thread/INFO]: DFather issued server command: /jointeam Hell
+[15:33:31] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully added in Team hell
+[15:43:28] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[15:43:28] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[15:43:28] [Server thread/INFO]: Using 4 threads for Netty based IO
+[15:43:28] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[15:43:28] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[15:43:28] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[15:43:28] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[15:43:28] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[15:43:29] [Server thread/INFO]: Loaded 1373 recipes
+[15:43:29] [Server thread/INFO]: Loaded 1484 advancements
+[15:43:29] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[15:43:29] [Paper Async Command Builder Thread Pool - 4/ERROR]: Caught previously unhandled exception :
+[15:43:29] [Paper Async Command Builder Thread Pool - 4/ERROR]: Paper Async Command Builder Thread Pool - 4
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[15:43:29] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[15:43:29] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 252ms.
+[15:43:29] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[15:43:29] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[15:43:29] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[15:43:29] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:43:29] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[15:43:29] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[15:43:29] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[15:43:29] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[15:43:29] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[15:43:29] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[15:43:29] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[15:43:29] [Server thread/INFO]: CONSOLE: Reload complete.
+[15:43:35] [Server thread/ERROR]: [BingoPlg] Ошибка! column 0 out of bounds [1,1]
+[15:43:35] [Server thread/ERROR]: [BingoPlg] java.sql.SQLException: column 0 out of bounds [1,1]
+[15:43:36] [Server thread/ERROR]: [BingoPlg] Ошибка! column 0 out of bounds [1,1]
+[15:43:36] [Server thread/ERROR]: [BingoPlg] java.sql.SQLException: column 0 out of bounds [1,1]
+[15:43:38] [Server thread/ERROR]: [BingoPlg] Ошибка! column 0 out of bounds [1,1]
+[15:43:38] [Server thread/ERROR]: [BingoPlg] java.sql.SQLException: column 0 out of bounds [1,1]
+[15:44:13] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[15:44:13] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[15:44:13] [Server thread/INFO]: Using 4 threads for Netty based IO
+[15:44:13] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[15:44:13] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[15:44:13] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[15:44:13] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[15:44:13] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[15:44:14] [Server thread/INFO]: Loaded 1373 recipes
+[15:44:14] [Server thread/INFO]: Loaded 1484 advancements
+[15:44:14] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[15:44:14] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[15:44:14] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 240ms.
+[15:44:14] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[15:44:14] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[15:44:14] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[15:44:14] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:44:14] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[15:44:14] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[15:44:14] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[15:44:14] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[15:44:14] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[15:44:14] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[15:44:14] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[15:44:14] [Server thread/INFO]: CONSOLE: Reload complete.
+[15:44:25] [Server thread/INFO]: DFather issued server command: /ct a
+[15:44:25] [Server thread/INFO]: [BingoPlg] Team <a> Was successfully added in Database
+[15:44:31] [Server thread/INFO]: DFather issued server command: /jointeam a
+[15:44:31] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully added in Team a
+[15:44:35] [Server thread/INFO]: DFather issued server command: /jointeam hell
+[15:44:35] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully added in Team hell
+[15:49:57] [Server thread/INFO]: DFather issued server command: /heal
+[15:50:01] [Server thread/INFO]: DFather issued server command: /jointeam a
+[15:50:01] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully added in Team a
+[15:53:49] [Server thread/INFO]: DFather issued server command: /jointeam hell
+[15:53:49] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully added in Team hell
+[16:20:28] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[16:20:28] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[16:20:28] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:20:28] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:20:28] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[16:20:28] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[16:20:29] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[16:20:29] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[16:20:29] [Server thread/INFO]: Loaded 1373 recipes
+[16:20:29] [Server thread/INFO]: Loaded 1484 advancements
+[16:20:29] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:20:29] [Paper Async Command Builder Thread Pool - 6/ERROR]: Caught previously unhandled exception :
+[16:20:29] [Paper Async Command Builder Thread Pool - 6/ERROR]: Paper Async Command Builder Thread Pool - 6
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[16:20:29] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[16:20:29] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 249ms.
+[16:20:29] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[16:20:29] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[16:20:29] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[16:20:29] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:20:29] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[16:20:29] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[16:20:29] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[16:20:29] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[16:20:29] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[16:20:29] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[16:20:29] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[16:20:29] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[16:20:29] [Server thread/INFO]: CONSOLE: Reload complete.
+[16:51:58] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[16:51:58] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[16:51:58] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:51:58] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:51:58] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[16:51:58] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[16:51:59] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[16:51:59] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[16:51:59] [Server thread/INFO]: Loaded 1373 recipes
+[16:51:59] [Server thread/INFO]: Loaded 1484 advancements
+[16:51:59] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:51:59] [Paper Async Command Builder Thread Pool - 5/ERROR]: Caught previously unhandled exception :
+[16:51:59] [Paper Async Command Builder Thread Pool - 5/ERROR]: Paper Async Command Builder Thread Pool - 5
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[16:51:59] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[16:51:59] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 177ms.
+[16:51:59] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[16:51:59] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[16:51:59] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[16:51:59] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:51:59] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[16:51:59] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[16:51:59] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[16:51:59] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[16:51:59] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[16:51:59] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[16:51:59] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[16:51:59] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[16:51:59] [Server thread/INFO]: CONSOLE: Reload complete.
+[16:52:08] [Server thread/INFO]: DFather issued server command: /tptm
+[16:52:11] [Server thread/INFO]: DFather issued server command: /tptm a
+[16:52:11] [Server thread/ERROR]: [BingoPlg] Ошибка! [SQLITE_ERROR] SQL error or missing database (no such table: player)
+[16:52:11] [Server thread/ERROR]: [BingoPlg] org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: player)
+[16:52:20] [Server thread/INFO]: DFather issued server command: /tptm hell
+[16:52:20] [Server thread/ERROR]: [BingoPlg] Ошибка! [SQLITE_ERROR] SQL error or missing database (no such table: player)
+[16:52:20] [Server thread/ERROR]: [BingoPlg] org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: player)
+[16:52:52] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[16:52:52] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[16:52:52] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:52:52] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:52:52] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[16:52:52] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[16:52:52] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[16:52:52] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[16:52:52] [Server thread/INFO]: Loaded 1373 recipes
+[16:52:52] [Server thread/INFO]: Loaded 1484 advancements
+[16:52:52] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:52:52] [Paper Async Command Builder Thread Pool - 7/ERROR]: Caught previously unhandled exception :
+[16:52:52] [Paper Async Command Builder Thread Pool - 7/ERROR]: Paper Async Command Builder Thread Pool - 7
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[16:52:52] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[16:52:53] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 159ms.
+[16:52:53] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[16:52:53] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[16:52:53] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[16:52:53] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:52:53] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[16:52:53] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[16:52:53] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[16:52:53] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[16:52:53] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[16:52:53] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[16:52:53] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[16:52:53] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[16:52:53] [Server thread/INFO]: CONSOLE: Reload complete.
+[16:53:04] [Server thread/INFO]: DFather issued server command: /tptm hell
+[16:53:04] [Server thread/ERROR]: [BingoPlg] Ошибка! [SQLITE_ERROR] SQL error or missing database (no such table: player)
+[16:53:04] [Server thread/ERROR]: [BingoPlg] org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: player)
+[16:53:25] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[16:53:25] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[16:53:25] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:53:25] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:53:25] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[16:53:25] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[16:53:25] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[16:53:25] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[16:53:25] [Server thread/INFO]: Loaded 1373 recipes
+[16:53:25] [Server thread/INFO]: Loaded 1484 advancements
+[16:53:25] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:53:25] [Paper Async Command Builder Thread Pool - 8/ERROR]: Caught previously unhandled exception :
+[16:53:25] [Paper Async Command Builder Thread Pool - 8/ERROR]: Paper Async Command Builder Thread Pool - 8
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[16:53:25] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[16:53:26] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 206ms.
+[16:53:26] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[16:53:26] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[16:53:26] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[16:53:26] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:53:26] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[16:53:26] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[16:53:26] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[16:53:26] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[16:53:26] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[16:53:26] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[16:53:26] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[16:53:26] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[16:53:26] [Server thread/INFO]: CONSOLE: Reload complete.
+[16:53:30] [Server thread/INFO]: DFather issued server command: /tptm hell
+[16:53:30] [Server thread/WARN]: [BingoPlg] DFather
+[16:53:30] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[16:53:33] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2746ms or 54 ticks behind
+[16:53:57] [Server thread/INFO]: DFather issued server command: /kill
+[16:53:57] [Server thread/INFO]: DFather was killed
+[16:53:57] [Server thread/INFO]: [DFather: Killed DFather]
+[16:54:11] [Server thread/INFO]: DFather issued server command: /tptm a
+[16:54:11] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <a>
+[16:54:50] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[16:54:50] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[16:54:50] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:54:50] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:54:50] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[16:54:50] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[16:54:50] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[16:54:50] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[16:54:51] [Server thread/INFO]: Loaded 1373 recipes
+[16:54:51] [Server thread/INFO]: Loaded 1484 advancements
+[16:54:51] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:54:51] [Paper Async Command Builder Thread Pool - 10/ERROR]: Caught previously unhandled exception :
+[16:54:51] [Paper Async Command Builder Thread Pool - 10/ERROR]: Paper Async Command Builder Thread Pool - 10
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[16:54:51] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[16:54:51] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 201ms.
+[16:54:51] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[16:54:51] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[16:54:51] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[16:54:51] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:54:51] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[16:54:51] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[16:54:51] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[16:54:51] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[16:54:51] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[16:54:51] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[16:54:51] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[16:54:51] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[16:54:51] [Server thread/INFO]: CONSOLE: Reload complete.
+[16:54:54] [Server thread/INFO]: DFather issued server command: /tptm a
+[16:54:58] [Server thread/INFO]: DFather issued server command: /tptm hell
+[16:54:58] [Server thread/WARN]: [BingoPlg] DFather
+[16:54:58] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[16:54:58] [Server thread/WARN]: DFather moved too quickly! 574.3686335534209,136.0,212.0392984697077
+[16:55:40] [Server thread/INFO]: DFather issued server command: /kill
+[16:55:40] [Server thread/INFO]: DFather was killed
+[16:55:40] [Server thread/INFO]: [DFather: Killed DFather]
+[16:57:05] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[16:57:05] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[16:57:05] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:57:05] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:57:05] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[16:57:05] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[16:57:05] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[16:57:05] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[16:57:05] [Server thread/INFO]: Loaded 1373 recipes
+[16:57:05] [Server thread/INFO]: Loaded 1484 advancements
+[16:57:05] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:57:05] [Paper Async Command Builder Thread Pool - 9/ERROR]: Caught previously unhandled exception :
+[16:57:05] [Paper Async Command Builder Thread Pool - 9/ERROR]: Paper Async Command Builder Thread Pool - 9
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[16:57:05] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[16:57:06] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 184ms.
+[16:57:06] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[16:57:06] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[16:57:06] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[16:57:06] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:57:06] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[16:57:06] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[16:57:06] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[16:57:06] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[16:57:06] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[16:57:06] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[16:57:06] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[16:57:06] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[16:57:06] [Server thread/INFO]: CONSOLE: Reload complete.
+[16:57:19] [Server thread/INFO]: DFather issued server command: /tptm hell
+[16:57:19] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[16:57:19] [Server thread/WARN]: DFather moved too quickly! 530.1487958761339,136.0,176.20947190296724
+[16:57:25] [Server thread/INFO]: DFather issued server command: /tptm hell
+[16:57:25] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[16:57:25] [Server thread/WARN]: DFather moved too quickly! -33.0,152.0,-149.0
+[16:57:25] [Server thread/WARN]: DFather moved too quickly! -33.0,152.0,-149.0
+[16:57:29] [Server thread/INFO]: DFather issued server command: /tptm hell
+[16:57:29] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[16:57:29] [Server thread/WARN]: DFather moved too quickly! 87.0,152.0921625024465,171.0
+[16:57:32] [Server thread/INFO]: DFather issued server command: /tptm hell
+[16:57:32] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[16:57:32] [Server thread/WARN]: DFather moved too quickly! -119.0,105.85074468477033,-93.0
+[16:57:48] [Server thread/INFO]: DFather issued server command: /tptm hell
+[16:57:48] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[16:57:48] [Server thread/WARN]: DFather moved too quickly! -3.0,139.32035242881216,-20.0
+[16:57:48] [Server thread/WARN]: DFather moved too quickly! -3.0,139.32035242881216,-20.0
+[16:58:00] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[16:58:00] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[16:58:00] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:58:00] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:58:00] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[16:58:00] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[16:58:00] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[16:58:00] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[16:58:01] [Server thread/INFO]: Loaded 1373 recipes
+[16:58:01] [Server thread/INFO]: Loaded 1484 advancements
+[16:58:01] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:58:01] [Paper Async Command Builder Thread Pool - 11/ERROR]: Caught previously unhandled exception :
+[16:58:01] [Paper Async Command Builder Thread Pool - 11/ERROR]: Paper Async Command Builder Thread Pool - 11
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[16:58:01] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[16:58:01] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 242ms.
+[16:58:01] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[16:58:01] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[16:58:01] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[16:58:01] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:58:01] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[16:58:01] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[16:58:01] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[16:58:01] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[16:58:01] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[16:58:01] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[16:58:01] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[16:58:01] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[16:58:01] [Server thread/INFO]: CONSOLE: Reload complete.
+[16:58:03] [Server thread/INFO]: DFather issued server command: /tptm hell
+[16:58:03] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[16:58:13] [Server thread/INFO]: DFather issued server command: /tptm hell
+[16:58:13] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[16:58:13] [Server thread/WARN]: DFather moved too quickly! 0.0,-10.806526110009003,0.0
+[16:58:33] [Server thread/INFO]: DFather issued server command: /tptm hell
+[16:58:33] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[16:58:33] [Server thread/WARN]: DFather moved too quickly! -355.0,138.18464916954775,-548.0
+[16:58:33] [Server thread/WARN]: DFather moved too quickly! -355.0,138.18464916954775,-548.0
+[16:58:34] [Server thread/WARN]: DFather moved too quickly! 0.0,-10.806526110009003,0.0
+[16:58:40] [Server thread/INFO]: DFather issued server command: /tptm hell
+[16:58:40] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[16:58:40] [Server thread/WARN]: DFather moved too quickly! 423.0,154.64069498938267,357.0
+[16:58:40] [Server thread/WARN]: DFather moved too quickly! 423.0,154.64069498938267,357.0
+[16:58:40] [Server thread/WARN]: DFather moved too quickly! 423.0,154.64069498938267,357.0
+[16:58:40] [Server thread/WARN]: DFather moved too quickly! 423.0,154.64069498938267,357.0
+[16:58:40] [Server thread/WARN]: DFather moved too quickly! 423.0,154.64069498938267,357.0
+[16:58:58] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[16:58:58] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[16:58:58] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:58:58] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:58:58] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[16:58:58] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[16:58:58] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[16:58:58] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[16:58:59] [Server thread/INFO]: Loaded 1373 recipes
+[16:58:59] [Server thread/INFO]: Loaded 1484 advancements
+[16:58:59] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:58:59] [Paper Async Command Builder Thread Pool - 12/ERROR]: Caught previously unhandled exception :
+[16:58:59] [Paper Async Command Builder Thread Pool - 12/ERROR]: Paper Async Command Builder Thread Pool - 12
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[16:58:59] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[16:58:59] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 218ms.
+[16:58:59] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[16:58:59] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[16:58:59] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[16:58:59] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:58:59] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[16:58:59] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[16:58:59] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[16:58:59] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[16:58:59] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[16:58:59] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[16:58:59] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[16:58:59] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[16:58:59] [Server thread/INFO]: CONSOLE: Reload complete.
+[16:59:01] [Server thread/INFO]: DFather issued server command: /tptm hell
+[16:59:01] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[16:59:01] [Server thread/WARN]: DFather moved too quickly! -343.0,164.0,-1492.0
+[16:59:05] [Server thread/WARN]: DFather was kicked for floating too long!
+[16:59:05] [Server thread/INFO]: DFather lost connection: Flying is not enabled on this server
+[16:59:05] [Server thread/INFO]: DFather left the game
+[16:59:10] [User Authenticator #1/INFO]: UUID of player DFather is d61cbde7-05fd-4f6d-aed3-cbde55803ec9
+[16:59:10] [Server thread/INFO]: [BingoPlg] DFather Is already in Database
+[16:59:10] [Server thread/INFO]: DFather joined the game
+[16:59:10] [Server thread/INFO]: DFather[/127.0.0.1:50952] logged in with entity id 7496 at ([world]538.0, 199.8447679954834, -1615.0)
+[16:59:14] [Server thread/INFO]: DFather fell from a high place
+[16:59:40] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[16:59:40] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[16:59:40] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:59:40] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:59:40] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[16:59:40] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[16:59:40] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[16:59:40] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[16:59:41] [Server thread/INFO]: Loaded 1373 recipes
+[16:59:41] [Server thread/INFO]: Loaded 1484 advancements
+[16:59:41] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:59:41] [Paper Async Command Builder Thread Pool - 14/ERROR]: Caught previously unhandled exception :
+[16:59:41] [Paper Async Command Builder Thread Pool - 14/ERROR]: Paper Async Command Builder Thread Pool - 14
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[16:59:41] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[16:59:41] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 250ms.
+[16:59:41] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[16:59:41] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[16:59:41] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[16:59:41] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:59:41] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[16:59:41] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[16:59:41] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[16:59:41] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[16:59:41] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[16:59:41] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[16:59:41] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[16:59:41] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[16:59:41] [Server thread/INFO]: CONSOLE: Reload complete.
+[16:59:46] [Server thread/INFO]: DFather issued server command: /tptm hell
+[16:59:46] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[16:59:46] [Server thread/WARN]: DFather moved too quickly! 843.5,137.0,-1012.5
+[16:59:46] [Server thread/WARN]: DFather moved too quickly! 843.5,137.0,-1012.5
+[16:59:46] [Server thread/WARN]: DFather moved too quickly! 843.5,137.0,-1012.5
+[16:59:46] [Server thread/WARN]: DFather moved too quickly! 843.5,137.0,-1012.5
+[17:00:02] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:00:02] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[17:00:02] [Server thread/WARN]: DFather moved too quickly! -1906.1215702835277,136.0,3477.1157415637845
+[17:00:02] [Server thread/WARN]: DFather moved too quickly! -1906.1215702835277,136.0,3477.1157415637845
+[17:00:02] [Server thread/WARN]: DFather moved too quickly! -1906.1215702835277,136.0,3477.1157415637845
+[17:06:59] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:06:59] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:06:59] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:06:59] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:06:59] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[17:06:59] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:06:59] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:06:59] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:07:00] [Server thread/INFO]: Loaded 1373 recipes
+[17:07:00] [Server thread/INFO]: Loaded 1484 advancements
+[17:07:00] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:07:00] [Paper Async Command Builder Thread Pool - 15/ERROR]: Caught previously unhandled exception :
+[17:07:00] [Paper Async Command Builder Thread Pool - 15/ERROR]: Paper Async Command Builder Thread Pool - 15
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[17:07:00] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:07:00] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 162ms.
+[17:07:00] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:07:00] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:07:00] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:07:00] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:07:00] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:07:00] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:07:00] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:07:00] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:07:00] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:07:00] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:07:00] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:07:00] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:07:00] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:07:03] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:07:04] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[17:07:13] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:07:14] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[17:07:20] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:07:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[17:07:35] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:07:36] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[17:07:43] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:07:44] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully teleported with Team <hell>
+[17:10:17] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:10:17] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:10:17] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:10:17] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:10:17] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[17:10:17] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:10:17] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:10:17] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:10:17] [Server thread/INFO]: Loaded 1373 recipes
+[17:10:17] [Server thread/INFO]: Loaded 1484 advancements
+[17:10:17] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:10:17] [Paper Async Command Builder Thread Pool - 13/ERROR]: Caught previously unhandled exception :
+[17:10:17] [Paper Async Command Builder Thread Pool - 13/ERROR]: Paper Async Command Builder Thread Pool - 13
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[17:10:17] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:10:18] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 378ms.
+[17:10:18] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:10:18] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:10:18] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:10:18] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:10:18] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:10:18] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:10:18] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:10:18] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:10:18] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:10:18] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:10:18] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:10:18] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:10:18] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:10:21] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:10:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell>
+[17:15:21] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:15:21] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:15:21] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:15:21] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:15:21] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[17:15:21] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:15:22] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:15:22] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:15:22] [Server thread/INFO]: Loaded 1373 recipes
+[17:15:22] [Server thread/INFO]: Loaded 1484 advancements
+[17:15:22] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:15:22] [Paper Async Command Builder Thread Pool - 16/ERROR]: Caught previously unhandled exception :
+[17:15:22] [Paper Async Command Builder Thread Pool - 16/ERROR]: Paper Async Command Builder Thread Pool - 16
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[17:15:22] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:15:22] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 119ms.
+[17:15:22] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:15:22] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:15:22] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:15:22] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:15:22] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:15:22] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:15:22] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:15:22] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:15:22] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:15:22] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:15:22] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:15:22] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:15:22] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:15:25] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:15:27] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell>
+[17:17:31] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:17:31] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:17:31] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:17:31] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:17:31] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[17:17:31] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:17:31] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:17:31] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:17:32] [Server thread/INFO]: Loaded 1373 recipes
+[17:17:32] [Server thread/INFO]: Loaded 1484 advancements
+[17:17:32] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:17:32] [Paper Async Command Builder Thread Pool - 17/ERROR]: Caught previously unhandled exception :
+[17:17:32] [Paper Async Command Builder Thread Pool - 17/ERROR]: Paper Async Command Builder Thread Pool - 17
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[17:17:32] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:17:32] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 115ms.
+[17:17:32] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:17:32] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:17:32] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:17:32] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:17:32] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:17:32] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:17:32] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:17:32] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:17:32] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:17:32] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:17:32] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:17:32] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:17:32] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:17:36] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:17:38] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell>
+[17:18:46] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:18:46] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:18:46] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:18:46] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:18:46] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[17:18:46] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:18:46] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:18:46] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:18:46] [Server thread/INFO]: Loaded 1373 recipes
+[17:18:46] [Server thread/INFO]: Loaded 1484 advancements
+[17:18:46] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:18:46] [Paper Async Command Builder Thread Pool - 18/ERROR]: Caught previously unhandled exception :
+[17:18:46] [Paper Async Command Builder Thread Pool - 18/ERROR]: Paper Async Command Builder Thread Pool - 18
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[17:18:46] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:18:47] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 234ms.
+[17:18:47] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:18:47] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:18:47] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:18:47] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:18:47] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:18:47] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:18:47] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:18:47] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:18:47] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:18:47] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:18:47] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:18:47] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:18:47] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:18:50] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:18:51] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:1521.0 Y:64.0 Z:-2315.0
+[17:23:03] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:23:03] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:23:03] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:23:03] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:23:03] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[17:23:03] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:23:03] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:23:03] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:23:03] [Server thread/INFO]: Loaded 1373 recipes
+[17:23:03] [Server thread/INFO]: Loaded 1484 advancements
+[17:23:04] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:23:04] [Paper Async Command Builder Thread Pool - 19/ERROR]: Caught previously unhandled exception :
+[17:23:04] [Paper Async Command Builder Thread Pool - 19/ERROR]: Paper Async Command Builder Thread Pool - 19
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[17:23:04] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:23:04] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 198ms.
+[17:23:04] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:23:04] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:23:04] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:23:04] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:23:04] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:23:04] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:23:04] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:23:04] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:23:04] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:23:04] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:23:04] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:23:04] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:23:04] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:23:12] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:23:13] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:-2062.0 Y:77.0 Z:-275.0
+[17:24:11] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:24:11] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:430.0 Y:64.0 Z:-505.0
+[17:24:30] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:24:32] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:965.0 Y:70.0 Z:1153.0
+[17:25:37] [Server thread/INFO]: DFather issued server command: /kill
+[17:25:37] [Server thread/INFO]: DFather was killed
+[17:25:37] [Server thread/INFO]: [DFather: Killed DFather]
+[17:27:25] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:27:25] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:27:25] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:27:25] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:27:25] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[17:27:25] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:27:25] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:27:25] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:27:25] [Server thread/INFO]: Loaded 1373 recipes
+[17:27:25] [Server thread/INFO]: Loaded 1484 advancements
+[17:27:25] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:27:25] [Paper Async Command Builder Thread Pool - 21/ERROR]: Caught previously unhandled exception :
+[17:27:25] [Paper Async Command Builder Thread Pool - 21/ERROR]: Paper Async Command Builder Thread Pool - 21
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[17:27:25] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:27:25] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 208ms.
+[17:27:25] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:27:25] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:27:25] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:27:25] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:27:25] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:27:25] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:27:25] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:27:25] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:27:25] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:27:25] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:27:25] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:27:25] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:27:25] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:27:28] [Server thread/INFO]: DFather issued server command: /kill
+[17:27:28] [Server thread/INFO]: DFather was killed
+[17:27:28] [Server thread/INFO]: [DFather: Killed DFather]
+[17:27:31] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:27:32] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:1886.0 Y:121.0 Z:2880.0
+[17:27:43] [Server thread/INFO]: DFather issued server command: /kill
+[17:27:43] [Server thread/INFO]: DFather was killed
+[17:27:43] [Server thread/INFO]: [DFather: Killed DFather]
+[17:37:12] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:37:12] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:37:12] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:37:12] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:37:12] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[17:37:12] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:37:12] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:37:12] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:37:12] [Server thread/INFO]: Loaded 1373 recipes
+[17:37:12] [Server thread/INFO]: Loaded 1484 advancements
+[17:37:12] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:37:12] [Paper Async Command Builder Thread Pool - 20/ERROR]: Caught previously unhandled exception :
+[17:37:12] [Paper Async Command Builder Thread Pool - 20/ERROR]: Paper Async Command Builder Thread Pool - 20
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[17:37:12] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:37:13] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 201ms.
+[17:37:13] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:37:13] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:37:13] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:37:13] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:37:13] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:37:13] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:37:13] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:37:13] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:37:13] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:37:13] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:37:13] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:37:13] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:37:13] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:37:16] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:37:16] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:2577.0 Y:73.0 Z:-2349.0
+[17:41:09] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:41:09] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:41:09] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:41:09] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:41:09] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[17:41:09] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:41:10] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:41:10] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:41:10] [Server thread/INFO]: Loaded 1373 recipes
+[17:41:10] [Server thread/INFO]: Loaded 1484 advancements
+[17:41:10] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:41:10] [Paper Async Command Builder Thread Pool - 22/ERROR]: Caught previously unhandled exception :
+[17:41:10] [Paper Async Command Builder Thread Pool - 22/ERROR]: Paper Async Command Builder Thread Pool - 22
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[17:41:10] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:41:10] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 114ms.
+[17:41:10] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:41:10] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:41:10] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:41:10] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:41:10] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:41:10] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:41:10] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:41:10] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:41:10] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:41:10] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:41:10] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:41:10] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:41:10] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:41:13] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:41:14] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:1816.0 Y:82.0 Z:499.0
+[17:43:33] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:43:33] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:43:33] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:43:33] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:43:33] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[17:43:33] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:43:33] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:43:33] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:43:34] [Server thread/INFO]: Loaded 1373 recipes
+[17:43:34] [Server thread/INFO]: Loaded 1484 advancements
+[17:43:34] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:43:34] [Paper Async Command Builder Thread Pool - 23/ERROR]: Caught previously unhandled exception :
+[17:43:34] [Paper Async Command Builder Thread Pool - 23/ERROR]: Paper Async Command Builder Thread Pool - 23
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[17:43:34] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:43:34] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 202ms.
+[17:43:34] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:43:34] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:43:34] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:43:34] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:43:34] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:43:34] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:43:34] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:43:34] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:43:34] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:43:34] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:43:34] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:43:34] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:43:34] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:43:37] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:43:40] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:-2360.0 Y:113.0 Z:1938.0
+[17:43:50] [Server thread/INFO]: DFather issued server command: /gamemode spectator
+[17:43:50] [Server thread/INFO]: [DFather: Set own game mode to Spectator Mode]
+[17:44:08] [Server thread/INFO]: DFather issued server command: /gamemode creative
+[17:44:08] [Server thread/INFO]: [DFather: Set own game mode to Creative Mode]
+[17:44:15] [Server thread/INFO]: DFather issued server command: /gamemode survival
+[17:44:15] [Server thread/INFO]: [DFather: Set own game mode to Survival Mode]
+[17:44:47] [Server thread/INFO]: DFather issued server command: /gamemode survival
+[17:44:50] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:44:51] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:2708.0 Y:80.0 Z:2800.0
+[17:47:01] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:47:01] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:47:01] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:47:01] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:47:01] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[17:47:01] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:47:01] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:47:01] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:47:01] [Server thread/INFO]: Loaded 1373 recipes
+[17:47:01] [Server thread/INFO]: Loaded 1484 advancements
+[17:47:01] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:47:01] [Paper Async Command Builder Thread Pool - 24/ERROR]: Caught previously unhandled exception :
+[17:47:01] [Paper Async Command Builder Thread Pool - 24/ERROR]: Paper Async Command Builder Thread Pool - 24
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[17:47:01] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:47:01] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 111ms.
+[17:47:01] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:47:01] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:47:01] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:47:01] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:47:01] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:47:01] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:47:01] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:47:01] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:47:01] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:47:01] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:47:01] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:47:01] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:47:01] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:47:05] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:47:06] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:-1528.0 Y:109.0 Z:1689.0
+[17:52:58] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:52:58] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:52:58] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:52:58] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:52:58] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[17:52:58] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:52:58] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:52:58] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:52:58] [Server thread/INFO]: Loaded 1373 recipes
+[17:52:58] [Server thread/INFO]: Loaded 1484 advancements
+[17:52:58] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:52:58] [Paper Async Command Builder Thread Pool - 25/ERROR]: Caught previously unhandled exception :
+[17:52:58] [Paper Async Command Builder Thread Pool - 25/ERROR]: Paper Async Command Builder Thread Pool - 25
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[17:52:58] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:52:58] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 253ms.
+[17:52:58] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:52:58] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:52:58] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:52:58] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:52:58] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:52:58] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:52:58] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:52:58] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:52:58] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:52:58] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:52:58] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:52:58] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:52:59] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:53:01] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:53:01] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:2248.0 Y:75.0 Z:692.0
+[17:53:07] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:53:09] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:2177.0 Y:64.0 Z:-2898.0
+[17:57:44] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:57:44] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:57:44] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:57:44] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:57:44] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[17:57:44] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:57:44] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:57:44] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:57:45] [Server thread/INFO]: Loaded 1373 recipes
+[17:57:45] [Server thread/INFO]: Loaded 1484 advancements
+[17:57:45] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:57:45] [Paper Async Command Builder Thread Pool - 26/ERROR]: Caught previously unhandled exception :
+[17:57:45] [Paper Async Command Builder Thread Pool - 26/ERROR]: Paper Async Command Builder Thread Pool - 26
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[17:57:45] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:57:45] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 211ms.
+[17:57:45] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:57:45] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:57:45] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:57:45] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:57:45] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:57:45] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:57:45] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:57:45] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:57:45] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:57:45] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:57:45] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:57:45] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:57:45] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:58:16] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:58:16] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:58:16] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:58:16] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:58:16] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[17:58:16] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:58:16] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:58:16] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:58:17] [Server thread/INFO]: Loaded 1373 recipes
+[17:58:17] [Server thread/INFO]: Loaded 1484 advancements
+[17:58:17] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:58:17] [Paper Async Command Builder Thread Pool - 27/ERROR]: Caught previously unhandled exception :
+[17:58:17] [Paper Async Command Builder Thread Pool - 27/ERROR]: Paper Async Command Builder Thread Pool - 27
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[17:58:17] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:58:17] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 130ms.
+[17:58:17] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:58:17] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:58:17] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:58:17] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:58:17] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:58:17] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:58:17] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:58:17] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:58:17] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:58:17] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:58:17] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:58:17] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:58:17] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:58:19] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:58:20] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:602.0 Y:64.0 Z:-2761.0
+[17:59:48] [Server thread/INFO]: DFather issued server command: /kill
+[17:59:48] [Server thread/INFO]: DFather was killed
+[17:59:48] [Server thread/INFO]: [DFather: Killed DFather]
+[17:59:52] [Server thread/INFO]: DFather issued server command: /kill
+[17:59:52] [Server thread/INFO]: DFather was killed
+[17:59:52] [Server thread/INFO]: [DFather: Killed DFather]
+[17:59:58] [Server thread/INFO]: DFather issued server command: /tptm hell
+[17:59:58] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:1933.0 Y:92.0 Z:2982.0
+[17:59:58] [Server thread/WARN]: DFather moved too quickly! 2440.5,28.0,3109.5
+[17:59:58] [Server thread/WARN]: DFather moved too quickly! 2440.5,28.0,3109.5
+[18:03:29] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[18:03:29] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[18:03:29] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:03:29] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:03:29] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[18:03:29] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[18:03:29] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[18:03:29] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[18:03:30] [Server thread/INFO]: Loaded 1373 recipes
+[18:03:30] [Server thread/INFO]: Loaded 1484 advancements
+[18:03:30] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:03:30] [Paper Async Command Builder Thread Pool - 28/ERROR]: Caught previously unhandled exception :
+[18:03:30] [Paper Async Command Builder Thread Pool - 28/ERROR]: Paper Async Command Builder Thread Pool - 28
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[18:03:30] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[18:03:30] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 114ms.
+[18:03:30] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[18:03:30] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[18:03:30] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[18:03:30] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:03:30] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[18:03:30] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[18:03:30] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[18:03:30] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[18:03:30] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[18:03:30] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[18:03:30] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[18:03:30] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[18:03:30] [Server thread/INFO]: CONSOLE: Reload complete.
+[18:03:34] [Server thread/INFO]: DFather issued server command: /tptm hell
+[18:03:35] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:2898.0 Y:96.0 Z:-586.0
+[18:04:03] [Server thread/INFO]: DFather issued server command: /spawnpoint
+[18:04:03] [Server thread/INFO]: [DFather: Set spawn point to 2897, 93, -586 [0.0] in minecraft:overworld for DFather]
+[18:04:11] [Server thread/INFO]: DFather issued server command: /tptm hell
+[18:04:12] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:519.0 Y:109.0 Z:2187.0
+[18:04:16] [Server thread/INFO]: DFather issued server command: /spawnpoint
+[18:04:16] [Server thread/INFO]: [DFather: Set spawn point to 519, 109, 2187 [0.0] in minecraft:overworld for DFather]
+[18:05:11] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[18:05:11] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[18:05:11] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:05:11] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:05:11] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[18:05:11] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[18:05:11] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[18:05:11] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[18:05:11] [Server thread/INFO]: Loaded 1373 recipes
+[18:05:11] [Server thread/INFO]: Loaded 1484 advancements
+[18:05:11] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:05:11] [Paper Async Command Builder Thread Pool - 29/ERROR]: Caught previously unhandled exception :
+[18:05:11] [Paper Async Command Builder Thread Pool - 29/ERROR]: Paper Async Command Builder Thread Pool - 29
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[18:05:11] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[18:05:12] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 216ms.
+[18:05:12] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[18:05:12] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[18:05:12] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[18:05:12] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:05:12] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[18:05:12] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[18:05:12] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[18:05:12] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[18:05:12] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[18:05:12] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[18:05:12] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[18:05:12] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[18:05:12] [Server thread/INFO]: CONSOLE: Reload complete.
+[18:05:20] [Server thread/INFO]: DFather issued server command: /tptm hell
+[18:05:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:-711.0 Y:72.0 Z:-547.0
+[18:05:23] [Server thread/INFO]: DFather issued server command: /spawnpoint
+[18:05:23] [Server thread/INFO]: [DFather: Set spawn point to -711, 71, -547 [0.0] in minecraft:overworld for DFather]
+[18:05:41] [Server thread/INFO]: DFather issued server command: /kill
+[18:05:41] [Server thread/INFO]: DFather was killed
+[18:05:41] [Server thread/INFO]: [DFather: Killed DFather]
+[18:05:56] [Server thread/INFO]: DFather issued server command: /kill
+[18:05:56] [Server thread/INFO]: DFather was killed
+[18:05:56] [Server thread/INFO]: [DFather: Killed DFather]
+[18:06:38] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[18:06:38] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[18:06:38] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:06:38] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:06:38] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[18:06:38] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[18:06:38] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[18:06:38] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[18:06:38] [Server thread/INFO]: Loaded 1373 recipes
+[18:06:38] [Server thread/INFO]: Loaded 1484 advancements
+[18:06:38] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:06:38] [Paper Async Command Builder Thread Pool - 30/ERROR]: Caught previously unhandled exception :
+[18:06:38] [Paper Async Command Builder Thread Pool - 30/ERROR]: Paper Async Command Builder Thread Pool - 30
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[18:06:38] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[18:06:39] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 304ms.
+[18:06:39] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[18:06:39] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[18:06:39] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[18:06:39] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:06:39] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[18:06:39] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[18:06:39] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[18:06:39] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[18:06:39] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[18:06:39] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[18:06:39] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[18:06:39] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[18:06:39] [Server thread/INFO]: CONSOLE: Reload complete.
+[18:06:42] [Server thread/INFO]: DFather issued server command: /spawnpoint
+[18:06:42] [Server thread/INFO]: [DFather: Set spawn point to -711, 71, -547 [0.0] in minecraft:overworld for DFather]
+[18:06:45] [Server thread/INFO]: DFather issued server command: /tptm hell
+[18:06:46] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:-1741.0 Y:120.0 Z:1202.0
+[18:07:02] [Server thread/INFO]: DFather issued server command: /spawnpoint
+[18:07:02] [Server thread/INFO]: [DFather: Set spawn point to -1742, 120, 1202 [0.0] in minecraft:overworld for DFather]
+[18:08:17] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[18:08:17] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[18:08:17] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:08:17] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:08:17] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[18:08:17] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[18:08:17] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[18:08:17] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[18:08:18] [Server thread/INFO]: Loaded 1373 recipes
+[18:08:18] [Server thread/INFO]: Loaded 1484 advancements
+[18:08:18] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:08:18] [Paper Async Command Builder Thread Pool - 31/ERROR]: Caught previously unhandled exception :
+[18:08:18] [Paper Async Command Builder Thread Pool - 31/ERROR]: Paper Async Command Builder Thread Pool - 31
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[18:08:18] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[18:08:18] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 225ms.
+[18:08:18] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[18:08:18] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[18:08:18] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[18:08:18] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:08:18] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[18:08:18] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[18:08:18] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[18:08:18] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[18:08:18] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[18:08:18] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[18:08:18] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[18:08:18] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[18:08:18] [Server thread/INFO]: CONSOLE: Reload complete.
+[18:08:24] [Server thread/INFO]: DFather issued server command: /spawnpoint
+[18:08:24] [Server thread/INFO]: [DFather: Set spawn point to -1744, 119, 1203 [0.0] in minecraft:overworld for DFather]
+[18:08:26] [Server thread/INFO]: DFather issued server command: /tptm hell
+[18:08:28] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:-2794.0 Y:64.0 Z:-2838.0
+[18:08:51] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[18:08:51] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[18:08:51] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:08:51] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:08:51] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[18:08:51] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[18:08:51] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[18:08:51] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[18:08:52] [Server thread/INFO]: Loaded 1373 recipes
+[18:08:52] [Server thread/INFO]: Loaded 1484 advancements
+[18:08:52] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:08:52] [Server thread/INFO]: [PluginInitializerManager] Initialized 0 plugins
+[18:08:52] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:08:52] [Server thread/INFO]: CONSOLE: Reload complete.
+[18:08:57] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[18:08:57] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[18:08:57] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:08:57] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:08:57] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[18:08:57] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[18:08:57] [Server thread/INFO]: Loaded 1373 recipes
+[18:08:57] [Server thread/INFO]: Loaded 1484 advancements
+[18:08:58] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:08:58] [Paper Async Command Builder Thread Pool - 33/ERROR]: Caught previously unhandled exception :
+[18:08:58] [Paper Async Command Builder Thread Pool - 33/ERROR]: Paper Async Command Builder Thread Pool - 33
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[18:08:58] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[18:08:58] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 208ms.
+[18:08:58] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[18:08:58] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[18:08:58] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[18:08:58] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:08:58] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[18:08:58] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[18:08:58] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[18:08:58] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[18:08:58] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[18:08:58] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[18:08:58] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[18:08:58] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[18:08:58] [Server thread/INFO]: CONSOLE: Reload complete.
+[18:09:01] [Server thread/INFO]: DFather issued server command: /tptm hell
+[18:09:02] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:1186.0 Y:64.0 Z:-1054.0
+[18:09:57] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[18:09:57] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[18:09:57] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:09:57] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:09:57] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[18:09:57] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[18:09:57] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[18:09:57] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[18:09:58] [Server thread/INFO]: Loaded 1373 recipes
+[18:09:58] [Server thread/INFO]: Loaded 1484 advancements
+[18:09:58] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:09:58] [Paper Async Command Builder Thread Pool - 32/ERROR]: Caught previously unhandled exception :
+[18:09:58] [Paper Async Command Builder Thread Pool - 32/ERROR]: Paper Async Command Builder Thread Pool - 32
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[18:09:58] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[18:09:58] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 238ms.
+[18:09:58] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[18:09:58] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[18:09:58] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[18:09:58] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:09:58] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[18:09:58] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[18:09:58] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[18:09:58] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[18:09:58] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[18:09:58] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[18:09:58] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[18:09:58] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[18:09:58] [Server thread/INFO]: CONSOLE: Reload complete.
+[18:10:01] [Server thread/INFO]: DFather issued server command: /tptm hell
+[18:10:01] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:-1929.0 Y:73.0 Z:-2773.0
+[18:10:30] [Server thread/INFO]: DFather issued server command: /spawnpoint
+[18:10:30] [Server thread/INFO]: [DFather: Set spawn point to -1929, 72, -2773 [0.0] in minecraft:overworld for DFather]
+[18:22:15] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[18:22:15] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[18:22:15] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:22:15] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:22:15] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[18:22:15] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[18:22:15] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[18:22:15] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[18:22:16] [Server thread/INFO]: Loaded 1373 recipes
+[18:22:16] [Server thread/INFO]: Loaded 1484 advancements
+[18:22:16] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:22:16] [Paper Async Command Builder Thread Pool - 34/ERROR]: Caught previously unhandled exception :
+[18:22:16] [Paper Async Command Builder Thread Pool - 34/ERROR]: Paper Async Command Builder Thread Pool - 34
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[18:22:16] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[18:22:16] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 119ms.
+[18:22:16] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[18:22:16] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[18:22:16] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[18:22:16] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:22:16] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[18:22:16] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[18:22:16] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[18:22:16] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[18:22:16] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[18:22:16] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[18:22:16] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[18:22:16] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[18:22:16] [Server thread/INFO]: CONSOLE: Reload complete.
+[18:22:20] [Server thread/INFO]: DFather issued server command: /tptm hell
+[18:22:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:390.0 Y:64.0 Z:-268.0
+[18:22:31] [Server thread/INFO]: DFather issued server command: /kill
+[18:22:31] [Server thread/INFO]: DFather was killed
+[18:22:31] [Server thread/INFO]: [DFather: Killed DFather]
+[18:23:09] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[18:23:09] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[18:23:09] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:23:09] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:23:09] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[18:23:09] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[18:23:09] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[18:23:09] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[18:23:09] [Server thread/INFO]: Loaded 1373 recipes
+[18:23:09] [Server thread/INFO]: Loaded 1484 advancements
+[18:23:09] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:23:09] [Paper Async Command Builder Thread Pool - 36/ERROR]: Caught previously unhandled exception :
+[18:23:09] [Paper Async Command Builder Thread Pool - 36/ERROR]: Paper Async Command Builder Thread Pool - 36
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[18:23:09] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[18:23:10] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 246ms.
+[18:23:10] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[18:23:10] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[18:23:10] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[18:23:10] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:23:10] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[18:23:10] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[18:23:10] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[18:23:10] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[18:23:10] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[18:23:10] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[18:23:10] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[18:23:10] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[18:23:10] [Server thread/INFO]: CONSOLE: Reload complete.
+[18:23:13] [Server thread/INFO]: DFather lost connection: Disconnected
+[18:23:13] [Server thread/INFO]: DFather left the game
+[18:23:16] [User Authenticator #2/INFO]: UUID of player DFather is d61cbde7-05fd-4f6d-aed3-cbde55803ec9
+[18:23:16] [Server thread/INFO]: [BingoPlg] DFather Is already in Database
+[18:23:16] [Server thread/INFO]: DFather joined the game
+[18:23:16] [Server thread/INFO]: DFather[/127.0.0.1:51973] logged in with entity id 20890 at ([world]-516.5, 64.0, -132.5)
+[18:23:19] [Server thread/INFO]: DFather issued server command: /tptm hell
+[18:23:20] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:-2509.0 Y:82.0 Z:-2401.0
+[18:23:30] [Server thread/INFO]: DFather issued server command: /kill
+[18:23:30] [Server thread/INFO]: DFather was killed
+[18:23:30] [Server thread/INFO]: [DFather: Killed DFather]
+[18:24:52] [Server thread/INFO]: DFather issued server command: /tptm hell
+[18:24:53] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:-2556.0 Y:65.0 Z:1300.0
+[18:24:56] [Server thread/INFO]: DFather issued server command: /spawnpoint
+[18:24:56] [Server thread/INFO]: [DFather: Set spawn point to -2556, 63, 1300 [0.0] in minecraft:overworld for DFather]
+[18:25:06] [Server thread/INFO]: DFather issued server command: /kill
+[18:25:06] [Server thread/INFO]: DFather was killed
+[18:25:06] [Server thread/INFO]: [DFather: Killed DFather]
+[18:40:38] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[18:40:38] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[18:40:38] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:40:38] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:40:38] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[18:40:38] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[18:40:38] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[18:40:38] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[18:40:39] [Server thread/INFO]: Loaded 1373 recipes
+[18:40:39] [Server thread/INFO]: Loaded 1484 advancements
+[18:40:39] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:40:39] [Paper Async Command Builder Thread Pool - 37/ERROR]: Caught previously unhandled exception :
+[18:40:39] [Paper Async Command Builder Thread Pool - 37/ERROR]: Paper Async Command Builder Thread Pool - 37
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[18:40:39] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[18:40:39] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 249ms.
+[18:40:39] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[18:40:39] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[18:40:39] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[18:40:39] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:40:39] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[18:40:39] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[18:40:39] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[18:40:39] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[18:40:39] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[18:40:39] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[18:40:39] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[18:40:39] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[18:40:39] [Server thread/INFO]: CONSOLE: Reload complete.
+[18:40:43] [Server thread/INFO]: DFather issued server command: /tptm hell
+[18:40:44] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:2747.0 Y:70.0 Z:1840.0
+[18:40:56] [Server thread/INFO]: DFather issued server command: /kill
+[18:40:56] [Server thread/INFO]: DFather was killed
+[18:40:56] [Server thread/INFO]: [DFather: Killed DFather]
+[18:42:13] [Server thread/INFO]: DFather issued server command: /tptm hell
+[18:42:14] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:-2285.0 Y:66.0 Z:-2680.0
+[18:42:32] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[18:42:32] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[18:42:32] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:42:32] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:42:33] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[18:42:33] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[18:42:33] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[18:42:33] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[18:42:33] [Server thread/INFO]: Loaded 1373 recipes
+[18:42:33] [Server thread/INFO]: Loaded 1484 advancements
+[18:42:33] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:42:33] [Paper Async Command Builder Thread Pool - 38/ERROR]: Caught previously unhandled exception :
+[18:42:33] [Paper Async Command Builder Thread Pool - 38/ERROR]: Paper Async Command Builder Thread Pool - 38
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[18:42:33] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[18:42:33] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 143ms.
+[18:42:33] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[18:42:33] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[18:42:33] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[18:42:33] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:42:33] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[18:42:33] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[18:42:33] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[18:42:33] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[18:42:33] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[18:42:33] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[18:42:33] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[18:42:33] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[18:42:33] [Server thread/INFO]: CONSOLE: Reload complete.
+[18:42:35] [Server thread/INFO]: DFather issued server command: /tptm hell
+[18:42:37] [Server thread/INFO]: DFather died
+[18:42:37] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:1056.0 Y:65.0 Z:318.0
+[18:43:36] [Server thread/INFO]: DFather issued server command: /tptm hell
+[18:43:37] [Server thread/INFO]: DFather died
+[18:43:37] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:2289.0 Y:77.0 Z:1202.0
+[18:44:02] [Server thread/INFO]: DFather issued server command: /kill
+[18:44:02] [Server thread/INFO]: DFather was killed
+[18:44:02] [Server thread/INFO]: [DFather: Killed DFather]
+[18:56:08] [Server thread/INFO]: DFather issued server command: /tptm hell
+[18:56:09] [Server thread/INFO]: DFather died
+[18:56:09] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:-2629.0 Y:70.0 Z:-1697.0
+[18:56:12] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[18:56:12] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[18:56:12] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:56:12] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:56:12] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[18:56:12] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[18:56:12] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[18:56:12] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[18:56:13] [Server thread/INFO]: Loaded 1373 recipes
+[18:56:13] [Server thread/INFO]: Loaded 1484 advancements
+[18:56:13] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:56:13] [Paper Async Command Builder Thread Pool - 39/ERROR]: Caught previously unhandled exception :
+[18:56:13] [Paper Async Command Builder Thread Pool - 39/ERROR]: Paper Async Command Builder Thread Pool - 39
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[18:56:13] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[18:56:13] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 310ms.
+[18:56:13] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[18:56:13] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[18:56:13] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[18:56:13] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:56:13] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[18:56:13] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[18:56:13] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[18:56:13] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[18:56:13] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[18:56:13] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[18:56:13] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[18:56:13] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[18:56:13] [Server thread/INFO]: CONSOLE: Reload complete.
+[18:56:15] [Server thread/INFO]: DFather issued server command: /tptm hell
+[18:56:17] [Server thread/INFO]: DFather died
+[18:56:17] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:-2089.0 Y:102.0 Z:1879.0
+[18:56:32] [Server thread/INFO]: DFather issued server command: /tptm hell 0
+[18:56:34] [Server thread/INFO]: DFather issued server command: /tptm hell 0 0
+[18:56:35] [Server thread/INFO]: DFather died
+[18:56:35] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:0.0 Y:65.0 Z:0.0
+[18:56:41] [Server thread/INFO]: DFather issued server command: /tptm hell 0 0
+[18:56:41] [Server thread/INFO]: DFather died
+[18:56:41] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:0.0 Y:65.0 Z:0.0
+[18:57:09] [Server thread/INFO]: DFather issued server command: /tptm hell 0 0
+[18:57:09] [Server thread/INFO]: DFather died
+[18:57:09] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:0.0 Y:65.0 Z:0.0
+[18:58:25] [Server thread/INFO]: DFather issued server command: /tptm a
+[18:59:54] [Server thread/INFO]: DFather issued server command: /tptm hell 3000 -3000
+[18:59:55] [Server thread/INFO]: DFather died
+[18:59:55] [Server thread/INFO]: [BingoPlg] Player <DFather> Was successfully Teleported and Spawn Pointed with Team <hell> 
+X:3000.0 Y:65.0 Z:-3000.0
+[19:05:51] [Server thread/INFO]: DFather lost connection: Disconnected
+[19:05:51] [Server thread/INFO]: DFather left the game
+[19:05:58] [Server thread/INFO]: Stopping server
+[19:05:58] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[19:05:58] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[19:05:58] [Server thread/INFO]: Saving players
+[19:05:58] [Server thread/INFO]: Saving worlds
+[19:05:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Saved 34 block chunks, 46 entity chunks, 0 poi chunks in world 'world' in 0,19s
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[19:05:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[19:05:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,01s
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[19:05:58] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[19:05:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:05:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:05:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19:05:58] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[19:05:58] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[19:05:58] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[19:05:58] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[19:05:58] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
