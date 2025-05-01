@@ -6,6 +6,7 @@ import me.dubovoy.bingoPlg.commands.JoinTeam;
 import me.dubovoy.bingoPlg.commands.TeleportTeam;
 import me.dubovoy.bingoPlg.database.BingoDb;
 import me.dubovoy.bingoPlg.events.PlayerJoined;
+import me.dubovoy.bingoPlg.logic.Difficulty;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Listener;
@@ -33,7 +34,7 @@ public final class BingoPlg extends JavaPlugin {
 
 //        InitCommand("revile", new RevileCommand(this));
 
-
+        LogWMsg(Difficulty.DiffZero().toString());
         InitEvent("PlayerJoin event", new PlayerJoined(this));
         LogWMsg("Команды и События - успешно загружены!");
 
