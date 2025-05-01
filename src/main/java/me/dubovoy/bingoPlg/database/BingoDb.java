@@ -18,6 +18,7 @@ public class BingoDb {
 
         teamsTable(connection);
         playersTable(connection);
+        gameTable(connection);
     }
 
     private void teamsTable(Connection connection) throws SQLException{
@@ -37,6 +38,18 @@ public class BingoDb {
                     uuid TEXT PRIMARY KEY,
                     nickname TEXT,
                     team_id INTEGER DEFAULT (-1));
+            """);
+        }
+    }
+
+    private void gameTable(Connection connection) throws SQLException{
+        try (Statement statement = connection.createStatement()){
+            statement.execute("""
+                    CREATE TABLE IF NOT EXISTS game(
+                    title TEXT PRIMARY KEY,
+                    gameMode TEXT,
+                    gridSize INTEGER DEFAULT (5),
+                    items TEXT);
             """);
         }
     }
