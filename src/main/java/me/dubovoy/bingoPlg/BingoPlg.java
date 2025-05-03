@@ -34,7 +34,7 @@ public final class BingoPlg extends JavaPlugin {
 
 //        InitCommand("revile", new RevileCommand(this));
 
-        LogWMsg(Difficulty.ZeroDf().toString());
+        LogWMsg(Difficulty.Example().toString());
         InitEvent("PlayerJoin event", new PlayerJoined(this));
         LogWMsg("Команды и События - успешно загружены!");
 

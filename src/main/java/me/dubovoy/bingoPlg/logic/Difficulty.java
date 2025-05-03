@@ -16,6 +16,7 @@ public class Difficulty{
 
     public static List<Material> Example(){
         List<Material> materials = new ArrayList<>();
+        materials.add(Material.getMaterial("diamond"));
         materials.add(Material.AIR);
         return materials;
     }
@@ -917,6 +918,7 @@ public class Difficulty{
     }
     public static List<Material> ForthDf(){
         List<Material> materials = new ArrayList<>();
+        materials.add(Material.AMETHYST_CLUSTER);
         materials.add(Material.BEACON);
         materials.add(Material.CREEPER_BANNER_PATTERN);
         materials.add(Material.ELYTRA);

@@ -1,280 +1,167 @@
-[03:42:05] [ServerMain/INFO]: [bootstrap] Running Java 23 (Java HotSpot(TM) 64-Bit Server VM 23+37-2369; Oracle Corporation null) on Windows 10 10.0 (amd64)
-[03:42:05] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.5-45-main@a7a76c8 (2025-04-29T13:48:18Z) for Minecraft 1.21.5
-[03:42:06] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[03:42:06] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
-[03:42:06] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+[04:01:17] [ServerMain/INFO]: [bootstrap] Running Java 23 (Java HotSpot(TM) 64-Bit Server VM 23+37-2369; Oracle Corporation null) on Windows 10 10.0 (amd64)
+[04:01:17] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.5-45-main@a7a76c8 (2025-04-29T13:48:18Z) for Minecraft 1.21.5
+[04:01:18] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:01:18] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[04:01:19] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 335ms.
+[04:01:19] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:01:19] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
  - BingoPlg (1.0)
-[03:42:10] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[03:42:12] [ServerMain/INFO]: Loaded 1373 recipes
-[03:42:12] [ServerMain/INFO]: Loaded 1484 advancements
-[03:42:12] [Server thread/INFO]: Starting minecraft server version 1.21.5
-[03:42:12] [Server thread/WARN]: ****************************
-[03:42:12] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
-[03:42:12] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
-[03:42:12] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
-[03:42:12] [Server thread/WARN]: ****************************
-[03:42:12] [Server thread/INFO]: Loading properties
-[03:42:12] [Server thread/INFO]: This server is running Paper version 1.21.5-45-main@a7a76c8 (2025-04-29T13:48:18Z) (Implementing API version 1.21.5-R0.1-SNAPSHOT)
-[03:42:12] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[03:42:12] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[03:42:12] [Server thread/INFO]: Using 4 threads for Netty based IO
-[03:42:12] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
-[03:42:12] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[03:42:13] [Server thread/INFO]: Default game type: SURVIVAL
-[03:42:13] [Server thread/INFO]: Generating keypair
-[03:42:13] [Server thread/INFO]: Starting Minecraft server on *:25565
-[03:42:13] [Server thread/INFO]: Using default channel type
-[03:42:13] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[03:42:13] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[03:42:13] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
-[03:42:13] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[03:42:13] [Server thread/INFO]: Preparing level "world"
-[03:42:13] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[03:42:13] [Server thread/INFO]: Preparing spawn area: 0%
-[03:42:14] [Server thread/INFO]: Preparing spawn area: 18%
-[03:42:14] [Server thread/INFO]: Time elapsed: 611 ms
-[03:42:14] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[03:42:14] [Server thread/INFO]: Preparing spawn area: 0%
-[03:42:14] [Server thread/INFO]: Time elapsed: 90 ms
-[03:42:14] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[03:42:14] [Server thread/INFO]: Preparing spawn area: 0%
-[03:42:14] [Server thread/INFO]: Time elapsed: 67 ms
-[03:42:14] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
-[03:42:14] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
-[03:42:14] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
-[03:42:14] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
-[03:42:14] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
-[03:42:14] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
-[03:42:14] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
-[03:42:14] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
-[03:42:14] [Server thread/INFO]: [spark] Starting background profiler...
-[03:42:14] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows10/amd64), so the built-in Java engine will be used instead.
-[03:42:14] [Server thread/INFO]: Done preparing level "world" (1.522s)
-[03:42:14] [Server thread/INFO]: Running delayed init tasks
-[03:42:14] [Server thread/INFO]: Done (10.437s)! For help, type "help"
-[03:45:04] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[03:45:04] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[03:45:04] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[03:45:04] [Server thread/INFO]: Using 4 threads for Netty based IO
-[03:45:04] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
-[03:45:04] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[03:45:04] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
-[03:45:04] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
-[03:45:04] [Server thread/INFO]: Loaded 1373 recipes
-[03:45:04] [Server thread/INFO]: Loaded 1484 advancements
-[03:45:04] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
-[03:45:04] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
-[03:45:05] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 264ms.
-[03:45:05] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
-[03:45:05] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+[04:01:23] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[04:01:24] [ServerMain/INFO]: Loaded 1373 recipes
+[04:01:24] [ServerMain/INFO]: Loaded 1484 advancements
+[04:01:24] [Server thread/INFO]: Starting minecraft server version 1.21.5
+[04:01:24] [Server thread/WARN]: ****************************
+[04:01:24] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
+[04:01:24] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
+[04:01:24] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
+[04:01:24] [Server thread/WARN]: ****************************
+[04:01:24] [Server thread/INFO]: Loading properties
+[04:01:24] [Server thread/INFO]: This server is running Paper version 1.21.5-45-main@a7a76c8 (2025-04-29T13:48:18Z) (Implementing API version 1.21.5-R0.1-SNAPSHOT)
+[04:01:24] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[04:01:24] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:01:24] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:01:25] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[04:01:25] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:01:25] [Server thread/INFO]: Default game type: SURVIVAL
+[04:01:25] [Server thread/INFO]: Generating keypair
+[04:01:25] [Server thread/INFO]: Starting Minecraft server on *:25565
+[04:01:25] [Server thread/INFO]: Using default channel type
+[04:01:25] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[04:01:25] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[04:01:25] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[04:01:25] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:01:25] [Server thread/INFO]: Preparing level "world"
+[04:01:25] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[04:01:26] [Server thread/INFO]: Preparing spawn area: 0%
+[04:01:26] [Server thread/INFO]: Preparing spawn area: 10%
+[04:01:26] [Server thread/INFO]: Time elapsed: 588 ms
+[04:01:26] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[04:01:26] [Server thread/INFO]: Preparing spawn area: 0%
+[04:01:26] [Server thread/INFO]: Time elapsed: 166 ms
+[04:01:26] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[04:01:26] [Server thread/INFO]: Preparing spawn area: 0%
+[04:01:26] [Server thread/INFO]: Time elapsed: 106 ms
+[04:01:26] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[04:01:26] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[04:01:26] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[04:01:26] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[04:01:26] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[04:01:26] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[04:01:26] [Server thread/WARN]: [BingoPlg] [null, AIR]
+[04:01:26] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[04:01:26] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[04:01:27] [Server thread/INFO]: [spark] Starting background profiler...
+[04:01:27] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows10/amd64), so the built-in Java engine will be used instead.
+[04:01:27] [Server thread/INFO]: Done preparing level "world" (1.698s)
+[04:01:27] [Server thread/INFO]: Running delayed init tasks
+[04:01:27] [Server thread/INFO]: Done (10.288s)! For help, type "help"
+[04:01:46] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[04:01:46] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[04:01:46] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:01:46] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:01:46] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[04:01:46] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:01:47] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[04:01:47] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[04:01:47] [Server thread/INFO]: Loaded 1373 recipes
+[04:01:47] [Server thread/INFO]: Loaded 1484 advancements
+[04:01:47] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:01:47] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[04:01:47] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 133ms.
+[04:01:47] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:01:47] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
  - BingoPlg (1.0)
-[03:45:05] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
-[03:45:05] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[03:45:05] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
-[03:45:05] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
-[03:45:05] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
-[03:45:05] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
-[03:45:05] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
-[03:45:05] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
-[03:45:05] [Server thread/ERROR]: Error occurred while enabling BingoPlg v1.0 (Is it up to date?)
-java.lang.RuntimeException: java.io.FileNotFoundException: data\0.json (Системе не удается найти указанный путь)
-	at bingoplg.jar/me.dubovoy.bingoPlg.logic.Difficulty.DiffZero(Difficulty.java:25) ~[bingoplg.jar:?]
-	at bingoplg.jar/me.dubovoy.bingoPlg.BingoPlg.onEnable(BingoPlg.java:37) ~[bingoplg.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:280) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:649) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:604) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at org.bukkit.craftbukkit.CraftServer.reload(CraftServer.java:1131) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at org.bukkit.Bukkit.reload(Bukkit.java:1039) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:59) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:165) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.CraftServer.dispatchCommand(CraftServer.java:1000) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at org.bukkit.craftbukkit.CraftServer.dispatchServerCommand(CraftServer.java:985) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:436) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at net.minecraft.server.dedicated.DedicatedServer.tickConnection(DedicatedServer.java:386) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1736) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1527) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1249) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:308) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
-Caused by: java.io.FileNotFoundException: data\0.json (Системе не удается найти указанный путь)
-	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219) ~[?:?]
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159) ~[?:?]
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112) ~[?:?]
-	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
-	at bingoplg.jar/me.dubovoy.bingoPlg.logic.Difficulty.DiffZero(Difficulty.java:23) ~[bingoplg.jar:?]
-	... 20 more
-[03:45:05] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
-[03:45:05] [Server thread/ERROR]: Error occurred while disabling BingoPlg v1.0
-java.lang.NullPointerException: Cannot invoke "me.dubovoy.bingoPlg.database.BingoDb.closeConnection()" because "this.database" is null
-	at bingoplg.jar/me.dubovoy.bingoPlg.BingoPlg.onDisable(BingoPlg.java:61) ~[bingoplg.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:286) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugin(PaperPluginManagerImpl.java:114) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:550) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:206) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:649) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:604) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at org.bukkit.craftbukkit.CraftServer.reload(CraftServer.java:1131) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at org.bukkit.Bukkit.reload(Bukkit.java:1039) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:59) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:165) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.CraftServer.dispatchCommand(CraftServer.java:1000) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at org.bukkit.craftbukkit.CraftServer.dispatchServerCommand(CraftServer.java:985) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:436) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at net.minecraft.server.dedicated.DedicatedServer.tickConnection(DedicatedServer.java:386) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1736) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1527) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1249) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:308) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
-[03:45:05] [Server thread/INFO]: CONSOLE: Reload complete.
-[03:47:44] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[03:47:44] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[03:47:44] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[03:47:44] [Server thread/INFO]: Using 4 threads for Netty based IO
-[03:47:44] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
-[03:47:44] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[03:47:44] [Server thread/INFO]: Loaded 1373 recipes
-[03:47:44] [Server thread/INFO]: Loaded 1484 advancements
-[03:47:44] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
-[03:47:44] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
-[03:47:45] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 143ms.
-[03:47:45] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
-[03:47:45] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+[04:01:47] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[04:01:47] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:01:47] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[04:01:47] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[04:01:47] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[04:01:47] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[04:01:47] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[04:01:47] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[04:01:47] [Server thread/WARN]: [BingoPlg] [null, AIR]
+[04:01:47] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[04:01:47] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[04:01:47] [Server thread/INFO]: CONSOLE: Reload complete.
+[04:01:55] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[04:01:55] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[04:01:55] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:01:55] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:01:55] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[04:01:55] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:01:55] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[04:01:55] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[04:01:55] [Server thread/INFO]: Loaded 1373 recipes
+[04:01:55] [Server thread/INFO]: Loaded 1484 advancements
+[04:01:55] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:01:55] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[04:01:55] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 134ms.
+[04:01:56] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:01:56] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
  - BingoPlg (1.0)
-[03:47:45] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
-[03:47:45] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[03:47:45] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
-[03:47:45] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
-[03:47:45] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
-[03:47:45] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
-[03:47:45] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
-[03:47:45] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
-[03:47:45] [Server thread/WARN]: [BingoPlg] [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-[03:47:45] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
-[03:47:45] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
-[03:47:45] [Server thread/INFO]: CONSOLE: Reload complete.
-[03:58:46] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[03:58:46] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[03:58:46] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[03:58:46] [Server thread/INFO]: Using 4 threads for Netty based IO
-[03:58:46] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
-[03:58:46] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[03:58:46] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
-[03:58:46] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
-[03:58:46] [Server thread/INFO]: Loaded 1373 recipes
-[03:58:46] [Server thread/INFO]: Loaded 1484 advancements
-[03:58:46] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
-[03:58:46] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
-[03:58:46] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 143ms.
-[03:58:46] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
-[03:58:46] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+[04:01:56] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[04:01:56] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:01:56] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[04:01:56] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[04:01:56] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[04:01:56] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[04:01:56] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[04:01:56] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[04:01:56] [Server thread/WARN]: [BingoPlg] [null, AIR]
+[04:01:56] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[04:01:56] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[04:01:56] [Server thread/INFO]: CONSOLE: Reload complete.
+[04:02:12] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[04:02:12] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[04:02:12] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:02:12] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:02:12] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[04:02:12] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:02:12] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[04:02:12] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[04:02:12] [Server thread/INFO]: Loaded 1373 recipes
+[04:02:12] [Server thread/INFO]: Loaded 1484 advancements
+[04:02:12] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:02:12] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[04:02:12] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 67ms.
+[04:02:13] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:02:13] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
  - BingoPlg (1.0)
-[03:58:46] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
-[03:58:46] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[03:58:46] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
-[03:58:46] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
-[03:58:46] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
-[03:58:46] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
-[03:58:46] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
-[03:58:46] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
-[03:58:46] [Server thread/WARN]: [BingoPlg] [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-[03:58:46] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
-[03:58:46] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
-[03:58:46] [Server thread/INFO]: CONSOLE: Reload complete.
-[03:59:17] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[03:59:17] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[03:59:17] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[03:59:17] [Server thread/INFO]: Using 4 threads for Netty based IO
-[03:59:17] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
-[03:59:17] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[03:59:17] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
-[03:59:17] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
-[03:59:17] [Server thread/INFO]: Loaded 1373 recipes
-[03:59:17] [Server thread/INFO]: Loaded 1484 advancements
-[03:59:17] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
-[03:59:18] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
-[03:59:18] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 109ms.
-[03:59:18] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
-[03:59:18] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+[04:02:13] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[04:02:13] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:02:13] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[04:02:13] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[04:02:13] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[04:02:13] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[04:02:13] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[04:02:13] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[04:02:13] [Server thread/WARN]: [BingoPlg] [null, AIR]
+[04:02:13] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[04:02:13] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[04:02:13] [Server thread/INFO]: CONSOLE: Reload complete.
+[04:02:19] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[04:02:19] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[04:02:19] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:02:19] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:02:19] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[04:02:19] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:02:19] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[04:02:19] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[04:02:19] [Server thread/INFO]: Loaded 1373 recipes
+[04:02:19] [Server thread/INFO]: Loaded 1484 advancements
+[04:02:19] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:02:19] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:02:19] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
  - BingoPlg (1.0)
-[03:59:18] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
-[03:59:18] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[03:59:18] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
-[03:59:18] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
-[03:59:18] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
-[03:59:18] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
-[03:59:18] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
-[03:59:18] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
-[03:59:18] [Server thread/WARN]: [BingoPlg] [ANDESITE, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-[03:59:18] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
-[03:59:18] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
-[03:59:18] [Server thread/INFO]: CONSOLE: Reload complete.
-[04:06:26] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[04:06:26] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[04:06:26] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[04:06:26] [Server thread/INFO]: Using 4 threads for Netty based IO
-[04:06:26] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
-[04:06:26] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[04:06:26] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
-[04:06:26] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
-[04:06:26] [Server thread/INFO]: Loaded 1373 recipes
-[04:06:26] [Server thread/INFO]: Loaded 1484 advancements
-[04:06:26] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
-[04:06:26] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
-[04:06:27] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 110ms.
-[04:06:27] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
-[04:06:27] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
- - BingoPlg (1.0)
-[04:06:27] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
-[04:06:27] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[04:06:27] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
-[04:06:27] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
-[04:06:27] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
-[04:06:27] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
-[04:06:27] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
-[04:06:27] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
-[04:06:27] [Server thread/WARN]: [BingoPlg] [ANDESITE, ANDESITE_SLAB, ANDESITE_STAIRS, ANDESITE_WALL, BAKED_POTATO, BIRCH_BOAT, BIRCH_BUTTON, BIRCH_DOOR, BIRCH_FENCE, BIRCH_FENCE_GATE, BIRCH_LOG, BIRCH_PLANKS, BIRCH_PRESSURE_PLATE, BIRCH_SIGN, BIRCH_SLAB, BIRCH_STAIRS, BIRCH_TRAPDOOR, BIRCH_WOOD, BOWL, CAMPFIRE, CHEST, COAL, COAL_BLOCK, COBBLESTONE, COBBLESTONE_SLAB, COBBLESTONE_STAIRS, COBBLESTONE_WALL, COMPOSTER, CRAFTING_TABLE, DARK_OAK_BOAT, DARK_OAK_BUTTON, DARK_OAK_DOOR, DARK_OAK_FENCE, DARK_OAK_FENCE_GATE, DARK_OAK_LOG, DARK_OAK_PLANKS, DARK_OAK_PRESSURE_PLATE, DARK_OAK_SAPLING, DARK_OAK_SIGN, DARK_OAK_SLAB, DARK_OAK_STAIRS, DARK_OAK_TRAPDOOR, DARK_OAK_WOOD, DIORITE, DIORITE_SLAB, DIORITE_STAIRS, DIORITE_WALL, DIRT, DRIED_KELP, FEATHER, FLINT, INK_SAC, KELP, LADDER, LEVER, MANGROVE_BOAT, MANGROVE_BUTTON, MANGROVE_DOOR, MANGROVE_FENCE, MANGROVE_FENCE_GATE, MANGROVE_LOG, MANGROVE_PLANKS, MANGROVE_PRESSURE_PLATE, MANGROVE_PROPAGULE, MANGROVE_SIGN, MANGROVE_SLAB, MANGROVE_STAIRS, MANGROVE_TRAPDOOR, MANGROVE_WOOD, OAK_BOAT, OAK_BUTTON, OAK_DOOR, OAK_FENCE, OAK_FENCE_GATE, OAK_LOG, OAK_PLANKS, OAK_PRESSURE_PLATE, OAK_SAPLING, OAK_SIGN, OAK_SLAB, OAK_STAIRS, OAK_TRAPDOOR, OAK_WOOD, ORANGE_DYE, OXEYE_DAISY, PETRIFIED_OAK_SLAB, POPPY, PORKCHOP, RED_DYE, SAND, SANDSTONE, SANDSTONE_SLAB, SANDSTONE_STAIRS, SANDSTONE_WALL, SPRUCE_BOAT, SPRUCE_BUTTON, SPRUCE_DOOR, SPRUCE_FENCE, SPRUCE_FENCE_GATE, SPRUCE_LOG, SPRUCE_PLANKS, SPRUCE_PRESSURE_PLATE, SPRUCE_SAPLING, SPRUCE_SIGN, SPRUCE_SLAB, SPRUCE_STAIRS, SPRUCE_TRAPDOOR, SPRUCE_WOOD, STICK, STONE_AXE, STONE_HOE, STONE_PICKAXE, STONE_SHOVEL, STONE_SWORD, STRIPPED_DARK_OAK_LOG, STRIPPED_DARK_OAK_WOOD, STRIPPED_OAK_LOG, STRIPPED_OAK_WOOD, STRIPPED_SPRUCE_LOG, STRIPPED_SPRUCE_WOOD, TRAPPED_CHEST, WHEAT_SEEDS, WOODEN_AXE, WOODEN_HOE, WOODEN_PICKAXE, WOODEN_SHOVEL, WOODEN_SWORD, YELLOW_DYE]
-[04:06:27] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
-[04:06:27] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
-[04:06:27] [Server thread/INFO]: CONSOLE: Reload complete.
-[04:12:28] [Server thread/INFO]: Stopping server
-[04:12:28] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
-[04:12:28] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
-[04:12:28] [Server thread/INFO]: Saving players
-[04:12:28] [Server thread/INFO]: Saving worlds
-[04:12:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world' in 0,01s
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
-[04:12:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0,01s
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
-[04:12:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,01s
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
-[04:12:28] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
-[04:12:28] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[04:12:28] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[04:12:28] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[04:12:28] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[04:12:28] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
-[04:12:28] [Server thread/INFO]: All RegionFile I/O tasks to complete
-[04:12:28] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
-[04:12:28] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+[04:02:19] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[04:02:19] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:02:19] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[04:02:19] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[04:02:19] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[04:02:19] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[04:02:19] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[04:02:19] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[04:02:19] [Server thread/WARN]: [BingoPlg] [null, AIR]
+[04:02:19] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[04:02:19] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[04:02:19] [Server thread/INFO]: CONSOLE: Reload complete.
