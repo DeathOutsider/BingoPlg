@@ -1,9 +1,6 @@
 package me.dubovoy.bingoPlg;
 
-import me.dubovoy.bingoPlg.commands.CreateTeam;
-import me.dubovoy.bingoPlg.commands.HealPlayer;
-import me.dubovoy.bingoPlg.commands.JoinTeam;
-import me.dubovoy.bingoPlg.commands.TeleportTeam;
+import me.dubovoy.bingoPlg.commands.*;
 import me.dubovoy.bingoPlg.database.BingoDb;
 import me.dubovoy.bingoPlg.events.PlayerJoined;
 import me.dubovoy.bingoPlg.logic.Difficulty;
@@ -31,10 +28,11 @@ public final class BingoPlg extends JavaPlugin {
         InitCommand("CreateTeam", new CreateTeam(this));
         InitCommand("JoinTeam", new JoinTeam(this));
         InitCommand("TeleportTeam", new TeleportTeam(this));
-
+        InitCommand("Table", new CreateTableEx(this));
 //        InitCommand("revile", new RevileCommand(this));
 
-        LogWMsg(Difficulty.Example().toString());
+//        LogWMsg(Difficulty.Example().toString());
+//        LogWMsg(Difficulty.jsReader(getDataFolder().getAbsolutePath(), 0).toString());
         InitEvent("PlayerJoin event", new PlayerJoined(this));
         LogWMsg("Команды и События - успешно загружены!");
 

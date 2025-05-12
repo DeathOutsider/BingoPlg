@@ -8,9 +8,15 @@ import org.bukkit.Material;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
 import java.lang.reflect.Type;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Difficulty{
 
@@ -18,6 +24,28 @@ public class Difficulty{
         List<Material> materials = new ArrayList<>();
         materials.add(Material.getMaterial("diamond"));
         materials.add(Material.AIR);
+        return materials;
+    }
+
+    public static List<Material> jsReader(String path, int quality){
+        List<Material> materials = new ArrayList<>();
+        String filename = path + "/bng_" + quality + ".json";
+        try {
+            Gson gson = new Gson();
+            Reader reader = Files.newBufferedReader(Paths.get(filename));
+            List<String> ls = gson.fromJson(reader, List.class);
+
+            for (String item: ls){
+                materials.add(Material.getMaterial(item));
+            }
+
+            // close reader
+            reader.close();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+//        materials.add(Material.getMaterial("BIRCH_BUTTON"));
+//        materials.add(Material.AIR);
         return materials;
     }
 

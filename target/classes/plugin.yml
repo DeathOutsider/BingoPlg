@@ -23,3 +23,8 @@ commands:
     description: ""
     aliases: [ tpt, tptm]
     usage: "/teleportteam"
+
+  table:
+    description: ""
+    aliases: [ ]
+    usage: "/table 0"
