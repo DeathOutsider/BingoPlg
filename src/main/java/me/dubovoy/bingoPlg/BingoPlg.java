@@ -2,6 +2,7 @@ package me.dubovoy.bingoPlg;
 
 import me.dubovoy.bingoPlg.commands.*;
 import me.dubovoy.bingoPlg.database.BingoDb;
+import me.dubovoy.bingoPlg.events.CompassClicking;
 import me.dubovoy.bingoPlg.events.PlayerJoined;
 import me.dubovoy.bingoPlg.logic.Difficulty;
 import org.bukkit.Bukkit;
@@ -29,11 +30,14 @@ public final class BingoPlg extends JavaPlugin {
         InitCommand("JoinTeam", new JoinTeam(this));
         InitCommand("TeleportTeam", new TeleportTeam(this));
         InitCommand("Table", new CreateTableEx(this));
+        InitCommand("Compass", new CompassBingo());
 //        InitCommand("revile", new RevileCommand(this));
 
 //        LogWMsg(Difficulty.Example().toString());
 //        LogWMsg(Difficulty.jsReader(getDataFolder().getAbsolutePath(), 0).toString());
         InitEvent("PlayerJoin event", new PlayerJoined(this));
+        InitEvent("PlayerInteract event", new CompassClicking(this));
+
         LogWMsg("Команды и События - успешно загружены!");
 
         try{

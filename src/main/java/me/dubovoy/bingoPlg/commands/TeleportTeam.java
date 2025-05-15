@@ -56,7 +56,8 @@ public class TeleportTeam implements CommandExecutor, TabExecutor {
                     location.add(0, -1, 0);
                 }
 //                Location locationTp = location;
-                location.getBlock().setType(Material.BEDROCK);
+                Material platformBlock = Material.BEDROCK;
+                location.getBlock().setType(platformBlock);
                 int platform = 5;
                 int axis = (-1 * platform/2);
                 location.add(axis, 0, axis);
@@ -68,7 +69,7 @@ public class TeleportTeam implements CommandExecutor, TabExecutor {
                             location.getBlock().setType(Material.AIR);
                         }
                         location.add(0, -2, 0);
-                        location.getBlock().setType(Material.BEDROCK);
+                        location.getBlock().setType(platformBlock);
                         location.add(0, 0, 1);
                     }
                     location.add(0, 0, -1 * platform);
