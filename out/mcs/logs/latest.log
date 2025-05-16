@@ -1,132 +1,96 @@
-[03:05:12] [ServerMain/INFO]: [bootstrap] Running Java 23 (Java HotSpot(TM) 64-Bit Server VM 23+37-2369; Oracle Corporation null) on Windows 10 10.0 (amd64)
-[03:05:12] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.5-45-main@a7a76c8 (2025-04-29T13:48:18Z) for Minecraft 1.21.5
-[03:05:13] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[03:05:13] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
-[03:05:13] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+[13:24:57] [ServerMain/INFO]: [bootstrap] Running Java 23 (Java HotSpot(TM) 64-Bit Server VM 23+37-2369; Oracle Corporation null) on Windows 10 10.0 (amd64)
+[13:24:57] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.5-45-main@a7a76c8 (2025-04-29T13:48:18Z) for Minecraft 1.21.5
+[13:24:58] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[13:24:58] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[13:24:59] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 628ms.
+[13:24:59] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[13:24:59] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
  - BingoPlg (1.0)
-[03:05:17] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[03:05:18] [ServerMain/INFO]: Loaded 1373 recipes
-[03:05:18] [ServerMain/INFO]: Loaded 1484 advancements
-[03:05:18] [Server thread/INFO]: Starting minecraft server version 1.21.5
-[03:05:18] [Server thread/WARN]: ****************************
-[03:05:18] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
-[03:05:18] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
-[03:05:18] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
-[03:05:18] [Server thread/WARN]: ****************************
-[03:05:18] [Server thread/INFO]: Loading properties
-[03:05:18] [Server thread/INFO]: This server is running Paper version 1.21.5-45-main@a7a76c8 (2025-04-29T13:48:18Z) (Implementing API version 1.21.5-R0.1-SNAPSHOT)
-[03:05:19] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[03:05:19] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[03:05:19] [Server thread/INFO]: Using 4 threads for Netty based IO
-[03:05:19] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
-[03:05:19] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[03:05:19] [Server thread/INFO]: Default game type: SURVIVAL
-[03:05:19] [Server thread/INFO]: Generating keypair
-[03:05:19] [Server thread/INFO]: Starting Minecraft server on *:25565
-[03:05:19] [Server thread/INFO]: Using default channel type
-[03:05:19] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[03:05:19] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[03:05:19] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
-[03:05:19] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[03:05:19] [Server thread/INFO]: Preparing level "world"
-[03:05:20] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[03:05:20] [Server thread/INFO]: Preparing spawn area: 0%
-[03:05:20] [Server thread/INFO]: Preparing spawn area: 30%
-[03:05:20] [Server thread/INFO]: Time elapsed: 575 ms
-[03:05:20] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[03:05:20] [Server thread/INFO]: Preparing spawn area: 0%
-[03:05:20] [Server thread/INFO]: Time elapsed: 155 ms
-[03:05:20] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[03:05:21] [Server thread/INFO]: Preparing spawn area: 0%
-[03:05:21] [Server thread/INFO]: Time elapsed: 137 ms
-[03:05:21] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
-[03:05:21] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
-[03:05:21] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
-[03:05:21] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
-[03:05:21] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
-[03:05:21] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
-[03:05:21] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
-[03:05:21] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
-[03:05:21] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
-[03:05:21] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
-[03:05:21] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
-[03:05:21] [Server thread/INFO]: [spark] Starting background profiler...
-[03:05:21] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows10/amd64), so the built-in Java engine will be used instead.
-[03:05:21] [Server thread/INFO]: Done preparing level "world" (1.604s)
-[03:05:21] [Server thread/INFO]: Running delayed init tasks
-[03:05:21] [Server thread/INFO]: Done (9.594s)! For help, type "help"
-[03:05:23] [User Authenticator #0/INFO]: UUID of player DFather is d61cbde7-05fd-4f6d-aed3-cbde55803ec9
-[03:05:24] [Server thread/INFO]: [BingoPlg] DFather Is already in Database
-[03:05:24] [Server thread/INFO]: DFather joined the game
-[03:05:24] [Server thread/INFO]: DFather[/127.0.0.1:64344] logged in with entity id 27 at ([world]2311.35861881921, 69.0, -2822.825112437169)
-[03:05:26] [Server thread/INFO]: DFather issued server command: /startbingo
-[03:05:26] [Server thread/ERROR]: [BingoPlg] Ошибка! [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
-[03:05:26] [Server thread/ERROR]: [BingoPlg] org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
-[03:05:33] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[03:05:33] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[03:05:33] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[03:05:33] [Server thread/INFO]: Using 4 threads for Netty based IO
-[03:05:33] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
-[03:05:33] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[03:05:33] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
-[03:05:33] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
-[03:05:34] [Server thread/INFO]: Loaded 1373 recipes
-[03:05:34] [Server thread/INFO]: Loaded 1484 advancements
-[03:05:34] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
-[03:05:34] [Paper Async Command Builder Thread Pool - 1/ERROR]: Caught previously unhandled exception :
-[03:05:34] [Paper Async Command Builder Thread Pool - 1/ERROR]: Paper Async Command Builder Thread Pool - 1
-java.util.ConcurrentModificationException: null
-	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
-	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
-	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1056) ~[?:?]
-	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:499) ~[?:?]
-	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
-	at java.base/java.util.HashMap.getNode(HashMap.java:577) ~[?:?]
-	at java.base/java.util.HashMap.get(HashMap.java:565) ~[?:?]
-	at net.minecraft.commands.Commands.fillUsableCommands(Commands.java:550) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at net.minecraft.commands.Commands.fillUsableCommands(Commands.java:587) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at net.minecraft.commands.Commands.sendAsync(Commands.java:489) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
-[03:05:34] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
-[03:05:34] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 237ms.
-[03:05:34] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
-[03:05:34] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
- - BingoPlg (1.0)
-[03:05:34] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
-[03:05:34] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[03:05:34] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
-[03:05:34] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
-[03:05:34] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
-[03:05:34] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
-[03:05:34] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
-[03:05:34] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
-[03:05:34] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
-[03:05:34] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
-[03:05:34] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
-[03:05:34] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
-[03:05:34] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
-[03:05:34] [Server thread/INFO]: CONSOLE: Reload complete.
-[03:05:37] [Server thread/INFO]: DFather issued server command: /startbingo
-[03:05:37] [Server thread/ERROR]: [BingoPlg] Ошибка! [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
-[03:05:37] [Server thread/ERROR]: [BingoPlg] org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
-[03:05:37] [Server thread/INFO]: 25
-[03:08:56] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[03:08:56] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[03:08:56] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[03:08:56] [Server thread/INFO]: Using 4 threads for Netty based IO
-[03:08:56] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
-[03:08:56] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[03:08:56] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
-[03:08:56] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
-[03:08:56] [Server thread/INFO]: Loaded 1373 recipes
-[03:08:56] [Server thread/INFO]: Loaded 1484 advancements
-[03:08:56] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
-[03:08:56] [Paper Async Command Builder Thread Pool - 0/ERROR]: Caught previously unhandled exception :
-[03:08:56] [Paper Async Command Builder Thread Pool - 0/ERROR]: Paper Async Command Builder Thread Pool - 0
+[13:25:05] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[13:25:07] [ServerMain/INFO]: Loaded 1373 recipes
+[13:25:07] [ServerMain/INFO]: Loaded 1484 advancements
+[13:25:08] [Server thread/INFO]: Starting minecraft server version 1.21.5
+[13:25:08] [Server thread/WARN]: ****************************
+[13:25:08] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
+[13:25:08] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
+[13:25:08] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
+[13:25:08] [Server thread/WARN]: ****************************
+[13:25:08] [Server thread/INFO]: Loading properties
+[13:25:08] [Server thread/INFO]: This server is running Paper version 1.21.5-45-main@a7a76c8 (2025-04-29T13:48:18Z) (Implementing API version 1.21.5-R0.1-SNAPSHOT)
+[13:25:08] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[13:25:08] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:25:08] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:25:09] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[13:25:09] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[13:25:09] [Server thread/INFO]: Default game type: SURVIVAL
+[13:25:09] [Server thread/INFO]: Generating keypair
+[13:25:09] [Server thread/INFO]: Starting Minecraft server on *:25565
+[13:25:09] [Server thread/INFO]: Using default channel type
+[13:25:09] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[13:25:09] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[13:25:10] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[13:25:10] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:25:10] [Server thread/INFO]: Preparing level "world"
+[13:25:10] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[13:25:11] [Server thread/INFO]: Preparing spawn area: 0%
+[13:25:11] [Server thread/INFO]: Preparing spawn area: 0%
+[13:25:12] [Server thread/INFO]: Preparing spawn area: 26%
+[13:25:12] [Server thread/INFO]: Time elapsed: 1325 ms
+[13:25:12] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[13:25:12] [Server thread/INFO]: Preparing spawn area: 0%
+[13:25:12] [Server thread/INFO]: Time elapsed: 343 ms
+[13:25:12] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[13:25:12] [Server thread/INFO]: Preparing spawn area: 0%
+[13:25:12] [Server thread/INFO]: Time elapsed: 122 ms
+[13:25:12] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[13:25:12] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[13:25:13] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[13:25:13] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[13:25:13] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[13:25:13] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[13:25:13] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[13:25:13] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[13:25:13] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[13:25:13] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[13:25:13] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[13:25:13] [Server thread/INFO]: [spark] Starting background profiler...
+[13:25:13] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows10/amd64), so the built-in Java engine will be used instead.
+[13:25:13] [Server thread/INFO]: Done preparing level "world" (3.674s)
+[13:25:13] [Server thread/INFO]: Running delayed init tasks
+[13:25:13] [Server thread/INFO]: Done (18.346s)! For help, type "help"
+[13:25:18] [User Authenticator #0/INFO]: UUID of player DFather is d61cbde7-05fd-4f6d-aed3-cbde55803ec9
+[13:25:20] [Server thread/INFO]: [BingoPlg] DFather Is already in Database
+[13:25:20] [Server thread/INFO]: DFather joined the game
+[13:25:20] [Server thread/INFO]: DFather[/127.0.0.1:62894] logged in with entity id 27 at ([world]2311.35861881921, 69.0, -2822.825112437169)
+[13:25:25] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:25:35] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:25:41] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:25:43] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:25:46] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:25:47] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:25:48] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:25:50] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:25:52] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:25:57] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:25:57] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:25:58] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:26:02] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:26:08] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:26:11] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:26:21] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:31:52] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[13:31:52] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[13:31:52] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:31:52] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:31:52] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[13:31:52] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[13:31:52] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[13:31:52] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[13:31:52] [Server thread/INFO]: Loaded 1373 recipes
+[13:31:52] [Server thread/INFO]: Loaded 1484 advancements
+[13:31:52] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[13:31:52] [Paper Async Command Builder Thread Pool - 1/ERROR]: Caught previously unhandled exception :
+[13:31:52] [Paper Async Command Builder Thread Pool - 1/ERROR]: Paper Async Command Builder Thread Pool - 1
 java.util.ConcurrentModificationException: null
 	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
 	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
@@ -140,42 +104,39 @@ java.util.ConcurrentModificationException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
 	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
-[03:08:56] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
-[03:08:56] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 82ms.
-[03:08:56] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
-[03:08:56] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+[13:31:52] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[13:31:52] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 159ms.
+[13:31:53] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[13:31:53] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
  - BingoPlg (1.0)
-[03:08:56] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
-[03:08:56] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[03:08:56] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
-[03:08:56] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
-[03:08:56] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
-[03:08:56] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
-[03:08:56] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
-[03:08:56] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
-[03:08:56] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
-[03:08:56] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
-[03:08:56] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
-[03:08:56] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
-[03:08:56] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
-[03:08:56] [Server thread/INFO]: CONSOLE: Reload complete.
-[03:08:59] [Server thread/INFO]: DFather issued server command: /startbingo
-[03:08:59] [Server thread/ERROR]: [BingoPlg] Ошибка! [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
-[03:08:59] [Server thread/ERROR]: [BingoPlg] org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
-[03:08:59] [Server thread/INFO]: [AMETHYST_BLOCK, BAMBOO_BLOCK, BAMBOO_BUTTON, BAMBOO_DOOR, BAMBOO_FENCE, BAMBOO_FENCE_GATE, BAMBOO_MOSAIC, BAMBOO_MOSAIC_SLAB, BAMBOO_MOSAIC_STAIRS, BAMBOO_PLANKS, BAMBOO_PRESSURE_PLATE, BAMBOO_SLAB, BAMBOO_STAIRS, BAMBOO_TRAPDOOR, CHERRY_BUTTON, CHERRY_DOOR, CHERRY_FENCE, CHERRY_FENCE_GATE, CHERRY_LOG, CHERRY_PLANKS, CHERRY_PRESSURE_PLATE, CHERRY_SLAB, CHERRY_STAIRS, CHERRY_TRAPDOOR, CHERRY_WOOD, CHISELED_RED_SANDSTONE, CHISELED_RESIN_BRICKS, COPPER_BULB, CRACKED_POLISHED_BLACKSTONE_BRICKS, CRIMSON_BUTTON, CRIMSON_DOOR, CRIMSON_FENCE, CRIMSON_FENCE_GATE, CRIMSON_HYPHAE, CRIMSON_PLANKS, CRIMSON_PRESSURE_PLATE, CRIMSON_SLAB, CRIMSON_STAIRS, CRIMSON_STEM, CRIMSON_TRAPDOOR, CUT_RED_SANDSTONE, CUT_RED_SANDSTONE_SLAB, DARK_PRISMARINE, DARK_PRISMARINE_SLAB, DARK_PRISMARINE_STAIRS, GILDED_BLACKSTONE, JUNGLE_BUTTON, JUNGLE_DOOR, JUNGLE_FENCE, JUNGLE_FENCE_GATE, JUNGLE_LOG, JUNGLE_PLANKS, JUNGLE_PRESSURE_PLATE, JUNGLE_SLAB, JUNGLE_STAIRS, JUNGLE_TRAPDOOR, JUNGLE_WOOD, MANGROVE_BUTTON, MANGROVE_DOOR, MANGROVE_FENCE, MANGROVE_FENCE_GATE, MANGROVE_LOG, MANGROVE_PLANKS, MANGROVE_PRESSURE_PLATE, MANGROVE_SLAB, MANGROVE_STAIRS, MANGROVE_TRAPDOOR, MANGROVE_WOOD, OXIDIZED_CHISELED_COPPER, OXIDIZED_COPPER, OXIDIZED_COPPER_BULB, OXIDIZED_COPPER_DOOR, OXIDIZED_COPPER_GRATE, OXIDIZED_COPPER_TRAPDOOR, OXIDIZED_CUT_COPPER, OXIDIZED_CUT_COPPER_SLAB, OXIDIZED_CUT_COPPER_STAIRS, PALE_OAK_BUTTON, PALE_OAK_DOOR, PALE_OAK_FENCE, PALE_OAK_FENCE_GATE, PALE_OAK_LOG, PALE_OAK_PLANKS, PALE_OAK_PRESSURE_PLATE, PALE_OAK_SLAB, PALE_OAK_STAIRS, PALE_OAK_TRAPDOOR, PALE_OAK_WOOD, PRISMARINE, PRISMARINE_BRICK_SLAB, PRISMARINE_BRICK_STAIRS, PRISMARINE_BRICKS, PRISMARINE_SLAB, PRISMARINE_STAIRS, PRISMARINE_WALL, RED_NETHER_BRICK_SLAB, RED_NETHER_BRICK_STAIRS, RED_NETHER_BRICK_WALL, RED_NETHER_BRICKS, RED_SANDSTONE, RED_SANDSTONE_SLAB, RED_SANDSTONE_STAIRS, RED_SANDSTONE_WALL, RESIN_BRICK_SLAB, RESIN_BRICK_STAIRS, RESIN_BRICK_WALL, RESIN_BRICKS, SEA_LANTERN, SMOOTH_RED_SANDSTONE, SMOOTH_RED_SANDSTONE_SLAB, SMOOTH_RED_SANDSTONE_STAIRS, STRIPPED_BAMBOO_BLOCK, STRIPPED_CHERRY_LOG, STRIPPED_CHERRY_WOOD, STRIPPED_CRIMSON_HYPHAE, STRIPPED_CRIMSON_STEM, STRIPPED_JUNGLE_LOG, STRIPPED_JUNGLE_WOOD, STRIPPED_MANGROVE_LOG, STRIPPED_MANGROVE_WOOD, STRIPPED_PALE_OAK_LOG, STRIPPED_PALE_OAK_WOOD, STRIPPED_WARPED_HYPHAE, STRIPPED_WARPED_STEM, WARPED_BUTTON, WARPED_DOOR, WARPED_FENCE, WARPED_FENCE_GATE, WARPED_HYPHAE, WARPED_PLANKS, WARPED_PRESSURE_PLATE, WARPED_SLAB, WARPED_STAIRS, WARPED_STEM, WARPED_TRAPDOOR, WAXED_OXIDIZED_CHISELED_COPPER, WAXED_OXIDIZED_COPPER, WAXED_OXIDIZED_COPPER_BULB, WAXED_OXIDIZED_COPPER_DOOR, WAXED_OXIDIZED_COPPER_GRATE, WAXED_OXIDIZED_COPPER_TRAPDOOR, WAXED_OXIDIZED_CUT_COPPER, WAXED_OXIDIZED_CUT_COPPER_SLAB, WAXED_OXIDIZED_CUT_COPPER_STAIRS, WAXED_WEATHERED_CHISELED_COPPER, WAXED_WEATHERED_COPPER, WAXED_WEATHERED_COPPER_BULB, WAXED_WEATHERED_COPPER_DOOR, WAXED_WEATHERED_COPPER_GRATE, WAXED_WEATHERED_COPPER_TRAPDOOR, WAXED_WEATHERED_CUT_COPPER, WAXED_WEATHERED_CUT_COPPER_SLAB, WAXED_WEATHERED_CUT_COPPER_STAIRS, WEATHERED_CHISELED_COPPER, WEATHERED_COPPER, WEATHERED_COPPER_BULB, WEATHERED_COPPER_DOOR, WEATHERED_COPPER_GRATE, WEATHERED_COPPER_TRAPDOOR, WEATHERED_CUT_COPPER, WEATHERED_CUT_COPPER_SLAB, WEATHERED_CUT_COPPER_STAIRS, BROWN_BANNER, BROWN_BED, BROWN_CANDLE, BROWN_CARPET, BROWN_CONCRETE, BROWN_CONCRETE_POWDER, BROWN_GLAZED_TERRACOTTA, BROWN_STAINED_GLASS, BROWN_STAINED_GLASS_PANE, BROWN_TERRACOTTA, BROWN_WOOL, CYAN_BANNER, CYAN_BED, CYAN_CANDLE, CYAN_CARPET, CYAN_CONCRETE, CYAN_CONCRETE_POWDER, CYAN_GLAZED_TERRACOTTA, CYAN_STAINED_GLASS, CYAN_STAINED_GLASS_PANE, CYAN_TERRACOTTA, CYAN_WOOL, GREEN_BANNER, GREEN_BED, GREEN_CANDLE, GREEN_CARPET, GREEN_CONCRETE, GREEN_CONCRETE_POWDER, GREEN_GLAZED_TERRACOTTA, GREEN_STAINED_GLASS, GREEN_STAINED_GLASS_PANE, GREEN_TERRACOTTA, GREEN_WOOL, LIME_BANNER, LIME_BED, LIME_CANDLE, LIME_CARPET, LIME_CONCRETE, LIME_CONCRETE_POWDER, LIME_GLAZED_TERRACOTTA, LIME_STAINED_GLASS, LIME_STAINED_GLASS_PANE, LIME_TERRACOTTA, LIME_WOOL, TINTED_GLASS, BAMBOO, BEE_NEST, BLUE_ICE, BRAIN_CORAL, BRAIN_CORAL_BLOCK, BRAIN_CORAL_FAN, BROWN_MUSHROOM_BLOCK, BUBBLE_CORAL, BUBBLE_CORAL_BLOCK, BUBBLE_CORAL_FAN, CACTUS, CACTUS_FLOWER, CALCITE, CHERRY_LEAVES, CHERRY_SAPLING, CLOSED_EYEBLOSSOM, COAL_ORE, COCOA_BEANS, COPPER_ORE, CRIMSON_FUNGUS, CRIMSON_ROOTS, CRYING_OBSIDIAN, DARK_OAK_LEAVES, DARK_OAK_SAPLING, DEAD_BRAIN_CORAL, DEAD_BRAIN_CORAL_BLOCK, DEAD_BRAIN_CORAL_FAN, DEAD_BUBBLE_CORAL, DEAD_BUBBLE_CORAL_BLOCK, DEAD_BUBBLE_CORAL_FAN, DEAD_BUSH, DEAD_FIRE_CORAL, DEAD_FIRE_CORAL_BLOCK, DEAD_FIRE_CORAL_FAN, DEAD_HORN_CORAL, DEAD_HORN_CORAL_BLOCK, DEAD_HORN_CORAL_FAN, DEAD_TUBE_CORAL, DEAD_TUBE_CORAL_BLOCK, DEAD_TUBE_CORAL_FAN, DEEPSLATE_COPPER_ORE, DEEPSLATE_DIAMOND_ORE, DEEPSLATE_GOLD_ORE, DEEPSLATE_IRON_ORE, DEEPSLATE_LAPIS_ORE, DEEPSLATE_REDSTONE_ORE, FIRE_CORAL, FIRE_CORAL_BLOCK, FIRE_CORAL_FAN, GOLD_ORE, GRASS_BLOCK, HONEYCOMB_BLOCK, HORN_CORAL, HORN_CORAL_BLOCK, HORN_CORAL_FAN, ICE, IRON_ORE, JUNGLE_LEAVES, JUNGLE_SAPLING, LAPIS_ORE, MANGROVE_LEAVES, MANGROVE_PROPAGULE, MANGROVE_ROOTS, MELON, MELON_SEEDS, MUSHROOM_STEM, NETHER_SPROUTS, NETHER_WART_BLOCK, OPEN_EYEBLOSSOM, PACKED_ICE, PALE_HANGING_MOSS, PALE_MOSS_BLOCK, PALE_MOSS_CARPET, PALE_OAK_LEAVES, PALE_OAK_SAPLING, PINK_PETALS, PODZOL, RED_MUSHROOM_BLOCK, RED_SAND, REDSTONE_ORE, RESIN_BLOCK, SEA_PICKLE, SHORT_DRY_GRASS, SPONGE, TALL_DRY_GRASS, TUBE_CORAL, TUBE_CORAL_BLOCK, TUBE_CORAL_FAN, TURTLE_EGG, TWISTING_VINES, WARPED_FUNGUS, WARPED_ROOTS, WARPED_WART_BLOCK, WEEPING_VINES, WET_SPONGE, BAMBOO_HANGING_SIGN, BAMBOO_SIGN, CHERRY_HANGING_SIGN, CHERRY_SIGN, CRIMSON_HANGING_SIGN, CRIMSON_SIGN, ENDER_CHEST, JUNGLE_HANGING_SIGN, JUNGLE_SIGN, MANGROVE_HANGING_SIGN, MANGROVE_SIGN, PALE_OAK_HANGING_SIGN, PALE_OAK_SIGN, RESPAWN_ANCHOR, SCAFFOLDING, WARPED_HANGING_SIGN, WARPED_SIGN, CALIBRATED_SCULK_SENSOR, AXOLOTL_BUCKET, BAMBOO_CHEST_RAFT, BAMBOO_RAFT, BROWN_BUNDLE, CHERRY_BOAT, CHERRY_CHEST_BOAT, CYAN_BUNDLE, GREEN_BUNDLE, JUNGLE_BOAT, JUNGLE_CHEST_BOAT, LIME_BUNDLE, MANGROVE_BOAT, MANGROVE_CHEST_BOAT, NAME_TAG, PALE_OAK_BOAT, PALE_OAK_CHEST_BOAT, SPYGLASS, TADPOLE_BUCKET, BLUE_EGG, CROSSBOW, WIND_CHARGE, ENCHANTED_GOLDEN_APPLE, TROPICAL_FISH, PUFFERFISH, COOKIE, AMETHYST_SHARD, BOLT_ARMOR_TRIM_SMITHING_TEMPLATE, BREEZE_ROD, BROWN_DYE, BURN_POTTERY_SHERD, CYAN_DYE, FLOW_ARMOR_TRIM_SMITHING_TEMPLATE, FLOW_POTTERY_SHERD, GREEN_DYE, GUSTER_POTTERY_SHERD, LIME_DYE, NETHER_WART, PRISMARINE_CRYSTALS, PRISMARINE_SHARD, RESIN_BRICK, RESIN_CLUMP, SCRAPE_POTTERY_SHERD, TRIAL_KEY, TURTLE_SCUTE, VEX_ARMOR_TRIM_SMITHING_TEMPLATE, WILD_ARMOR_TRIM_SMITHING_TEMPLATE, MUSIC_DISC_PIGSTEP, MUSIC_DISC_OTHERSIDE, MUSIC_DISC_CREATOR, AMETHYST_BLOCK, BAMBOO_BLOCK, BAMBOO_BUTTON, BAMBOO_DOOR, BAMBOO_FENCE, BAMBOO_FENCE_GATE, BAMBOO_MOSAIC, BAMBOO_MOSAIC_SLAB, BAMBOO_MOSAIC_STAIRS, BAMBOO_PLANKS, BAMBOO_PRESSURE_PLATE, BAMBOO_SLAB, BAMBOO_STAIRS, BAMBOO_TRAPDOOR, CHERRY_BUTTON, CHERRY_DOOR, CHERRY_FENCE, CHERRY_FENCE_GATE, CHERRY_LOG, CHERRY_PLANKS, CHERRY_PRESSURE_PLATE, CHERRY_SLAB, CHERRY_STAIRS, CHERRY_TRAPDOOR, CHERRY_WOOD, CHISELED_RED_SANDSTONE, CHISELED_RESIN_BRICKS, COPPER_BULB, CRACKED_POLISHED_BLACKSTONE_BRICKS, CRIMSON_BUTTON, CRIMSON_DOOR, CRIMSON_FENCE, CRIMSON_FENCE_GATE, CRIMSON_HYPHAE, CRIMSON_PLANKS, CRIMSON_PRESSURE_PLATE, CRIMSON_SLAB, CRIMSON_STAIRS, CRIMSON_STEM, CRIMSON_TRAPDOOR, CUT_RED_SANDSTONE, CUT_RED_SANDSTONE_SLAB, DARK_PRISMARINE, DARK_PRISMARINE_SLAB, DARK_PRISMARINE_STAIRS, GILDED_BLACKSTONE, JUNGLE_BUTTON, JUNGLE_DOOR, JUNGLE_FENCE, JUNGLE_FENCE_GATE, JUNGLE_LOG, JUNGLE_PLANKS, JUNGLE_PRESSURE_PLATE, JUNGLE_SLAB, JUNGLE_STAIRS, JUNGLE_TRAPDOOR, JUNGLE_WOOD, MANGROVE_BUTTON, MANGROVE_DOOR, MANGROVE_FENCE, MANGROVE_FENCE_GATE, MANGROVE_LOG, MANGROVE_PLANKS, MANGROVE_PRESSURE_PLATE, MANGROVE_SLAB, MANGROVE_STAIRS, MANGROVE_TRAPDOOR, MANGROVE_WOOD, OXIDIZED_CHISELED_COPPER, OXIDIZED_COPPER, OXIDIZED_COPPER_BULB, OXIDIZED_COPPER_DOOR, OXIDIZED_COPPER_GRATE, OXIDIZED_COPPER_TRAPDOOR, OXIDIZED_CUT_COPPER, OXIDIZED_CUT_COPPER_SLAB, OXIDIZED_CUT_COPPER_STAIRS, PALE_OAK_BUTTON, PALE_OAK_DOOR, PALE_OAK_FENCE, PALE_OAK_FENCE_GATE, PALE_OAK_LOG, PALE_OAK_PLANKS, PALE_OAK_PRESSURE_PLATE, PALE_OAK_SLAB, PALE_OAK_STAIRS, PALE_OAK_TRAPDOOR, PALE_OAK_WOOD, PRISMARINE, PRISMARINE_BRICK_SLAB, PRISMARINE_BRICK_STAIRS, PRISMARINE_BRICKS, PRISMARINE_SLAB, PRISMARINE_STAIRS, PRISMARINE_WALL, RED_NETHER_BRICK_SLAB, RED_NETHER_BRICK_STAIRS, RED_NETHER_BRICK_WALL, RED_NETHER_BRICKS, RED_SANDSTONE, RED_SANDSTONE_SLAB, RED_SANDSTONE_STAIRS, RED_SANDSTONE_WALL, RESIN_BRICK_SLAB, RESIN_BRICK_STAIRS, RESIN_BRICK_WALL, RESIN_BRICKS, SEA_LANTERN, SMOOTH_RED_SANDSTONE, SMOOTH_RED_SANDSTONE_SLAB, SMOOTH_RED_SANDSTONE_STAIRS, STRIPPED_BAMBOO_BLOCK, STRIPPED_CHERRY_LOG, STRIPPED_CHERRY_WOOD, STRIPPED_CRIMSON_HYPHAE, STRIPPED_CRIMSON_STEM, STRIPPED_JUNGLE_LOG, STRIPPED_JUNGLE_WOOD, STRIPPED_MANGROVE_LOG, STRIPPED_MANGROVE_WOOD, STRIPPED_PALE_OAK_LOG, STRIPPED_PALE_OAK_WOOD, STRIPPED_WARPED_HYPHAE, STRIPPED_WARPED_STEM, WARPED_BUTTON, WARPED_DOOR, WARPED_FENCE, WARPED_FENCE_GATE, WARPED_HYPHAE, WARPED_PLANKS, WARPED_PRESSURE_PLATE, WARPED_SLAB, WARPED_STAIRS, WARPED_STEM, WARPED_TRAPDOOR, WAXED_OXIDIZED_CHISELED_COPPER, WAXED_OXIDIZED_COPPER, WAXED_OXIDIZED_COPPER_BULB, WAXED_OXIDIZED_COPPER_DOOR, WAXED_OXIDIZED_COPPER_GRATE, WAXED_OXIDIZED_COPPER_TRAPDOOR, WAXED_OXIDIZED_CUT_COPPER, WAXED_OXIDIZED_CUT_COPPER_SLAB, WAXED_OXIDIZED_CUT_COPPER_STAIRS, WAXED_WEATHERED_CHISELED_COPPER, WAXED_WEATHERED_COPPER, WAXED_WEATHERED_COPPER_BULB, WAXED_WEATHERED_COPPER_DOOR, WAXED_WEATHERED_COPPER_GRATE, WAXED_WEATHERED_COPPER_TRAPDOOR, WAXED_WEATHERED_CUT_COPPER, WAXED_WEATHERED_CUT_COPPER_SLAB, WAXED_WEATHERED_CUT_COPPER_STAIRS, WEATHERED_CHISELED_COPPER, WEATHERED_COPPER, WEATHERED_COPPER_BULB, WEATHERED_COPPER_DOOR, WEATHERED_COPPER_GRATE, WEATHERED_COPPER_TRAPDOOR, WEATHERED_CUT_COPPER, WEATHERED_CUT_COPPER_SLAB, WEATHERED_CUT_COPPER_STAIRS, BROWN_BANNER, BROWN_BED, BROWN_CANDLE, BROWN_CARPET, BROWN_CONCRETE, BROWN_CONCRETE_POWDER, BROWN_GLAZED_TERRACOTTA, BROWN_STAINED_GLASS, BROWN_STAINED_GLASS_PANE, BROWN_TERRACOTTA, BROWN_WOOL, CYAN_BANNER, CYAN_BED, CYAN_CANDLE, CYAN_CARPET, CYAN_CONCRETE, CYAN_CONCRETE_POWDER, CYAN_GLAZED_TERRACOTTA, CYAN_STAINED_GLASS, CYAN_STAINED_GLASS_PANE, CYAN_TERRACOTTA, CYAN_WOOL, GREEN_BANNER, GREEN_BED, GREEN_CANDLE, GREEN_CARPET, GREEN_CONCRETE, GREEN_CONCRETE_POWDER, GREEN_GLAZED_TERRACOTTA, GREEN_STAINED_GLASS, GREEN_STAINED_GLASS_PANE, GREEN_TERRACOTTA, GREEN_WOOL, LIME_BANNER, LIME_BED, LIME_CANDLE, LIME_CARPET, LIME_CONCRETE, LIME_CONCRETE_POWDER, LIME_GLAZED_TERRACOTTA, LIME_STAINED_GLASS, LIME_STAINED_GLASS_PANE, LIME_TERRACOTTA, LIME_WOOL, TINTED_GLASS, BAMBOO, BEE_NEST, BLUE_ICE, BRAIN_CORAL, BRAIN_CORAL_BLOCK, BRAIN_CORAL_FAN, BROWN_MUSHROOM_BLOCK, BUBBLE_CORAL, BUBBLE_CORAL_BLOCK, BUBBLE_CORAL_FAN, CACTUS, CACTUS_FLOWER, CALCITE, CHERRY_LEAVES, CHERRY_SAPLING, CLOSED_EYEBLOSSOM, COAL_ORE, COCOA_BEANS, COPPER_ORE, CRIMSON_FUNGUS, CRIMSON_ROOTS, CRYING_OBSIDIAN, DARK_OAK_LEAVES, DARK_OAK_SAPLING, DEAD_BRAIN_CORAL, DEAD_BRAIN_CORAL_BLOCK, DEAD_BRAIN_CORAL_FAN, DEAD_BUBBLE_CORAL, DEAD_BUBBLE_CORAL_BLOCK, DEAD_BUBBLE_CORAL_FAN, DEAD_BUSH, DEAD_FIRE_CORAL, DEAD_FIRE_CORAL_BLOCK, DEAD_FIRE_CORAL_FAN, DEAD_HORN_CORAL, DEAD_HORN_CORAL_BLOCK, DEAD_HORN_CORAL_FAN, DEAD_TUBE_CORAL, DEAD_TUBE_CORAL_BLOCK, DEAD_TUBE_CORAL_FAN, DEEPSLATE_COPPER_ORE, DEEPSLATE_DIAMOND_ORE, DEEPSLATE_GOLD_ORE, DEEPSLATE_IRON_ORE, DEEPSLATE_LAPIS_ORE, DEEPSLATE_REDSTONE_ORE, FIRE_CORAL, FIRE_CORAL_BLOCK, FIRE_CORAL_FAN, GOLD_ORE, GRASS_BLOCK, HONEYCOMB_BLOCK, HORN_CORAL, HORN_CORAL_BLOCK, HORN_CORAL_FAN, ICE, IRON_ORE, JUNGLE_LEAVES, JUNGLE_SAPLING, LAPIS_ORE, MANGROVE_LEAVES, MANGROVE_PROPAGULE, MANGROVE_ROOTS, MELON, MELON_SEEDS, MUSHROOM_STEM, NETHER_SPROUTS, NETHER_WART_BLOCK, OPEN_EYEBLOSSOM, PACKED_ICE, PALE_HANGING_MOSS, PALE_MOSS_BLOCK, PALE_MOSS_CARPET, PALE_OAK_LEAVES, PALE_OAK_SAPLING, PINK_PETALS, PODZOL, RED_MUSHROOM_BLOCK, RED_SAND, REDSTONE_ORE, RESIN_BLOCK, SEA_PICKLE, SHORT_DRY_GRASS, SPONGE, TALL_DRY_GRASS, TUBE_CORAL, TUBE_CORAL_BLOCK, TUBE_CORAL_FAN, TURTLE_EGG, TWISTING_VINES, WARPED_FUNGUS, WARPED_ROOTS, WARPED_WART_BLOCK, WEEPING_VINES, WET_SPONGE, BAMBOO_HANGING_SIGN, BAMBOO_SIGN, CHERRY_HANGING_SIGN, CHERRY_SIGN, CRIMSON_HANGING_SIGN, CRIMSON_SIGN, ENDER_CHEST, JUNGLE_HANGING_SIGN, JUNGLE_SIGN, MANGROVE_HANGING_SIGN, MANGROVE_SIGN, PALE_OAK_HANGING_SIGN, PALE_OAK_SIGN, RESPAWN_ANCHOR, SCAFFOLDING, WARPED_HANGING_SIGN, WARPED_SIGN, CALIBRATED_SCULK_SENSOR, AXOLOTL_BUCKET, BAMBOO_CHEST_RAFT, BAMBOO_RAFT, BROWN_BUNDLE, CHERRY_BOAT, CHERRY_CHEST_BOAT, CYAN_BUNDLE, GREEN_BUNDLE, JUNGLE_BOAT, JUNGLE_CHEST_BOAT, LIME_BUNDLE, MANGROVE_BOAT, MANGROVE_CHEST_BOAT, NAME_TAG, PALE_OAK_BOAT, PALE_OAK_CHEST_BOAT, SPYGLASS, TADPOLE_BUCKET, BLUE_EGG, CROSSBOW, WIND_CHARGE, ENCHANTED_GOLDEN_APPLE, TROPICAL_FISH, PUFFERFISH, COOKIE, AMETHYST_SHARD, BOLT_ARMOR_TRIM_SMITHING_TEMPLATE, BREEZE_ROD, BROWN_DYE, BURN_POTTERY_SHERD, CYAN_DYE, FLOW_ARMOR_TRIM_SMITHING_TEMPLATE, FLOW_POTTERY_SHERD, GREEN_DYE, GUSTER_POTTERY_SHERD, LIME_DYE, NETHER_WART, PRISMARINE_CRYSTALS, PRISMARINE_SHARD, RESIN_BRICK, RESIN_CLUMP, SCRAPE_POTTERY_SHERD, TRIAL_KEY, TURTLE_SCUTE, VEX_ARMOR_TRIM_SMITHING_TEMPLATE, WILD_ARMOR_TRIM_SMITHING_TEMPLATE, MUSIC_DISC_PIGSTEP, MUSIC_DISC_OTHERSIDE, MUSIC_DISC_CREATOR, AMETHYST_BLOCK, BAMBOO_BLOCK, BAMBOO_BUTTON, BAMBOO_DOOR, BAMBOO_FENCE, BAMBOO_FENCE_GATE, BAMBOO_MOSAIC, BAMBOO_MOSAIC_SLAB, BAMBOO_MOSAIC_STAIRS, BAMBOO_PLANKS, BAMBOO_PRESSURE_PLATE, BAMBOO_SLAB, BAMBOO_STAIRS, BAMBOO_TRAPDOOR, CHERRY_BUTTON, CHERRY_DOOR, CHERRY_FENCE, CHERRY_FENCE_GATE, CHERRY_LOG, CHERRY_PLANKS, CHERRY_PRESSURE_PLATE, CHERRY_SLAB, CHERRY_STAIRS, CHERRY_TRAPDOOR, CHERRY_WOOD, CHISELED_RED_SANDSTONE, CHISELED_RESIN_BRICKS, COPPER_BULB, CRACKED_POLISHED_BLACKSTONE_BRICKS, CRIMSON_BUTTON, CRIMSON_DOOR, CRIMSON_FENCE, CRIMSON_FENCE_GATE, CRIMSON_HYPHAE, CRIMSON_PLANKS, CRIMSON_PRESSURE_PLATE, CRIMSON_SLAB, CRIMSON_STAIRS, CRIMSON_STEM, CRIMSON_TRAPDOOR, CUT_RED_SANDSTONE, CUT_RED_SANDSTONE_SLAB, DARK_PRISMARINE, DARK_PRISMARINE_SLAB, DARK_PRISMARINE_STAIRS, GILDED_BLACKSTONE, JUNGLE_BUTTON, JUNGLE_DOOR, JUNGLE_FENCE, JUNGLE_FENCE_GATE, JUNGLE_LOG, JUNGLE_PLANKS, JUNGLE_PRESSURE_PLATE, JUNGLE_SLAB, JUNGLE_STAIRS, JUNGLE_TRAPDOOR, JUNGLE_WOOD, MANGROVE_BUTTON, MANGROVE_DOOR, MANGROVE_FENCE, MANGROVE_FENCE_GATE, MANGROVE_LOG, MANGROVE_PLANKS, MANGROVE_PRESSURE_PLATE, MANGROVE_SLAB, MANGROVE_STAIRS, MANGROVE_TRAPDOOR, MANGROVE_WOOD, OXIDIZED_CHISELED_COPPER, OXIDIZED_COPPER, OXIDIZED_COPPER_BULB, OXIDIZED_COPPER_DOOR, OXIDIZED_COPPER_GRATE, OXIDIZED_COPPER_TRAPDOOR, OXIDIZED_CUT_COPPER, OXIDIZED_CUT_COPPER_SLAB, OXIDIZED_CUT_COPPER_STAIRS, PALE_OAK_BUTTON, PALE_OAK_DOOR, PALE_OAK_FENCE, PALE_OAK_FENCE_GATE, PALE_OAK_LOG, PALE_OAK_PLANKS, PALE_OAK_PRESSURE_PLATE, PALE_OAK_SLAB, PALE_OAK_STAIRS, PALE_OAK_TRAPDOOR, PALE_OAK_WOOD, PRISMARINE, PRISMARINE_BRICK_SLAB, PRISMARINE_BRICK_STAIRS, PRISMARINE_BRICKS, PRISMARINE_SLAB, PRISMARINE_STAIRS, PRISMARINE_WALL, RED_NETHER_BRICK_SLAB, RED_NETHER_BRICK_STAIRS, RED_NETHER_BRICK_WALL, RED_NETHER_BRICKS, RED_SANDSTONE, RED_SANDSTONE_SLAB, RED_SANDSTONE_STAIRS, RED_SANDSTONE_WALL, RESIN_BRICK_SLAB, RESIN_BRICK_STAIRS, RESIN_BRICK_WALL, RESIN_BRICKS, SEA_LANTERN, SMOOTH_RED_SANDSTONE, SMOOTH_RED_SANDSTONE_SLAB, SMOOTH_RED_SANDSTONE_STAIRS, STRIPPED_BAMBOO_BLOCK, STRIPPED_CHERRY_LOG, STRIPPED_CHERRY_WOOD, STRIPPED_CRIMSON_HYPHAE, STRIPPED_CRIMSON_STEM, STRIPPED_JUNGLE_LOG, STRIPPED_JUNGLE_WOOD, STRIPPED_MANGROVE_LOG, STRIPPED_MANGROVE_WOOD, STRIPPED_PALE_OAK_LOG, STRIPPED_PALE_OAK_WOOD, STRIPPED_WARPED_HYPHAE, STRIPPED_WARPED_STEM, WARPED_BUTTON, WARPED_DOOR, WARPED_FENCE, WARPED_FENCE_GATE, WARPED_HYPHAE, WARPED_PLANKS, WARPED_PRESSURE_PLATE, WARPED_SLAB, WARPED_STAIRS, WARPED_STEM, WARPED_TRAPDOOR, WAXED_OXIDIZED_CHISELED_COPPER, WAXED_OXIDIZED_COPPER, WAXED_OXIDIZED_COPPER_BULB, WAXED_OXIDIZED_COPPER_DOOR, WAXED_OXIDIZED_COPPER_GRATE, WAXED_OXIDIZED_COPPER_TRAPDOOR, WAXED_OXIDIZED_CUT_COPPER, WAXED_OXIDIZED_CUT_COPPER_SLAB, WAXED_OXIDIZED_CUT_COPPER_STAIRS, WAXED_WEATHERED_CHISELED_COPPER, WAXED_WEATHERED_COPPER, WAXED_WEATHERED_COPPER_BULB, WAXED_WEATHERED_COPPER_DOOR, WAXED_WEATHERED_COPPER_GRATE, WAXED_WEATHERED_COPPER_TRAPDOOR, WAXED_WEATHERED_CUT_COPPER, WAXED_WEATHERED_CUT_COPPER_SLAB, WAXED_WEATHERED_CUT_COPPER_STAIRS, WEATHERED_CHISELED_COPPER, WEATHERED_COPPER, WEATHERED_COPPER_BULB, WEATHERED_COPPER_DOOR, WEATHERED_COPPER_GRATE, WEATHERED_COPPER_TRAPDOOR, WEATHERED_CUT_COPPER, WEATHERED_CUT_COPPER_SLAB, WEATHERED_CUT_COPPER_STAIRS, BROWN_BANNER, BROWN_BED, BROWN_CANDLE, BROWN_CARPET, BROWN_CONCRETE, BROWN_CONCRETE_POWDER, BROWN_GLAZED_TERRACOTTA, BROWN_STAINED_GLASS, BROWN_STAINED_GLASS_PANE, BROWN_TERRACOTTA, BROWN_WOOL, CYAN_BANNER, CYAN_BED, CYAN_CANDLE, CYAN_CARPET, CYAN_CONCRETE, CYAN_CONCRETE_POWDER, CYAN_GLAZED_TERRACOTTA, CYAN_STAINED_GLASS, CYAN_STAINED_GLASS_PANE, CYAN_TERRACOTTA, CYAN_WOOL, GREEN_BANNER, GREEN_BED, GREEN_CANDLE, GREEN_CARPET, GREEN_CONCRETE, GREEN_CONCRETE_POWDER, GREEN_GLAZED_TERRACOTTA, GREEN_STAINED_GLASS, GREEN_STAINED_GLASS_PANE, GREEN_TERRACOTTA, GREEN_WOOL, LIME_BANNER, LIME_BED, LIME_CANDLE, LIME_CARPET, LIME_CONCRETE, LIME_CONCRETE_POWDER, LIME_GLAZED_TERRACOTTA, LIME_STAINED_GLASS, LIME_STAINED_GLASS_PANE, LIME_TERRACOTTA, LIME_WOOL, TINTED_GLASS, BAMBOO, BEE_NEST, BLUE_ICE, BRAIN_CORAL, BRAIN_CORAL_BLOCK, BRAIN_CORAL_FAN, BROWN_MUSHROOM_BLOCK, BUBBLE_CORAL, BUBBLE_CORAL_BLOCK, BUBBLE_CORAL_FAN, CACTUS, CACTUS_FLOWER, CALCITE, CHERRY_LEAVES, CHERRY_SAPLING, CLOSED_EYEBLOSSOM, COAL_ORE, COCOA_BEANS, COPPER_ORE, CRIMSON_FUNGUS, CRIMSON_ROOTS, CRYING_OBSIDIAN, DARK_OAK_LEAVES, DARK_OAK_SAPLING, DEAD_BRAIN_CORAL, DEAD_BRAIN_CORAL_BLOCK, DEAD_BRAIN_CORAL_FAN, DEAD_BUBBLE_CORAL, DEAD_BUBBLE_CORAL_BLOCK, DEAD_BUBBLE_CORAL_FAN, DEAD_BUSH, DEAD_FIRE_CORAL, DEAD_FIRE_CORAL_BLOCK, DEAD_FIRE_CORAL_FAN, DEAD_HORN_CORAL, DEAD_HORN_CORAL_BLOCK, DEAD_HORN_CORAL_FAN, DEAD_TUBE_CORAL, DEAD_TUBE_CORAL_BLOCK, DEAD_TUBE_CORAL_FAN, DEEPSLATE_COPPER_ORE, DEEPSLATE_DIAMOND_ORE, DEEPSLATE_GOLD_ORE, DEEPSLATE_IRON_ORE, DEEPSLATE_LAPIS_ORE, DEEPSLATE_REDSTONE_ORE, FIRE_CORAL, FIRE_CORAL_BLOCK, FIRE_CORAL_FAN, GOLD_ORE, GRASS_BLOCK, HONEYCOMB_BLOCK, HORN_CORAL, HORN_CORAL_BLOCK, HORN_CORAL_FAN, ICE, IRON_ORE, JUNGLE_LEAVES, JUNGLE_SAPLING, LAPIS_ORE, MANGROVE_LEAVES, MANGROVE_PROPAGULE, MANGROVE_ROOTS, MELON, MELON_SEEDS, MUSHROOM_STEM, NETHER_SPROUTS, NETHER_WART_BLOCK, OPEN_EYEBLOSSOM, PACKED_ICE, PALE_HANGING_MOSS, PALE_MOSS_BLOCK, PALE_MOSS_CARPET, PALE_OAK_LEAVES, PALE_OAK_SAPLING, PINK_PETALS, PODZOL, RED_MUSHROOM_BLOCK, RED_SAND, REDSTONE_ORE, RESIN_BLOCK, SEA_PICKLE, SHORT_DRY_GRASS, SPONGE, TALL_DRY_GRASS, TUBE_CORAL, TUBE_CORAL_BLOCK, TUBE_CORAL_FAN, TURTLE_EGG, TWISTING_VINES, WARPED_FUNGUS, WARPED_ROOTS, WARPED_WART_BLOCK, WEEPING_VINES, WET_SPONGE, BAMBOO_HANGING_SIGN, BAMBOO_SIGN, CHERRY_HANGING_SIGN, CHERRY_SIGN, CRIMSON_HANGING_SIGN, CRIMSON_SIGN, ENDER_CHEST, JUNGLE_HANGING_SIGN, JUNGLE_SIGN, MANGROVE_HANGING_SIGN, MANGROVE_SIGN, PALE_OAK_HANGING_SIGN, PALE_OAK_SIGN, RESPAWN_ANCHOR, SCAFFOLDING, WARPED_HANGING_SIGN, WARPED_SIGN, CALIBRATED_SCULK_SENSOR, AXOLOTL_BUCKET, BAMBOO_CHEST_RAFT, BAMBOO_RAFT, BROWN_BUNDLE, CHERRY_BOAT, CHERRY_CHEST_BOAT, CYAN_BUNDLE, GREEN_BUNDLE, JUNGLE_BOAT, JUNGLE_CHEST_BOAT, LIME_BUNDLE, MANGROVE_BOAT, MANGROVE_CHEST_BOAT, NAME_TAG, PALE_OAK_BOAT, PALE_OAK_CHEST_BOAT, SPYGLASS, TADPOLE_BUCKET, BLUE_EGG, CROSSBOW, WIND_CHARGE, ENCHANTED_GOLDEN_APPLE, TROPICAL_FISH, PUFFERFISH, COOKIE, AMETHYST_SHARD, BOLT_ARMOR_TRIM_SMITHING_TEMPLATE, BREEZE_ROD, BROWN_DYE, BURN_POTTERY_SHERD, CYAN_DYE, FLOW_ARMOR_TRIM_SMITHING_TEMPLATE, FLOW_POTTERY_SHERD, GREEN_DYE, GUSTER_POTTERY_SHERD, LIME_DYE, NETHER_WART, PRISMARINE_CRYSTALS, PRISMARINE_SHARD, RESIN_BRICK, RESIN_CLUMP, SCRAPE_POTTERY_SHERD, TRIAL_KEY, TURTLE_SCUTE, VEX_ARMOR_TRIM_SMITHING_TEMPLATE, WILD_ARMOR_TRIM_SMITHING_TEMPLATE, MUSIC_DISC_PIGSTEP, MUSIC_DISC_OTHERSIDE, MUSIC_DISC_CREATOR, AMETHYST_BLOCK, BAMBOO_BLOCK, BAMBOO_BUTTON, BAMBOO_DOOR, BAMBOO_FENCE, BAMBOO_FENCE_GATE, BAMBOO_MOSAIC, BAMBOO_MOSAIC_SLAB, BAMBOO_MOSAIC_STAIRS, BAMBOO_PLANKS, BAMBOO_PRESSURE_PLATE, BAMBOO_SLAB, BAMBOO_STAIRS, BAMBOO_TRAPDOOR, CHERRY_BUTTON, CHERRY_DOOR, CHERRY_FENCE, CHERRY_FENCE_GATE, CHERRY_LOG, CHERRY_PLANKS, CHERRY_PRESSURE_PLATE, CHERRY_SLAB, CHERRY_STAIRS, CHERRY_TRAPDOOR, CHERRY_WOOD, CHISELED_RED_SANDSTONE, CHISELED_RESIN_BRICKS, COPPER_BULB, CRACKED_POLISHED_BLACKSTONE_BRICKS, CRIMSON_BUTTON, CRIMSON_DOOR, CRIMSON_FENCE, CRIMSON_FENCE_GATE, CRIMSON_HYPHAE, CRIMSON_PLANKS, CRIMSON_PRESSURE_PLATE, CRIMSON_SLAB, CRIMSON_STAIRS, CRIMSON_STEM, CRIMSON_TRAPDOOR, CUT_RED_SANDSTONE, CUT_RED_SANDSTONE_SLAB, DARK_PRISMARINE, DARK_PRISMARINE_SLAB, DARK_PRISMARINE_STAIRS, GILDED_BLACKSTONE, JUNGLE_BUTTON, JUNGLE_DOOR, JUNGLE_FENCE, JUNGLE_FENCE_GATE, JUNGLE_LOG, JUNGLE_PLANKS, JUNGLE_PRESSURE_PLATE, JUNGLE_SLAB, JUNGLE_STAIRS, JUNGLE_TRAPDOOR, JUNGLE_WOOD, MANGROVE_BUTTON, MANGROVE_DOOR, MANGROVE_FENCE, MANGROVE_FENCE_GATE, MANGROVE_LOG, MANGROVE_PLANKS, MANGROVE_PRESSURE_PLATE, MANGROVE_SLAB, MANGROVE_STAIRS, MANGROVE_TRAPDOOR, MANGROVE_WOOD, OXIDIZED_CHISELED_COPPER, OXIDIZED_COPPER, OXIDIZED_COPPER_BULB, OXIDIZED_COPPER_DOOR, OXIDIZED_COPPER_GRATE, OXIDIZED_COPPER_TRAPDOOR, OXIDIZED_CUT_COPPER, OXIDIZED_CUT_COPPER_SLAB, OXIDIZED_CUT_COPPER_STAIRS, PALE_OAK_BUTTON, PALE_OAK_DOOR, PALE_OAK_FENCE, PALE_OAK_FENCE_GATE, PALE_OAK_LOG, PALE_OAK_PLANKS, PALE_OAK_PRESSURE_PLATE, PALE_OAK_SLAB, PALE_OAK_STAIRS, PALE_OAK_TRAPDOOR, PALE_OAK_WOOD, PRISMARINE, PRISMARINE_BRICK_SLAB, PRISMARINE_BRICK_STAIRS, PRISMARINE_BRICKS, PRISMARINE_SLAB, PRISMARINE_STAIRS, PRISMARINE_WALL, RED_NETHER_BRICK_SLAB, RED_NETHER_BRICK_STAIRS, RED_NETHER_BRICK_WALL, RED_NETHER_BRICKS, RED_SANDSTONE, RED_SANDSTONE_SLAB, RED_SANDSTONE_STAIRS, RED_SANDSTONE_WALL, RESIN_BRICK_SLAB, RESIN_BRICK_STAIRS, RESIN_BRICK_WALL, RESIN_BRICKS, SEA_LANTERN, SMOOTH_RED_SANDSTONE, SMOOTH_RED_SANDSTONE_SLAB, SMOOTH_RED_SANDSTONE_STAIRS, STRIPPED_BAMBOO_BLOCK, STRIPPED_CHERRY_LOG, STRIPPED_CHERRY_WOOD, STRIPPED_CRIMSON_HYPHAE, STRIPPED_CRIMSON_STEM, STRIPPED_JUNGLE_LOG, STRIPPED_JUNGLE_WOOD, STRIPPED_MANGROVE_LOG, STRIPPED_MANGROVE_WOOD, STRIPPED_PALE_OAK_LOG, STRIPPED_PALE_OAK_WOOD, STRIPPED_WARPED_HYPHAE, STRIPPED_WARPED_STEM, WARPED_BUTTON, WARPED_DOOR, WARPED_FENCE, WARPED_FENCE_GATE, WARPED_HYPHAE, WARPED_PLANKS, WARPED_PRESSURE_PLATE, WARPED_SLAB, WARPED_STAIRS, WARPED_STEM, WARPED_TRAPDOOR, WAXED_OXIDIZED_CHISELED_COPPER, WAXED_OXIDIZED_COPPER, WAXED_OXIDIZED_COPPER_BULB, WAXED_OXIDIZED_COPPER_DOOR, WAXED_OXIDIZED_COPPER_GRATE, WAXED_OXIDIZED_COPPER_TRAPDOOR, WAXED_OXIDIZED_CUT_COPPER, WAXED_OXIDIZED_CUT_COPPER_SLAB, WAXED_OXIDIZED_CUT_COPPER_STAIRS, WAXED_WEATHERED_CHISELED_COPPER, WAXED_WEATHERED_COPPER, WAXED_WEATHERED_COPPER_BULB, WAXED_WEATHERED_COPPER_DOOR, WAXED_WEATHERED_COPPER_GRATE, WAXED_WEATHERED_COPPER_TRAPDOOR, WAXED_WEATHERED_CUT_COPPER, WAXED_WEATHERED_CUT_COPPER_SLAB, WAXED_WEATHERED_CUT_COPPER_STAIRS, WEATHERED_CHISELED_COPPER, WEATHERED_COPPER, WEATHERED_COPPER_BULB, WEATHERED_COPPER_DOOR, WEATHERED_COPPER_GRATE, WEATHERED_COPPER_TRAPDOOR, WEATHERED_CUT_COPPER, WEATHERED_CUT_COPPER_SLAB, WEATHERED_CUT_COPPER_STAIRS, BROWN_BANNER, BROWN_BED, BROWN_CANDLE, BROWN_CARPET, BROWN_CONCRETE, BROWN_CONCRETE_POWDER, BROWN_GLAZED_TERRACOTTA, BROWN_STAINED_GLASS, BROWN_STAINED_GLASS_PANE, BROWN_TERRACOTTA, BROWN_WOOL, CYAN_BANNER, CYAN_BED, CYAN_CANDLE, CYAN_CARPET, CYAN_CONCRETE, CYAN_CONCRETE_POWDER, CYAN_GLAZED_TERRACOTTA, CYAN_STAINED_GLASS, CYAN_STAINED_GLASS_PANE, CYAN_TERRACOTTA, CYAN_WOOL, GREEN_BANNER, GREEN_BED, GREEN_CANDLE, GREEN_CARPET, GREEN_CONCRETE, GREEN_CONCRETE_POWDER, GREEN_GLAZED_TERRACOTTA, GREEN_STAINED_GLASS, GREEN_STAINED_GLASS_PANE, GREEN_TERRACOTTA, GREEN_WOOL, LIME_BANNER, LIME_BED, LIME_CANDLE, LIME_CARPET, LIME_CONCRETE, LIME_CONCRETE_POWDER, LIME_GLAZED_TERRACOTTA, LIME_STAINED_GLASS, LIME_STAINED_GLASS_PANE, LIME_TERRACOTTA, LIME_WOOL, TINTED_GLASS, BAMBOO, BEE_NEST, BLUE_ICE, BRAIN_CORAL, BRAIN_CORAL_BLOCK, BRAIN_CORAL_FAN, BROWN_MUSHROOM_BLOCK, BUBBLE_CORAL, BUBBLE_CORAL_BLOCK, BUBBLE_CORAL_FAN, CACTUS, CACTUS_FLOWER, CALCITE, CHERRY_LEAVES, CHERRY_SAPLING, CLOSED_EYEBLOSSOM, COAL_ORE, COCOA_BEANS, COPPER_ORE, CRIMSON_FUNGUS, CRIMSON_ROOTS, CRYING_OBSIDIAN, DARK_OAK_LEAVES, DARK_OAK_SAPLING, DEAD_BRAIN_CORAL, DEAD_BRAIN_CORAL_BLOCK, DEAD_BRAIN_CORAL_FAN, DEAD_BUBBLE_CORAL, DEAD_BUBBLE_CORAL_BLOCK, DEAD_BUBBLE_CORAL_FAN, DEAD_BUSH, DEAD_FIRE_CORAL, DEAD_FIRE_CORAL_BLOCK, DEAD_FIRE_CORAL_FAN, DEAD_HORN_CORAL, DEAD_HORN_CORAL_BLOCK, DEAD_HORN_CORAL_FAN, DEAD_TUBE_CORAL, DEAD_TUBE_CORAL_BLOCK, DEAD_TUBE_CORAL_FAN, DEEPSLATE_COPPER_ORE, DEEPSLATE_DIAMOND_ORE, DEEPSLATE_GOLD_ORE, DEEPSLATE_IRON_ORE, DEEPSLATE_LAPIS_ORE, DEEPSLATE_REDSTONE_ORE, FIRE_CORAL, FIRE_CORAL_BLOCK, FIRE_CORAL_FAN, GOLD_ORE, GRASS_BLOCK, HONEYCOMB_BLOCK, HORN_CORAL, HORN_CORAL_BLOCK, HORN_CORAL_FAN, ICE, IRON_ORE, JUNGLE_LEAVES, JUNGLE_SAPLING, LAPIS_ORE, MANGROVE_LEAVES, MANGROVE_PROPAGULE, MANGROVE_ROOTS, MELON, MELON_SEEDS, MUSHROOM_STEM, NETHER_SPROUTS, NETHER_WART_BLOCK, OPEN_EYEBLOSSOM, PACKED_ICE, PALE_HANGING_MOSS, PALE_MOSS_BLOCK, PALE_MOSS_CARPET, PALE_OAK_LEAVES, PALE_OAK_SAPLING, PINK_PETALS, PODZOL, RED_MUSHROOM_BLOCK, RED_SAND, REDSTONE_ORE, RESIN_BLOCK, SEA_PICKLE, SHORT_DRY_GRASS, SPONGE, TALL_DRY_GRASS, TUBE_CORAL, TUBE_CORAL_BLOCK, TUBE_CORAL_FAN, TURTLE_EGG, TWISTING_VINES, WARPED_FUNGUS, WARPED_ROOTS, WARPED_WART_BLOCK, WEEPING_VINES, WET_SPONGE, BAMBOO_HANGING_SIGN, BAMBOO_SIGN, CHERRY_HANGING_SIGN, CHERRY_SIGN, CRIMSON_HANGING_SIGN, CRIMSON_SIGN, ENDER_CHEST, JUNGLE_HANGING_SIGN, JUNGLE_SIGN, MANGROVE_HANGING_SIGN, MANGROVE_SIGN, PALE_OAK_HANGING_SIGN, PALE_OAK_SIGN, RESPAWN_ANCHOR, SCAFFOLDING, WARPED_HANGING_SIGN, WARPED_SIGN, CALIBRATED_SCULK_SENSOR, AXOLOTL_BUCKET, BAMBOO_CHEST_RAFT, BAMBOO_RAFT, BROWN_BUNDLE, CHERRY_BOAT, CHERRY_CHEST_BOAT, CYAN_BUNDLE, GREEN_BUNDLE, JUNGLE_BOAT, JUNGLE_CHEST_BOAT, LIME_BUNDLE, MANGROVE_BOAT, MANGROVE_CHEST_BOAT, NAME_TAG, PALE_OAK_BOAT, PALE_OAK_CHEST_BOAT, SPYGLASS, TADPOLE_BUCKET, BLUE_EGG, CROSSBOW, WIND_CHARGE, ENCHANTED_GOLDEN_APPLE, TROPICAL_FISH, PUFFERFISH, COOKIE, AMETHYST_SHARD, BOLT_ARMOR_TRIM_SMITHING_TEMPLATE, BREEZE_ROD, BROWN_DYE, BURN_POTTERY_SHERD, CYAN_DYE, FLOW_ARMOR_TRIM_SMITHING_TEMPLATE, FLOW_POTTERY_SHERD, GREEN_DYE, GUSTER_POTTERY_SHERD, LIME_DYE, NETHER_WART, PRISMARINE_CRYSTALS, PRISMARINE_SHARD, RESIN_BRICK, RESIN_CLUMP, SCRAPE_POTTERY_SHERD, TRIAL_KEY, TURTLE_SCUTE, VEX_ARMOR_TRIM_SMITHING_TEMPLATE, WILD_ARMOR_TRIM_SMITHING_TEMPLATE, MUSIC_DISC_PIGSTEP, MUSIC_DISC_OTHERSIDE, MUSIC_DISC_CREATOR]
-[03:09:44] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[03:09:44] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[03:09:44] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[03:09:44] [Server thread/INFO]: Using 4 threads for Netty based IO
-[03:09:44] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
-[03:09:44] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[03:09:44] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
-[03:09:44] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
-[03:09:44] [Server thread/INFO]: Loaded 1373 recipes
-[03:09:44] [Server thread/INFO]: Loaded 1484 advancements
-[03:09:44] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
-[03:09:44] [Paper Async Command Builder Thread Pool - 2/ERROR]: Caught previously unhandled exception :
-[03:09:44] [Paper Async Command Builder Thread Pool - 2/ERROR]: Paper Async Command Builder Thread Pool - 2
+[13:31:53] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[13:31:53] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:31:53] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[13:31:53] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[13:31:53] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[13:31:53] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[13:31:53] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[13:31:53] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[13:31:53] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[13:31:53] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[13:31:53] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[13:31:53] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[13:31:53] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[13:31:53] [Server thread/INFO]: CONSOLE: Reload complete.
+[13:31:54] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:33:20] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[13:33:20] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[13:33:20] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:33:20] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:33:20] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[13:33:20] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[13:33:20] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[13:33:20] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[13:33:20] [Server thread/INFO]: Loaded 1373 recipes
+[13:33:20] [Server thread/INFO]: Loaded 1484 advancements
+[13:33:20] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[13:33:20] [Paper Async Command Builder Thread Pool - 0/ERROR]: Caught previously unhandled exception :
+[13:33:20] [Paper Async Command Builder Thread Pool - 0/ERROR]: Paper Async Command Builder Thread Pool - 0
 java.util.ConcurrentModificationException: null
 	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
 	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
@@ -189,40 +150,46 @@ java.util.ConcurrentModificationException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
 	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
-[03:09:44] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
-[03:09:44] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+[13:33:21] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[13:33:21] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 148ms.
+[13:33:21] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[13:33:21] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
  - BingoPlg (1.0)
-[03:09:44] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
-[03:09:44] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[03:09:44] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
-[03:09:44] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
-[03:09:44] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
-[03:09:44] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
-[03:09:44] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
-[03:09:44] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
-[03:09:44] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
-[03:09:44] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
-[03:09:44] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
-[03:09:44] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
-[03:09:44] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
-[03:09:44] [Server thread/INFO]: CONSOLE: Reload complete.
-[03:09:46] [Server thread/INFO]: DFather issued server command: /startbingo
-[03:09:46] [Server thread/ERROR]: [BingoPlg] Ошибка! [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
-[03:09:46] [Server thread/ERROR]: [BingoPlg] org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
-[03:09:46] [Server thread/INFO]: [BIRCH_BUTTON, BIRCH_DOOR, BIRCH_FENCE, BIRCH_FENCE_GATE, BIRCH_LOG, BIRCH_PLANKS, BIRCH_PRESSURE_PLATE, BIRCH_SLAB, BIRCH_STAIRS, BIRCH_TRAPDOOR, BIRCH_WOOD, CHISELED_SANDSTONE, CHISELED_STONE_BRICKS, COAL_BLOCK, COBBLESTONE, COBBLESTONE_SLAB, COBBLESTONE_STAIRS, COBBLESTONE_WALL, COPPER_BLOCK, COPPER_DOOR, COPPER_GRATE, COPPER_TRAPDOOR, CRACKED_STONE_BRICKS, CUT_COPPER, CUT_COPPER_SLAB, CUT_COPPER_STAIRS, CUT_SANDSTONE, CUT_SANDSTONE_SLAB, OAK_BUTTON, OAK_DOOR, OAK_FENCE, OAK_FENCE_GATE, OAK_LOG, OAK_PLANKS, OAK_PRESSURE_PLATE, OAK_SLAB, OAK_STAIRS, OAK_TRAPDOOR, OAK_WOOD, SANDSTONE, SANDSTONE_SLAB, SANDSTONE_STAIRS, SANDSTONE_WALL, SMOOTH_SANDSTONE, SMOOTH_SANDSTONE_SLAB, SMOOTH_SANDSTONE_STAIRS, SMOOTH_STONE, SMOOTH_STONE_SLAB, STONE, STONE_BRICK_SLAB, STONE_BRICK_STAIRS, STONE_BRICK_WALL, STONE_BRICKS, STONE_BUTTON, STONE_PRESSURE_PLATE, STONE_SLAB, STONE_STAIRS, STRIPPED_BIRCH_LOG, STRIPPED_BIRCH_WOOD, STRIPPED_OAK_LOG, STRIPPED_OAK_WOOD, ALLIUM, AZURE_BLUET, BIRCH_SAPLING, CLAY, COARSE_DIRT, CORNFLOWER, DANDELION, DIRT, GRAVEL, LEAF_LITTER, LILAC, OAK_SAPLING, OXEYE_DAISY, PEONY, POPPY, ROSE_BUSH, SAND, SUGAR_CANE, WHEAT_SEEDS, BARREL, BIRCH_HANGING_SIGN, BIRCH_SIGN, CAMPFIRE, CARTOGRAPHY_TABLE, CHEST, CHISELED_BOOKSHELF, COMPOSTER, CRAFTING_TABLE, FLETCHING_TABLE, FLOWER_POT, FURNACE, GRINDSTONE, ITEM_FRAME, LADDER, LECTERN, LIGHTNING_ROD, OAK_HANGING_SIGN, OAK_SIGN, PAINTING, LEVER, BIRCH_BOAT, BIRCH_CHEST_BOAT, OAK_BOAT, OAK_CHEST_BOAT, STONE_HOE, STONE_PICKAXE, STONE_SHOVEL, WOODEN_HOE, WOODEN_PICKAXE, WOODEN_SHOVEL, LEATHER_BOOTS, LEATHER_CHESTPLATE, LEATHER_HELMET, LEATHER_HORSE_ARMOR, LEATHER_LEGGINGS, STONE_AXE, STONE_SWORD, WOODEN_AXE, WOODEN_SWORD, APPLE, BEEF, CHICKEN, COD, MUTTON, PORKCHOP, SALMON, COOKED_BEEF, COOKED_PORKCHOP, COOKED_MUTTON, COOKED_CHICKEN, COOKED_COD, COOKED_SALMON, BLACK_DYE, BLUE_DYE, BOWL, BRICK, CHARCOAL, CLAY_BALL, COAL, COPPER_INGOT, FEATHER, FLINT, GRAY_DYE, null, LEATHER, LIGHT_BLUE_DYE, LIGHT_GRAY_DYE, MAGENTA_DYE, ORANGE_DYE, PAPER, PINK_DYE, PURPLE_DYE, RAW_COPPER, RED_DYE, STICK, SUGAR, WHITE_DYE, YELLOW_DYE]
-[03:09:59] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[03:09:59] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[03:09:59] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[03:09:59] [Server thread/INFO]: Using 4 threads for Netty based IO
-[03:09:59] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
-[03:09:59] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[03:09:59] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
-[03:09:59] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
-[03:09:59] [Server thread/INFO]: Loaded 1373 recipes
-[03:09:59] [Server thread/INFO]: Loaded 1484 advancements
-[03:09:59] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
-[03:09:59] [Paper Async Command Builder Thread Pool - 3/ERROR]: Caught previously unhandled exception :
-[03:09:59] [Paper Async Command Builder Thread Pool - 3/ERROR]: Paper Async Command Builder Thread Pool - 3
+[13:33:21] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[13:33:21] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:33:21] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[13:33:21] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[13:33:21] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[13:33:21] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[13:33:21] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[13:33:21] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[13:33:21] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[13:33:21] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[13:33:21] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[13:33:21] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[13:33:21] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[13:33:21] [Server thread/INFO]: CONSOLE: Reload complete.
+[13:33:23] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:33:34] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:33:43] [Server thread/INFO]: DFather issued server command: /startbingo
+[13:33:43] [Server thread/ERROR]: [BingoPlg] Ошибка! [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
+[13:33:43] [Server thread/ERROR]: [BingoPlg] org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
+[13:33:47] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:34:46] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:34:47] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:36:56] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[13:36:56] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[13:36:56] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:36:56] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:36:56] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[13:36:56] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[13:36:56] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[13:36:56] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[13:36:56] [Server thread/INFO]: Loaded 1373 recipes
+[13:36:56] [Server thread/INFO]: Loaded 1484 advancements
+[13:36:57] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[13:36:57] [Paper Async Command Builder Thread Pool - 2/ERROR]: Caught previously unhandled exception :
+[13:36:57] [Paper Async Command Builder Thread Pool - 2/ERROR]: Paper Async Command Builder Thread Pool - 2
 java.util.ConcurrentModificationException: null
 	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
 	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
@@ -236,36 +203,39 @@ java.util.ConcurrentModificationException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
 	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
-[03:09:59] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
-[03:09:59] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+[13:36:57] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[13:36:57] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 84ms.
+[13:36:57] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[13:36:57] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
  - BingoPlg (1.0)
-[03:09:59] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
-[03:09:59] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[03:09:59] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
-[03:09:59] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
-[03:09:59] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
-[03:09:59] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
-[03:09:59] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
-[03:09:59] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
-[03:09:59] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
-[03:09:59] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
-[03:09:59] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
-[03:09:59] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
-[03:09:59] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
-[03:09:59] [Server thread/INFO]: CONSOLE: Reload complete.
-[03:13:50] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[03:13:50] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[03:13:50] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[03:13:50] [Server thread/INFO]: Using 4 threads for Netty based IO
-[03:13:50] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
-[03:13:50] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[03:13:50] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
-[03:13:50] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
-[03:13:51] [Server thread/INFO]: Loaded 1373 recipes
-[03:13:51] [Server thread/INFO]: Loaded 1484 advancements
-[03:13:51] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
-[03:13:51] [Paper Async Command Builder Thread Pool - 4/ERROR]: Caught previously unhandled exception :
-[03:13:51] [Paper Async Command Builder Thread Pool - 4/ERROR]: Paper Async Command Builder Thread Pool - 4
+[13:36:57] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[13:36:57] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:36:57] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[13:36:57] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[13:36:57] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[13:36:57] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[13:36:57] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[13:36:57] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[13:36:57] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[13:36:57] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[13:36:57] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[13:36:57] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[13:36:57] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[13:36:57] [Server thread/INFO]: CONSOLE: Reload complete.
+[13:36:58] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:38:53] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[13:38:53] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[13:38:53] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:38:53] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:38:53] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[13:38:53] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[13:38:53] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[13:38:53] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[13:38:54] [Server thread/INFO]: Loaded 1373 recipes
+[13:38:54] [Server thread/INFO]: Loaded 1484 advancements
+[13:38:54] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[13:38:54] [Paper Async Command Builder Thread Pool - 3/ERROR]: Caught previously unhandled exception :
+[13:38:54] [Paper Async Command Builder Thread Pool - 3/ERROR]: Paper Async Command Builder Thread Pool - 3
 java.util.ConcurrentModificationException: null
 	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
 	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
@@ -279,61 +249,144 @@ java.util.ConcurrentModificationException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
 	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
-[03:13:51] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
-[03:13:51] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 81ms.
-[03:13:51] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
-[03:13:51] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+[13:38:54] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[13:38:54] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 116ms.
+[13:38:54] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[13:38:54] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
  - BingoPlg (1.0)
-[03:13:51] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
-[03:13:51] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[03:13:51] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
-[03:13:51] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
-[03:13:51] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
-[03:13:51] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
-[03:13:51] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
-[03:13:51] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
-[03:13:51] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
-[03:13:51] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
-[03:13:51] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
-[03:13:51] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
-[03:13:51] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
-[03:13:51] [Server thread/INFO]: CONSOLE: Reload complete.
-[03:13:54] [Server thread/INFO]: DFather issued server command: /startbingo
-[03:13:54] [Server thread/ERROR]: [BingoPlg] Ошибка! [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
-[03:13:54] [Server thread/ERROR]: [BingoPlg] org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
-[03:14:43] [Server thread/INFO]: DFather lost connection: Disconnected
-[03:14:43] [Server thread/INFO]: DFather left the game
-[03:14:44] [Server thread/INFO]: Stopping server
-[03:14:44] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
-[03:14:44] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
-[03:14:44] [Server thread/INFO]: Saving players
-[03:14:44] [Server thread/INFO]: Saving worlds
-[03:14:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Saved 146 block chunks, 105 entity chunks, 0 poi chunks in world 'world' in 0,09s
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
-[03:14:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
-[03:14:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,01s
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
-[03:14:44] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
-[03:14:44] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[03:14:44] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[03:14:44] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[03:14:44] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[03:14:44] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
-[03:14:44] [Server thread/INFO]: All RegionFile I/O tasks to complete
-[03:14:44] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
-[03:14:44] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+[13:38:54] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[13:38:54] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:38:54] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[13:38:54] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[13:38:54] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[13:38:54] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[13:38:54] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[13:38:54] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[13:38:54] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[13:38:54] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[13:38:54] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[13:38:54] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[13:38:54] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[13:38:54] [Server thread/INFO]: CONSOLE: Reload complete.
+[13:38:56] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:38:57] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:39:00] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:39:20] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[13:39:20] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[13:39:20] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:39:20] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:39:20] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[13:39:20] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[13:39:20] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[13:39:20] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[13:39:20] [Server thread/INFO]: Loaded 1373 recipes
+[13:39:20] [Server thread/INFO]: Loaded 1484 advancements
+[13:39:21] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[13:39:21] [Paper Async Command Builder Thread Pool - 4/ERROR]: Caught previously unhandled exception :
+[13:39:21] [Paper Async Command Builder Thread Pool - 4/ERROR]: Paper Async Command Builder Thread Pool - 4
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1056) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:499) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:619) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+[13:39:21] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[13:39:21] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[13:39:21] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[13:39:21] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:39:21] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[13:39:21] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[13:39:21] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[13:39:21] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[13:39:21] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[13:39:21] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[13:39:21] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[13:39:21] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[13:39:21] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[13:39:21] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[13:39:21] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[13:39:21] [Server thread/INFO]: CONSOLE: Reload complete.
+[13:39:22] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:39:33] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[13:39:33] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[13:39:33] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:39:33] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:39:33] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[13:39:33] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[13:39:33] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[13:39:33] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[13:39:34] [Server thread/INFO]: Loaded 1373 recipes
+[13:39:34] [Server thread/INFO]: Loaded 1484 advancements
+[13:39:34] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[13:39:34] [Paper Async Command Builder Thread Pool - 5/ERROR]: Caught previously unhandled exception :
+[13:39:34] [Paper Async Command Builder Thread Pool - 5/ERROR]: Paper Async Command Builder Thread Pool - 5
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1056) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:499) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:619) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+[13:39:34] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[13:39:34] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 98ms.
+[13:39:34] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[13:39:34] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[13:39:34] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[13:39:34] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:39:34] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[13:39:34] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[13:39:34] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[13:39:34] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[13:39:34] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[13:39:34] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[13:39:34] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[13:39:34] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[13:39:34] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[13:39:34] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[13:39:34] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[13:39:34] [Server thread/INFO]: CONSOLE: Reload complete.
+[13:39:36] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:40:38] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:40:38] [Server thread/ERROR]: [BingoPlg] Ошибка! Index 25 out of bounds for length 25
+[13:40:38] [Server thread/ERROR]: [BingoPlg] java.lang.IndexOutOfBoundsException: Index 25 out of bounds for length 25
+[13:40:41] [Server thread/INFO]: DFather issued server command: /startbingo
+[13:40:41] [Server thread/ERROR]: [BingoPlg] Ошибка! [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
+[13:40:41] [Server thread/ERROR]: [BingoPlg] org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
+[13:40:44] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:42:00] [Server thread/INFO]: DFather issued server command: /give DFather minecraft:resin_brick_stairs
+[13:42:00] [Server thread/INFO]: [DFather: Gave 1 [Resin Brick Stairs] to DFather]
+[13:42:06] [Server thread/INFO]: DFather issued server command: /gamemode creative
+[13:42:06] [Server thread/INFO]: [DFather: Set own game mode to Creative Mode]
+[13:42:09] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:42:43] [Server thread/INFO]: DFather issued server command: /startbingo
+[13:42:43] [Server thread/ERROR]: [BingoPlg] Ошибка! [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
+[13:42:43] [Server thread/ERROR]: [BingoPlg] org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
+[13:42:48] [Server thread/INFO]: DFather issued server command: /gamemode survival
+[13:42:48] [Server thread/INFO]: [DFather: Set own game mode to Survival Mode]
+[13:42:51] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:43:11] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:43:13] [Server thread/INFO]: DFather issued server command: /startbingo
+[13:43:13] [Server thread/ERROR]: [BingoPlg] Ошибка! [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
+[13:43:13] [Server thread/ERROR]: [BingoPlg] org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
+[13:43:18] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:44:29] [Server thread/INFO]: DFather issued server command: /startbingo
+[13:44:29] [Server thread/ERROR]: [BingoPlg] Ошибка! [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
+[13:44:29] [Server thread/ERROR]: [BingoPlg] org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: game.id)
+[13:44:33] [Server thread/INFO]: [BingoPlg] DFather Has been clicked with Bingo_Compass
+[13:44:55] [Server thread/INFO]: DFather lost connection: Disconnected
+[13:44:55] [Server thread/INFO]: DFather left the game

@@ -44,7 +44,7 @@ public class StartBingo implements CommandExecutor, TabExecutor {
             int itemsCount = bingoPlg.getDb().getGridSize() * bingoPlg.getDb().getGridSize();
             int quality = bingoPlg.getDb().getDifficulty();
             List<Material> items = new ArrayList<>();
-            List<Material> materials = Difficulty.jsReader(bingoPlg.getInstance().getDataFolder().getAbsolutePath(), quality);
+            List<Material> materials = Difficulty.jsReader(bingoPlg.getDataFolder().getAbsolutePath(), quality);
 
             Collections.shuffle(materials);
             for (int i = 0; i < itemsCount; i++) {
