@@ -4,15 +4,12 @@ import me.dubovoy.bingoPlg.commands.*;
 import me.dubovoy.bingoPlg.database.BingoDb;
 import me.dubovoy.bingoPlg.events.CompassClicking;
 import me.dubovoy.bingoPlg.events.PlayerJoined;
-import me.dubovoy.bingoPlg.logic.Difficulty;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 public final class BingoPlg extends JavaPlugin {
@@ -20,23 +17,20 @@ public final class BingoPlg extends JavaPlugin {
     private BingoDb database;
     public boolean bLog = true;
 
-
     @Override
     public void onEnable() {
         // Plugin startup logic
         LogWMsg("Привет! BingoPlugin успешно загружен!");
+        CustomRecipes.register();
         InitCommand("Heal", new HealPlayer());
         InitCommand("CreateTeam", new CreateTeam(this));
         InitCommand("JoinTeam", new JoinTeam(this));
         InitCommand("TeleportTeam", new TeleportTeam(this));
         InitCommand("Table", new CreateTableEx(this));
-        InitCommand("Compass", new CompassBingo());
-//        InitCommand("revile", new RevileCommand(this));
+        InitCommand("StartBingo", new StartBingo(this));
 
-//        LogWMsg(Difficulty.Example().toString());
-//        LogWMsg(Difficulty.jsReader(getDataFolder().getAbsolutePath(), 0).toString());
         InitEvent("PlayerJoin event", new PlayerJoined(this));
-        InitEvent("PlayerInteract event", new CompassClicking(this));
+        InitEvent("PlayerInteractCompass event", new CompassClicking(this));
 
         LogWMsg("Команды и События - успешно загружены!");
 
@@ -44,12 +38,13 @@ public final class BingoPlg extends JavaPlugin {
             if (!getDataFolder().exists())
                 getDataFolder().mkdirs();
             database = new BingoDb(getDataFolder().getAbsolutePath()+"/bingoPlugin.db");
+
         } catch (SQLException e) {
             getLogger().severe("Error: " + e.getMessage());
             Bukkit.getPluginManager().disablePlugin(this);
         }
 
-//        CustomRecipes.register();
+
 
 //        scoreboardDelay = getServer().getScheduler().runTaskTimer(this, ScoreboardTimer.getInstance(), 0, 20);
 

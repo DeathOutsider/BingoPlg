@@ -29,23 +29,23 @@ public class Difficulty{
 
     public static List<Material> jsReader(String path, int quality){
         List<Material> materials = new ArrayList<>();
-        String filename = path + "/bng_" + quality + ".json";
-        try {
-            Gson gson = new Gson();
-            Reader reader = Files.newBufferedReader(Paths.get(filename));
-            List<String> ls = gson.fromJson(reader, List.class);
+        for (int i = 0; i < quality + 1; i++) {
+            String filename = path + "/bng_" + quality + ".json";
+            try {
+                Gson gson = new Gson();
+                Reader reader = Files.newBufferedReader(Paths.get(filename));
+                List<String> ls = gson.fromJson(reader, List.class);
 
-            for (String item: ls){
-                materials.add(Material.getMaterial(item));
+                for (String item: ls){
+                    materials.add(Material.getMaterial(item));
+                }
+
+                // close reader
+                reader.close();
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
             }
-
-            // close reader
-            reader.close();
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
         }
-//        materials.add(Material.getMaterial("BIRCH_BUTTON"));
-//        materials.add(Material.AIR);
         return materials;
     }
 

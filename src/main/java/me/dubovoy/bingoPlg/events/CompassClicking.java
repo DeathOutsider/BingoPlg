@@ -7,7 +7,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -24,11 +23,12 @@ public class CompassClicking implements Listener {
         ItemStack item = event.getItem();
         if (item == null)
             return;
+
         ItemMeta meta = item.getItemMeta();
-        if (meta.hasEnchant(Enchantment.KNOCKBACK) & item.getType() == Material.RECOVERY_COMPASS){
-            System.out.println("That's IT!");
-        } else{
+        if (!meta.hasEnchant(Enchantment.KNOCKBACK) | item.getType() != Material.RECOVERY_COMPASS){
             return;
         }
+        bingoPlg.LogIMsg(player.getName() + " Has been clicked with Bingo_Compass");
+
     }
 }

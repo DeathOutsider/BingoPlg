@@ -3,6 +3,7 @@ package me.dubovoy.bingoPlg.database;
 //import org.bukkit.Bukkit;
 //import org.bukkit.OfflinePlayer;
 import org.bukkit.Bukkit;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 
 import java.sql.*;
@@ -46,8 +47,10 @@ public class BingoDb {
         try (Statement statement = connection.createStatement()){
             statement.execute("""
                     CREATE TABLE IF NOT EXISTS game(
-                    title TEXT PRIMARY KEY,
+                    id INTEGER PRIMARY KEY,
+                    title TEXT,
                     gameMode TEXT,
+                    difficulty INTEGER DEFAULT (3),
                     gridSize INTEGER DEFAULT (5),
                     items TEXT);
             """);
@@ -137,6 +140,68 @@ public class BingoDb {
                 listAllTeamPlayers.add(Bukkit.getPlayer(resultSet.getString("nickname")));
             }
             return listAllTeamPlayers;
+        }
+    }
+
+    public void insertGame() throws SQLException{
+        try (PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO game (id, title, gameMode) VALUES (?, ?, ?)")){
+            preparedStatement.setInt(1, 0);
+            preparedStatement.setString(2, "BINGO!");
+            preparedStatement.setString(3, "V H");
+            preparedStatement.executeUpdate();
+        }
+    }
+
+    public void setDifficulty(int difficulty) throws SQLException{
+        try (PreparedStatement preparedStatement = connection.prepareStatement("UPDATE game SET difficulty = ? WHERE id = 0")){
+            preparedStatement.setInt(1, difficulty);
+            preparedStatement.executeUpdate();
+        }
+    }
+
+    public int getDifficulty() throws SQLException{
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT difficulty FROM game WHERE id = 0")){
+            ResultSet resultSet = preparedStatement.executeQuery();
+            return resultSet.getInt("difficulty");
+        }
+    }
+
+    public void setGridSize(int gridSize) throws SQLException{
+        try (PreparedStatement preparedStatement = connection.prepareStatement("UPDATE game SET gridSize = ? WHERE id = 0")){
+            preparedStatement.setInt(1, gridSize);
+            preparedStatement.executeUpdate();
+        }
+    }
+
+    public int getGridSize() throws SQLException{
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT gridSize FROM game WHERE id = 0")){
+            ResultSet resultSet = preparedStatement.executeQuery();
+            return resultSet.getInt("gridSize");
+        }
+    }
+
+    public void setItems(List<Material> materials) throws SQLException{
+        String items = materials.toString();
+        items = items.replace("[", "");
+        items = items.replace("]", "");
+        try (PreparedStatement preparedStatement = connection.prepareStatement("UPDATE game SET items = ? WHERE id = 0")){
+            preparedStatement.setString(1, items);
+            preparedStatement.executeUpdate();
+        }
+    }
+
+    public List<Material> getItems() throws SQLException{
+        List<Material> materials = new ArrayList<>();
+        String items = "";
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT items FROM game WHERE id = 0")){
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                items = resultSet.getString("items");
+            }
+            for (String i: items.split(", ")){
+                materials.add(Material.getMaterial(i));
+            }
+            return materials;
         }
     }
 

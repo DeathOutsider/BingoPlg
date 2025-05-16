@@ -29,7 +29,7 @@ commands:
     aliases: [ ]
     usage: "/table 0"
 
-  compass:
+  StartBingo:
     description: ""
-    aliases: [ ]
-    usage: "/compass"
+    aliases: [ sb ]
+    usage: "/StartBingo"
