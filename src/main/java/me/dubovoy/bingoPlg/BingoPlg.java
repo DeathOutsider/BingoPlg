@@ -4,6 +4,7 @@ import me.dubovoy.bingoPlg.commands.*;
 import me.dubovoy.bingoPlg.database.BingoDb;
 import me.dubovoy.bingoPlg.events.CompassClicking;
 import me.dubovoy.bingoPlg.events.PlayerJoined;
+import me.dubovoy.bingoPlg.logic.Difficulty;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Listener;
@@ -44,8 +45,9 @@ public final class BingoPlg extends JavaPlugin {
             Bukkit.getPluginManager().disablePlugin(this);
         }
 
-
-
+//        List<Material> matterials = new ArrayList<>();
+//        matterials.add(Difficulty.jsReader(getDataFolder().getAbsolutePath(), 0));
+//        System.out.println(Difficulty.readJson(getDataFolder().getAbsolutePath(), 5));
 //        scoreboardDelay = getServer().getScheduler().runTaskTimer(this, ScoreboardTimer.getInstance(), 0, 20);
 
 

@@ -1,19 +1,16 @@
 package me.dubovoy.bingoPlg.commands;
 
 import me.dubovoy.bingoPlg.BingoPlg;
+import me.dubovoy.bingoPlg.database.BingoTable;
 import me.dubovoy.bingoPlg.logic.Difficulty;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
-import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -41,17 +38,12 @@ public class StartBingo implements CommandExecutor, TabExecutor {
                 bingoPlg.LogErrorsMsg(e);
             }
 
-            int itemsCount = bingoPlg.getDb().getGridSize() * bingoPlg.getDb().getGridSize();
-            int quality = bingoPlg.getDb().getDifficulty();
-            List<Material> items = new ArrayList<>();
-            List<Material> materials = Difficulty.jsReader(bingoPlg.getDataFolder().getAbsolutePath(), quality);
+            BingoTable table = new BingoTable(bingoPlg);
+            table.CreateBingoTable();
 
-            Collections.shuffle(materials);
-            for (int i = 0; i < itemsCount; i++) {
-                items.add(materials.get(i));
-            }
-            bingoPlg.getDb().setItems(items);
 
+            bingoPlg.LogIMsg("Game Bingo! Was Started By " + commandSender.getName());
+            bingoPlg.LogIMsg(table.getBingoItemsStringTable());
         } catch (Exception e) {
             bingoPlg.LogErrorsMsg(e);
         }

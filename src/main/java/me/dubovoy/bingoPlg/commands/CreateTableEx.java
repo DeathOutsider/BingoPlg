@@ -52,7 +52,7 @@ public class CreateTableEx implements CommandExecutor, TabExecutor {
         ItemStack nullItem = new ItemStack(Material.BARRIER);
 
         Inventory show_inventory = Bukkit.createInventory(player, inv_size, inv_title);
-        List<Material> materials = Difficulty.jsReader(bingoPlg.getInstance().getDataFolder().getAbsolutePath(), quality);
+        List<Material> materials = Difficulty.readBingoFiles(bingoPlg.getInstance().getDataFolder().getAbsolutePath(), quality);
         bingoPlg.LogWMsg(materials.toString());
 //        Inventory inv_player = player.getInventory();
         for (int i = 0; i < inv_size; i++) {

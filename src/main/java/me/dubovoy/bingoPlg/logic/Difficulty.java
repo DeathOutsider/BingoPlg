@@ -1,22 +1,14 @@
 package me.dubovoy.bingoPlg.logic;
 
-import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-import com.google.gson.stream.JsonReader;
 import org.bukkit.Material;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
-import java.lang.reflect.Type;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class Difficulty{
 
@@ -27,10 +19,28 @@ public class Difficulty{
         return materials;
     }
 
-    public static List<Material> jsReader(String path, int quality){
+    public static List<Material> readJson (String path, int quality){
+        List<Material> materials = new ArrayList<>();
+        String filename = path + "/bng_" + quality + ".json";
+        try {
+            Gson gson = new Gson();
+            Reader reader = Files.newBufferedReader(Paths.get(filename));
+            List<String> ls = gson.fromJson(reader, List.class);
+
+            for (String item: ls){
+                materials.add(Material.getMaterial(item));
+            }
+            reader.close();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+        return materials;
+    }
+
+    public static List<Material> readBingoFiles(String path, int quality){
         List<Material> materials = new ArrayList<>();
         for (int i = 0; i < quality + 1; i++) {
-            String filename = path + "/bng_" + quality + ".json";
+            String filename = path + "/bng_" + i + ".json";
             try {
                 Gson gson = new Gson();
                 Reader reader = Files.newBufferedReader(Paths.get(filename));
