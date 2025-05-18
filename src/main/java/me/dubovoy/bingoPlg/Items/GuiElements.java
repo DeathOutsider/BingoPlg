@@ -29,6 +29,7 @@ public class GuiElements {
         playerInvItemMeta.addEnchant(Enchantment.KNOCKBACK, 1, false);
         playerInvItemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         playerInvItemMeta.setDisplayName(ChatColor.GREEN + "Предмет вашего инвентаря");
+        playerInvItemMeta.setCustomModelData(1);
         playerInvItem.setItemMeta(playerInvItemMeta);
         return playerInvItem;
     }
@@ -49,6 +50,7 @@ public class GuiElements {
         teamInvItemMeta.addEnchant(Enchantment.KNOCKBACK, 1, false);
         teamInvItemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         teamInvItemMeta.setDisplayName(ChatColor.YELLOW + "Предмет инвентаря команды");
+        teamInvItemMeta.setCustomModelData(1);
         teamInvItem.setItemMeta(teamInvItemMeta);
         return teamInvItem;
     }
