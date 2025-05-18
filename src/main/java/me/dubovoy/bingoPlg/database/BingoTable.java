@@ -13,6 +13,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class BingoTable {
+
     private final BingoPlg bingoPlg;
     public BingoTable(BingoPlg bingoPlg) {this.bingoPlg = bingoPlg;}
 
@@ -74,6 +75,20 @@ public class BingoTable {
         return table.toString();
     }
 
+    public int convertIndToGui(int bingoInd) {
+        int grid = getGridSize();
+        int colInd = bingoInd % grid;
+        int rowInd = bingoInd / grid;
+        return colInd + rowInd * 9;
+    }
+
+    public int convertIndToTable(int guiInd) {
+        int grid = getGridSize();
+        int colInd = guiInd % 9;
+        int rowInd = guiInd / 9;
+        return colInd + rowInd * grid;
+    }
+
     public int[] checkBingoInvItems(ItemStack[] pInventory, String mode){
         List<Integer> invIndexes = new ArrayList<>();
 
@@ -84,8 +99,16 @@ public class BingoTable {
                 Material material = itemStack.getType();
                 if (!invItems.contains(material)){
                     invItems.add(material);
-                    if (bingoItems.contains(material))
-                        invIndexes.add(bingoItems.indexOf(material));
+                    if (bingoItems.contains(material)){
+                        int ind = bingoItems.indexOf(material);
+                        ind = convertIndToGui(ind);
+
+//                        System.out.println(colInd);
+//                        System.out.println(rowInd*6);
+                        invIndexes.add(ind);
+//                        System.out.println(ind);
+//                        System.out.println(convertIndToTable(ind));
+                    }
                 }
             }
         } catch (Exception e) {

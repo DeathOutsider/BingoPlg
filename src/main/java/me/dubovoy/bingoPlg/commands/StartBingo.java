@@ -1,6 +1,8 @@
 package me.dubovoy.bingoPlg.commands;
 
 import me.dubovoy.bingoPlg.BingoPlg;
+import me.dubovoy.bingoPlg.Items.BingoItems;
+import me.dubovoy.bingoPlg.Msg;
 import me.dubovoy.bingoPlg.database.BingoTable;
 import me.dubovoy.bingoPlg.logic.Difficulty;
 import org.bukkit.Bukkit;
@@ -28,8 +30,11 @@ public class StartBingo implements CommandExecutor, TabExecutor {
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String @NotNull [] strings) {
         try {
             for (Player p: Bukkit.getOnlinePlayers()){
+//                ItemStack startItem = new ItemStack(Material.DIRT);
+                ItemStack startItem = new BingoItems().BingoCompass();
                 p.getInventory().clear();
-                p.getInventory().addItem(new ItemStack(Material.DIRT));
+                p.getInventory().addItem(startItem);
+                Msg.sendTitle(p, "§o§dBingo!", "§l§n§aНачалось!");
             }
 
             try{
@@ -41,9 +46,8 @@ public class StartBingo implements CommandExecutor, TabExecutor {
             BingoTable table = new BingoTable(bingoPlg);
             table.CreateBingoTable();
 
-
             bingoPlg.LogIMsg("Game Bingo! Was Started By " + commandSender.getName());
-            bingoPlg.LogIMsg(table.getBingoItemsStringTable());
+//            bingoPlg.LogIMsg(table.getBingoItemsStringTable());
         } catch (Exception e) {
             bingoPlg.LogErrorsMsg(e);
         }

@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 //import java.util.UUID;
 
 public class BingoDb {
@@ -111,6 +112,15 @@ public class BingoDb {
         }
     }
 
+    public int getTeamByPlayer(Player player) throws SQLException{
+
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT team_id FROM players WHERE uuid = ?")){
+            preparedStatement.setString(1, player.getUniqueId().toString());
+            ResultSet resultSet = preparedStatement.executeQuery();
+            return resultSet.getInt("team_id");
+        }
+    }
+
     public void updatePlayerTeam(Player player, int teamId) throws SQLException{
         try (PreparedStatement preparedStatement = connection.prepareStatement("UPDATE players SET team_id = ? WHERE uuid = ?")){
             preparedStatement.setInt(1, teamId);
@@ -133,11 +143,13 @@ public class BingoDb {
     public List<Player> listTeamPlayers(int teamId) throws SQLException{
         List<Player> listAllTeamPlayers = new ArrayList<>();
 
-        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT nickname FROM players WHERE team_id = ?")){
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT uuid FROM players WHERE team_id = ?")){
             preparedStatement.setInt(1, teamId);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()){
-                listAllTeamPlayers.add(Bukkit.getPlayer(resultSet.getString("nickname")));
+                Player player = Bukkit.getPlayer(UUID.fromString(resultSet.getString("uuid")));
+                if (player != null && player.isOnline())
+                        listAllTeamPlayers.add(player);
             }
             return listAllTeamPlayers;
         }

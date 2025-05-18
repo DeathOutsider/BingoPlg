@@ -1,5 +1,6 @@
 package me.dubovoy.bingoPlg;
 
+import me.dubovoy.bingoPlg.Items.BingoItems;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Color;
@@ -18,13 +19,8 @@ public class CustomRecipes {
 
     public static void register(){
 
-        ItemStack compass = new ItemStack(Material.RECOVERY_COMPASS);
-        ItemMeta compassMeta = compass.getItemMeta();
-        compassMeta.addEnchant(Enchantment.KNOCKBACK, 1, false);
-        compassMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-        compassMeta.setLore(Collections.singletonList(ChatColor.DARK_PURPLE + "Нажмите по воздуху, чтобы увидеть меню бинго!"));
-        compassMeta.setDisplayName(ChatColor.GOLD + "Bingo!");
-        compass.setItemMeta(compassMeta);
+        BingoItems bingoItems = new BingoItems();
+        ItemStack compass = bingoItems.BingoCompass();
 
         ShapelessRecipe recipe_compass = new ShapelessRecipe(Keys.BINGO_COMPASS, compass);
         recipe_compass.addIngredient(new ItemStack(Material.DIRT));
