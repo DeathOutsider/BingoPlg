@@ -34,6 +34,11 @@ commands:
     aliases: [ ]
     usage: "/table 0"
 
+  createtable:
+    description: ""
+    aliases: [ crtb ]
+    usage: "/createtable"
+
   StartBingo:
     description: ""
     aliases: [ sb ]

@@ -33,6 +33,7 @@ public final class BingoPlg extends JavaPlugin {
         InitCommand("TeleportTeam", new TeleportTeam(this));
         InitCommand("Table", new CreateTableEx(this));
         InitCommand("StartBingo", new StartBingo(this));
+        InitCommand("CreateTable", new GenerateTable(this));
 
         InitEvent("PlayerJoin event", new PlayerJoined(this));
         InitEvent("PlayerInteractCompass event", new CompassClicking(this));
