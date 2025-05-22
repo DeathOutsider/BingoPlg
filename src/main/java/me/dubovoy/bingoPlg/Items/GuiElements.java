@@ -7,6 +7,10 @@ import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.inventory.meta.components.CustomModelDataComponent;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class GuiElements {
 
@@ -14,43 +18,27 @@ public class GuiElements {
     public GuiElements(BingoPlg bingoPlg) {this.bingoPlg = bingoPlg;}
 
     public ItemStack playerInvMarkerPotion(){
-//        ItemStack playerInvItem = new ItemStack(Material.POTION);
-//        PotionMeta playerInvItemMeta = (PotionMeta) playerInvItem.getItemMeta();
-//        playerInvItemMeta.addCustomEffect(new PotionEffect(PotionEffectType.GLOWING, 20, 0), false);
-//        playerInvItemMeta.addEnchant(Enchantment.KNOCKBACK, 1, false);
-//        playerInvItemMeta.addItemFlags(ItemFlag.HIDE_ADDITIONAL_TOOLTIP);
-//        playerInvItemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-//        playerInvItemMeta.setDisplayName(ChatColor.GREEN + "Предмет вашего инвентаря");
-//        playerInvItemMeta.setColor(Color.LIME);
-//        playerInvItem.setItemMeta(playerInvItemMeta);
-
         ItemStack playerInvItem = new ItemStack(Material.STRUCTURE_VOID);
         ItemMeta playerInvItemMeta = playerInvItem.getItemMeta();
         playerInvItemMeta.addEnchant(Enchantment.KNOCKBACK, 1, false);
         playerInvItemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         playerInvItemMeta.setDisplayName(ChatColor.GREEN + "Предмет вашего инвентаря");
-        playerInvItemMeta.setCustomModelData(1);
+        CustomModelDataComponent dataComponent = playerInvItemMeta.getCustomModelDataComponent();
+        dataComponent.setStrings(List.of("1"));
+        playerInvItemMeta.setCustomModelDataComponent(dataComponent);
         playerInvItem.setItemMeta(playerInvItemMeta);
         return playerInvItem;
     }
 
     public ItemStack teamInvMarkerPotion(){
-//        ItemStack teamInvItem = new ItemStack(Material.POTION);
-//        PotionMeta teamInvItemMeta = (PotionMeta) teamInvItem.getItemMeta();
-//        teamInvItemMeta.addCustomEffect(new PotionEffect(PotionEffectType.GLOWING, 20, 0), false);
-//        teamInvItemMeta.addEnchant(Enchantment.KNOCKBACK, 1, false);
-//        teamInvItemMeta.addItemFlags(ItemFlag.HIDE_ADDITIONAL_TOOLTIP);
-//        teamInvItemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-//        teamInvItemMeta.setDisplayName(ChatColor.YELLOW + "Предмет инвентаря команды");
-//        teamInvItemMeta.setColor(Color.YELLOW);
-//        teamInvItem.setItemMeta(teamInvItemMeta);
-
         ItemStack teamInvItem = new ItemStack(Material.BARRIER);
         ItemMeta teamInvItemMeta = teamInvItem.getItemMeta();
         teamInvItemMeta.addEnchant(Enchantment.KNOCKBACK, 1, false);
         teamInvItemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         teamInvItemMeta.setDisplayName(ChatColor.YELLOW + "Предмет инвентаря команды");
-        teamInvItemMeta.setCustomModelData(1);
+        CustomModelDataComponent dataComponent = teamInvItemMeta.getCustomModelDataComponent();
+        dataComponent.setStrings(List.of("1"));
+        teamInvItemMeta.setCustomModelDataComponent(dataComponent);
         teamInvItem.setItemMeta(teamInvItemMeta);
         return teamInvItem;
     }

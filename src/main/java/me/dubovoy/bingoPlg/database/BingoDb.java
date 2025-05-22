@@ -96,6 +96,21 @@ public class BingoDb {
         }
     }
 
+    public void removeTeam(String teamName) throws SQLException{
+        int teamId = getTeamByName(teamName);
+
+        try (PreparedStatement preparedStatement = connection.prepareStatement("UPDATE players SET team_id = ? WHERE team_id = ?")){
+            preparedStatement.setInt(1, -1);
+            preparedStatement.setInt(2, teamId);
+            preparedStatement.executeUpdate();
+        }
+
+        try (PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM teams WHERE id = ?")){
+            preparedStatement.setInt(1, teamId);
+            preparedStatement.executeUpdate();
+        }
+    }
+
     public int getTeamByName(String teamName) throws SQLException{
         try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT id FROM teams WHERE name = ?")){
             preparedStatement.setString(1, teamName);
@@ -113,7 +128,6 @@ public class BingoDb {
     }
 
     public int getTeamByPlayer(Player player) throws SQLException{
-
         try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT team_id FROM players WHERE uuid = ?")){
             preparedStatement.setString(1, player.getUniqueId().toString());
             ResultSet resultSet = preparedStatement.executeQuery();

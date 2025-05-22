@@ -35,7 +35,7 @@ public class CompassClicking implements Listener {
         if (!itemMeta.hasEnchant(Enchantment.KNOCKBACK) | item.getType() != Material.RECOVERY_COMPASS){
             return;
         }
-        bingoPlg.LogIMsg(player.getName() + " Has been clicked with Bingo_Compass");
+        bingoPlg.LogIMsg("<" + player.getName() + "> Has been clicked with Bingo_Compass");
 
         try {
             String guiMeta = player.getName();
@@ -60,10 +60,10 @@ public class CompassClicking implements Listener {
             Inventory inv = event.getClickedInventory();
             if (inv == null)
                 return;
-
+//            bingoPlg.LogIMsg(inv.getType().toString());
             int slot = event.getSlot();
             ItemStack item = inv.getItem(slot);
-            if (item == null)
+            if (item == null | inv.getType() != InventoryType.CHEST)
                 return;
 
             GuiElements guiElements = new GuiElements(bingoPlg);

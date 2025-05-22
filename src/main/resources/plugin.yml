@@ -11,8 +11,13 @@ commands:
 
   createteam:
     description: ""
-    aliases: [ ct, cteam, crt, crtm ]
+    aliases: [ crtm ]
     usage: "/createteam"
+
+  deleteteam:
+    description: ""
+    aliases: [ dltm ]
+    usage: "/deleteteam"
 
   jointeam:
     description: ""

@@ -1,10 +1,13 @@
 package me.dubovoy.bingoPlg;
 
 import me.dubovoy.bingoPlg.commands.*;
+import me.dubovoy.bingoPlg.commands.teams.CreateTeam;
+import me.dubovoy.bingoPlg.commands.teams.DeleteTeam;
+import me.dubovoy.bingoPlg.commands.teams.JoinTeam;
+import me.dubovoy.bingoPlg.commands.teams.TeleportTeam;
 import me.dubovoy.bingoPlg.database.BingoDb;
 import me.dubovoy.bingoPlg.events.CompassClicking;
 import me.dubovoy.bingoPlg.events.PlayerJoined;
-import me.dubovoy.bingoPlg.logic.Difficulty;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Listener;
@@ -25,6 +28,7 @@ public final class BingoPlg extends JavaPlugin {
         CustomRecipes.register();
         InitCommand("Heal", new HealPlayer());
         InitCommand("CreateTeam", new CreateTeam(this));
+        InitCommand("DeleteTeam", new DeleteTeam(this));
         InitCommand("JoinTeam", new JoinTeam(this));
         InitCommand("TeleportTeam", new TeleportTeam(this));
         InitCommand("Table", new CreateTableEx(this));

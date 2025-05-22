@@ -19,7 +19,7 @@ public class BingoTable {
 
     public void CreateBingoTable(){
         try{
-            int itemsCount = bingoPlg.getDb().getGridSize() * bingoPlg.getDb().getGridSize();
+            int itemsCount = getGridSize() * getGridSize();
             int quality = bingoPlg.getDb().getDifficulty();
 
             List<Material> items = new ArrayList<>();
@@ -46,6 +46,33 @@ public class BingoTable {
         return items;
     }
 
+    public int getDifficulty(){
+        int difficulty = 0;
+        try{
+            difficulty = bingoPlg.getDb().getDifficulty();
+
+        } catch (Exception e) {
+            bingoPlg.LogErrorsMsg(e);
+        }
+        return difficulty;
+    }
+
+    public String setDifficulty(int difficulty){
+        String message = null;
+        if (difficulty<0 | difficulty>=6){
+            message = "Недопустимая сложность сетки!";
+        } else
+            try{
+                bingoPlg.getDb().setDifficulty(difficulty);
+                message = "Сложность Bingo теперь " + difficulty;
+                if (bingoPlg.bLog)
+                    bingoPlg.LogIMsg("Bingo Difficulty was set at " + difficulty);
+            } catch (Exception e) {
+                bingoPlg.LogErrorsMsg(e);
+            }
+        return message;
+    }
+
     public int getGridSize(){
         int grid = 0;
         try{
@@ -55,6 +82,22 @@ public class BingoTable {
             bingoPlg.LogErrorsMsg(e);
         }
         return grid;
+    }
+
+    public String setGridSize(int gridSize){
+        String message = null;
+        if (gridSize<=0 | gridSize>=7){
+            message = "Недопустимый размер сетки!";
+        } else
+            try{
+                bingoPlg.getDb().setGridSize(gridSize);
+                message = "Сетка Bingo теперь " + gridSize + "x" + gridSize;
+                if (bingoPlg.bLog)
+                    bingoPlg.LogIMsg("Bingo Grid Size was set at " + gridSize);
+            } catch (Exception e) {
+                bingoPlg.LogErrorsMsg(e);
+            }
+        return message;
     }
 
     public String getBingoItemsStringTable(){

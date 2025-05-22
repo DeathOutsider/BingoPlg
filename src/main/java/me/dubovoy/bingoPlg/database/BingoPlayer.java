@@ -117,14 +117,4 @@ public class BingoPlayer {
         }
         return guiPlayers;
     }
-
-    public void setTeamId(int teamId, Player player){
-        try {
-            bingoPlg.getDb().updatePlayerTeam(player, teamId);
-
-        } catch (Exception e) {
-            bingoPlg.LogErrorsMsg(e);
-        }
-    }
-
 }

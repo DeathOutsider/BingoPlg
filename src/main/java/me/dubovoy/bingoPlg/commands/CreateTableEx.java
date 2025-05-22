@@ -43,21 +43,15 @@ public class CreateTableEx implements CommandExecutor, TabExecutor {
         int page = Integer.parseInt(strings[1]);
 
         int inv_size = 9*6;
-//                String inv_title = strings[0]+" Inventory";
+        int sh_size = 9*5;
         String inv_title = "Inventory";
-
-        int chance_to_get_inventory_item = 70;
-
-        ItemStack placeHolder = new ItemStack(Material.MAGENTA_STAINED_GLASS_PANE);
-        ItemStack nullItem = new ItemStack(Material.BARRIER);
 
         Inventory show_inventory = Bukkit.createInventory(player, inv_size, inv_title);
         List<Material> materials = Difficulty.readBingoFiles(bingoPlg.getInstance().getDataFolder().getAbsolutePath(), quality);
         bingoPlg.LogWMsg(materials.toString());
-//        Inventory inv_player = player.getInventory();
-        for (int i = 0; i < inv_size; i++) {
+        for (int i = 0; i < sh_size; i++) {
             try {
-                show_inventory.addItem(new ItemStack(materials.get(i + inv_size * (page-1))));
+                show_inventory.addItem(new ItemStack(materials.get(i + sh_size * (page-1))));
             } catch (Exception e) {
                 show_inventory.addItem(new ItemStack(Material.AIR));
             }
