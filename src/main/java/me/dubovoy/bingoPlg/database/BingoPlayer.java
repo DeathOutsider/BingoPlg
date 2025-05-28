@@ -75,7 +75,8 @@ public class BingoPlayer {
         Inventory guiPlayers = Bukkit.createInventory(player, 9 * 6, "Bingo!");
 
         BingoTable bingoTable = new BingoTable(bingoPlg);
-        GuiElements guiElements = new GuiElements(bingoPlg);
+        GuiElements guiElements = new GuiElements();
+        String bingoMode = bingoTable.getBingoMode();
 
         List<Material> items = bingoTable.getBingoItems();
         int gridSize = bingoTable.getGridSize();
@@ -106,6 +107,8 @@ public class BingoPlayer {
         int[] indOfPlayer = bingoTable.checkBingoInvItems(getInvItemStack(playerInvMaterials), "");
         int[] indOfTeammates = bingoTable.checkBingoInvItems(getInvItemStack(teammateInvMaterials), "");
 
+
+
         Arrays.sort(indOfPlayer);
         Arrays.sort(indOfTeammates);
 
@@ -115,6 +118,61 @@ public class BingoPlayer {
         for (int i:indOfPlayer){
             guiPlayers.setItem(i, playerInvItem);
         }
+
+
+
         return guiPlayers;
     }
+
+    public boolean isPlayerWin (Player player){
+        BingoTable bingoTable = new BingoTable(bingoPlg);
+        GuiElements guiElements = new GuiElements();
+        String bingoMode = bingoTable.getBingoMode();
+        int gridSize = bingoTable.getGridSize();
+        Inventory guiPlayers = player.getOpenInventory().getTopInventory();
+        ItemStack playerInvItem = guiElements.playerInvMarkerPotion();
+
+        if (bingoMode.equals("CROSS")){
+
+            boolean horizontalLine = false;
+            boolean verticalLine = false;
+
+
+            //Horizontal Line Confirm
+            for (int i = 0; i < gridSize; i++) {
+                int counter = 0;
+                for (int j = 0; j < gridSize; j++) {
+                    int ind = i * 9 + j;
+                    if (playerInvItem.getType() == guiPlayers.getItem(ind).getType()){
+                        counter ++;
+                        if (counter == gridSize){
+                            horizontalLine = true;
+                            if (bingoPlg.bLog)
+                                bingoPlg.LogIMsg("Player <" + player.getName() + "> " + i + " Horizontal Line Is Completed!");
+                        }
+                    }
+                }
+            }
+
+            //Vertical Line Confirm
+            for (int i = 0; i < gridSize; i++) {
+                int counter = 0;
+                for (int j = 0; j < gridSize; j++) {
+                    int ind = i  + j * 9;
+                    if (playerInvItem.getType() == guiPlayers.getItem(ind).getType()){
+                        counter ++;
+                        if (counter == gridSize){
+                            verticalLine = true;
+                            if (bingoPlg.bLog)
+                                bingoPlg.LogIMsg("Player <" + player.getName() + "> " + i + " Vertical Line Is Completed!");
+                        }
+                    }
+                }
+            }
+            return horizontalLine & verticalLine;
+        }
+
+        return false;
+    }
+
 }

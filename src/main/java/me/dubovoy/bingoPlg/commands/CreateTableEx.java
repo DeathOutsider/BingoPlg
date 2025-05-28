@@ -2,6 +2,7 @@ package me.dubovoy.bingoPlg.commands;
 
 import me.dubovoy.bingoPlg.BingoPlg;
 import me.dubovoy.bingoPlg.Msg;
+import me.dubovoy.bingoPlg.database.BingoDb;
 import me.dubovoy.bingoPlg.logic.Difficulty;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -15,6 +16,8 @@ import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class CreateTableEx implements CommandExecutor, TabExecutor {
@@ -47,7 +50,14 @@ public class CreateTableEx implements CommandExecutor, TabExecutor {
         String inv_title = "Inventory";
 
         Inventory show_inventory = Bukkit.createInventory(player, inv_size, inv_title);
-        List<Material> materials = Difficulty.readBingoFiles(bingoPlg.getInstance().getDataFolder().getAbsolutePath(), quality);
+//        List<Material> materials = Difficulty.readBingoFiles(bingoPlg.getInstance().getDataFolder().getAbsolutePath(), quality);
+        List<Material> materials = new ArrayList<>();
+        try {
+            materials = bingoPlg.getDb().getAllItemsForDifficulty(quality);
+
+        } catch (SQLException e) {
+            bingoPlg.LogErrorsMsg(e);
+        }
         bingoPlg.LogWMsg(materials.toString());
         for (int i = 0; i < sh_size; i++) {
             try {

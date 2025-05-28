@@ -21,6 +21,8 @@ public class BingoDb {
         teamsTable(connection);
         playersTable(connection);
         gameTable(connection);
+        settingsTable(connection);
+        insertGame();
     }
 
     private void teamsTable(Connection connection) throws SQLException{
@@ -55,6 +57,38 @@ public class BingoDb {
                     gridSize INTEGER DEFAULT (5),
                     items TEXT);
             """);
+        }
+    }
+
+    private void settingsTable(Connection connection) throws SQLException{
+        try (Statement statement = connection.createStatement()){
+            statement.execute("""
+                    CREATE TABLE IF NOT EXISTS settings(
+                    id INTEGER PRIMARY KEY,
+                    item TEXT UNIQUE,
+                    material TEXT UNIQUE,
+                    difficulty INTEGER DEFAULT (-1),
+                    minecraft_type TEXT,
+                    bingo_type TEXT);
+            """);
+        }
+    }
+
+    public void addItemSetting(String item, String material, int difficulty) throws SQLException{
+        boolean noItem = false;
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM settings WHERE item = ?")){
+            preparedStatement.setString(1, item);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            noItem = !resultSet.next();
+        }
+        if (!noItem)
+            return;
+        try (PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO settings (item, material, difficulty) VALUES (?, ?, ?)")){
+            preparedStatement.setString(1, item);
+            preparedStatement.setString(2, material);
+            preparedStatement.setInt(3, difficulty);
+            preparedStatement.executeUpdate();
+
         }
     }
 
@@ -170,6 +204,15 @@ public class BingoDb {
     }
 
     public void insertGame() throws SQLException{
+        boolean gameInDb = false;
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM game")){
+            ResultSet resultSet = preparedStatement.executeQuery();
+            gameInDb = resultSet.next();
+        }
+
+        if (gameInDb)
+            return;
+
         try (PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO game (id, title, gameMode) VALUES (?, ?, ?)")){
             preparedStatement.setInt(1, 0);
             preparedStatement.setString(2, "BINGO!");
@@ -206,7 +249,22 @@ public class BingoDb {
         }
     }
 
-    public void setItems(List<Material> materials) throws SQLException{
+    public String getBingoMode() throws SQLException{
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT gameMode FROM game WHERE id = 0")){
+            ResultSet resultSet = preparedStatement.executeQuery();
+            return resultSet.getString("gameMode");
+        }
+    }
+
+    public void setBingoMode(String mode) throws SQLException{
+        try (PreparedStatement preparedStatement = connection.prepareStatement("UPDATE game SET gameMode = ? WHERE id = 0")){
+            preparedStatement.setString(1, mode);
+            preparedStatement.executeUpdate();
+        }
+    }
+
+
+    public void setBingoTablesItems(List<Material> materials) throws SQLException{
         String items = materials.toString();
         items = items.replace("[", "");
         items = items.replace("]", "");
@@ -216,7 +274,7 @@ public class BingoDb {
         }
     }
 
-    public List<Material> getItems() throws SQLException{
+    public List<Material> getBingoTableItems() throws SQLException{
         List<Material> materials = new ArrayList<>();
         String items = "";
         try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT items FROM game WHERE id = 0")){
@@ -230,5 +288,32 @@ public class BingoDb {
             return materials;
         }
     }
+
+    public List<Material> getItemsForDifficulty(int difficulty) throws SQLException{
+        List<Material> materials = new ArrayList<>();
+        String items = "";
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM settings WHERE difficulty = ?")){
+            preparedStatement.setInt(1, difficulty);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                items += resultSet.getString("material") + ", ";
+            }
+            for (String i: items.split(", ")){
+                materials.add(Material.getMaterial(i));
+            }
+            return materials;
+        }
+    }
+
+    public List<Material> getAllItemsForDifficulty(int difficulty) throws SQLException{
+        List<Material> materials = new ArrayList<>();
+
+        for (int i = 0; i < difficulty + 1; i++) {
+            materials.addAll(getItemsForDifficulty(i));
+        }
+
+        return materials;
+    }
+
 
 }

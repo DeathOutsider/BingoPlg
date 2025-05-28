@@ -14,9 +14,6 @@ import java.util.List;
 
 public class GuiElements {
 
-    private final BingoPlg bingoPlg;
-    public GuiElements(BingoPlg bingoPlg) {this.bingoPlg = bingoPlg;}
-
     public ItemStack playerInvMarkerPotion(){
         ItemStack playerInvItem = new ItemStack(Material.STRUCTURE_VOID);
         ItemMeta playerInvItemMeta = playerInvItem.getItemMeta();

@@ -6,6 +6,7 @@ import me.dubovoy.bingoPlg.commands.teams.DeleteTeam;
 import me.dubovoy.bingoPlg.commands.teams.JoinTeam;
 import me.dubovoy.bingoPlg.commands.teams.TeleportTeam;
 import me.dubovoy.bingoPlg.database.BingoDb;
+import me.dubovoy.bingoPlg.database.SettingsItemsDb;
 import me.dubovoy.bingoPlg.events.CompassClicking;
 import me.dubovoy.bingoPlg.events.PlayerJoined;
 import org.bukkit.Bukkit;
@@ -49,12 +50,8 @@ public final class BingoPlg extends JavaPlugin {
             getLogger().severe("Error: " + e.getMessage());
             Bukkit.getPluginManager().disablePlugin(this);
         }
-
-//        List<Material> matterials = new ArrayList<>();
-//        matterials.add(Difficulty.jsReader(getDataFolder().getAbsolutePath(), 0));
-//        System.out.println(Difficulty.readJson(getDataFolder().getAbsolutePath(), 5));
-//        scoreboardDelay = getServer().getScheduler().runTaskTimer(this, ScoreboardTimer.getInstance(), 0, 20);
-
+        SettingsItemsDb settings = new SettingsItemsDb(this);
+        settings.fillSettings();
 
     }
 

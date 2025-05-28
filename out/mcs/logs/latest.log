@@ -1,23 +1,1292 @@
-[00:00:00] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
-[00:00:03] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
-[00:00:06] [Server thread/INFO]: DFather issued server command: /give DFather minecraft:open_eyeblossom
-[00:00:06] [Server thread/INFO]: [DFather: Gave 1 [Open Eyeblossom] to DFather]
-[00:00:06] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
-[00:00:11] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
-[00:00:25] [Server thread/INFO]: DFather issued server command: /time set night
-[00:00:25] [Server thread/INFO]: [DFather: Set the time to 13000]
-[00:00:28] [Server thread/INFO]: DFather issued server command: /crtb
-[00:00:28] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
-[00:01:36] [Server thread/INFO]: DFather issued server command: /crtb
-[00:01:36] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
-[00:06:18] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
-[00:06:23] [Server thread/INFO]: DFather issued server command: /crtb
-[00:06:24] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
-[00:06:51] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
-[00:06:53] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
-[00:07:07] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
-[00:07:25] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
-[00:07:27] [Server thread/INFO]: DFather issued server command: /crtb
-[00:07:27] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
-[00:07:44] [Server thread/INFO]: DFather lost connection: Disconnected
-[00:07:45] [Server thread/INFO]: DFather left the game
+[16:46:42] [ServerMain/INFO]: [bootstrap] Running Java 23 (Java HotSpot(TM) 64-Bit Server VM 23+37-2369; Oracle Corporation null) on Windows 10 10.0 (amd64)
+[16:46:42] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.5-45-main@a7a76c8 (2025-04-29T13:48:18Z) for Minecraft 1.21.5
+[16:46:43] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:46:43] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[16:46:43] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[16:46:47] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[16:46:49] [ServerMain/INFO]: Loaded 1373 recipes
+[16:46:49] [ServerMain/INFO]: Loaded 1484 advancements
+[16:46:49] [Server thread/INFO]: Starting minecraft server version 1.21.5
+[16:46:49] [Server thread/WARN]: ****************************
+[16:46:49] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
+[16:46:49] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
+[16:46:49] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
+[16:46:49] [Server thread/WARN]: ****************************
+[16:46:49] [Server thread/INFO]: Loading properties
+[16:46:49] [Server thread/INFO]: This server is running Paper version 1.21.5-45-main@a7a76c8 (2025-04-29T13:48:18Z) (Implementing API version 1.21.5-R0.1-SNAPSHOT)
+[16:46:49] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[16:46:49] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:46:49] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:46:49] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[16:46:49] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[16:46:49] [Server thread/INFO]: Default game type: SURVIVAL
+[16:46:49] [Server thread/INFO]: Generating keypair
+[16:46:50] [Server thread/INFO]: Starting Minecraft server on *:25565
+[16:46:50] [Server thread/INFO]: Using default channel type
+[16:46:50] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[16:46:50] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[16:46:50] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[16:46:50] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:46:50] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:46:50] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[16:46:50] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16:46:50] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[16:46:50] [Server thread/INFO]: Preparing level "world"
+[16:46:50] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[16:46:50] [Server thread/INFO]: Preparing spawn area: 0%
+[16:46:51] [Server thread/INFO]: Preparing spawn area: 30%
+[16:46:51] [Server thread/INFO]: Time elapsed: 639 ms
+[16:46:51] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[16:46:51] [Server thread/INFO]: Preparing spawn area: 0%
+[16:46:51] [Server thread/INFO]: Time elapsed: 104 ms
+[16:46:51] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[16:46:51] [Server thread/INFO]: Preparing spawn area: 0%
+[16:46:51] [Server thread/INFO]: Time elapsed: 57 ms
+[16:46:51] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[16:46:51] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[16:46:51] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[16:46:51] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[16:46:51] [Server thread/INFO]: [BingoPlg] DeleteTeam - команда была загружена
+[16:46:51] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[16:46:51] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[16:46:51] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[16:46:51] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[16:46:51] [Server thread/INFO]: [BingoPlg] CreateTable - команда была загружена
+[16:46:51] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[16:46:51] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[16:46:51] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[16:46:52] [Server thread/INFO]: [spark] Starting background profiler...
+[16:46:52] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows10/amd64), so the built-in Java engine will be used instead.
+[16:46:52] [Server thread/INFO]: Done preparing level "world" (1.994s)
+[16:46:52] [Server thread/INFO]: Running delayed init tasks
+[16:46:52] [Server thread/INFO]: Done (10.803s)! For help, type "help"
+[16:48:15] [User Authenticator #0/INFO]: UUID of player DFather is e8a82329-9e7d-3b17-87a6-f0647e994b8d
+[16:48:16] [Server thread/INFO]: [BingoPlg] DFather Is already in Database
+[16:48:16] [Server thread/INFO]: DFather joined the game
+[16:48:16] [Server thread/INFO]: DFather[/127.0.0.1:51506] logged in with entity id 25 at ([world]-654.2886695145328, 63.0, -76.33547589807256)
+[16:48:18] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:09:13] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:09:13] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:09:13] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:09:13] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:09:13] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[17:09:13] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:09:13] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:09:13] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:09:14] [Server thread/INFO]: Loaded 1373 recipes
+[17:09:14] [Server thread/INFO]: Loaded 1484 advancements
+[17:09:14] [Paper Async Command Builder Thread Pool - 1/ERROR]: Caught previously unhandled exception :
+[17:09:14] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:09:14] [Paper Async Command Builder Thread Pool - 1/ERROR]: Paper Async Command Builder Thread Pool - 1
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1056) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:499) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:619) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+[17:09:14] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:09:14] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 307ms.
+[17:09:14] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:09:14] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:09:14] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:09:14] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:09:14] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:09:14] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:09:14] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:09:14] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:09:14] [Server thread/INFO]: [BingoPlg] DeleteTeam - команда была загружена
+[17:09:14] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:09:14] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:09:14] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[17:09:14] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[17:09:14] [Server thread/INFO]: [BingoPlg] CreateTable - команда была загружена
+[17:09:14] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:09:14] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[17:09:14] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:09:14] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:09:16] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:09:19] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:09:37] [Server thread/INFO]: DFather issued server command: /crtb
+[17:09:40] [Server thread/ERROR]: [BingoPlg] Ошибка! [SQLITE_BUSY] The database file is locked (database is locked)
+[17:09:40] [Server thread/ERROR]: [BingoPlg] org.sqlite.SQLiteException: [SQLITE_BUSY] The database file is locked (database is locked)
+[17:09:40] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3006ms or 60 ticks behind
+[17:09:40] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:09:40] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:09:46] [Server thread/INFO]: DFather issued server command: /crtb
+[17:09:47] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:10:10] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:10:17] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:10:19] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:10:54] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:10:54] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:10:54] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:10:54] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:10:54] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[17:10:54] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:10:54] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:10:54] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:10:54] [Server thread/INFO]: Loaded 1373 recipes
+[17:10:54] [Server thread/INFO]: Loaded 1484 advancements
+[17:10:54] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:10:54] [Paper Async Command Builder Thread Pool - 0/ERROR]: Caught previously unhandled exception :
+[17:10:54] [Paper Async Command Builder Thread Pool - 0/ERROR]: Paper Async Command Builder Thread Pool - 0
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1056) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:499) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:619) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+[17:10:54] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:10:54] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 104ms.
+[17:10:54] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:10:54] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:10:54] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:10:54] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:10:54] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:10:54] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:10:54] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:10:54] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:10:54] [Server thread/INFO]: [BingoPlg] DeleteTeam - команда была загружена
+[17:10:54] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:10:54] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:10:54] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[17:10:54] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[17:10:54] [Server thread/INFO]: [BingoPlg] CreateTable - команда была загружена
+[17:10:54] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:10:54] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[17:10:54] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:10:54] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:10:56] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:10:56] [Server thread/INFO]: [BingoPlg] CROSS
+[17:11:35] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:11:35] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:11:35] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:11:35] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:11:35] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[17:11:35] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:11:35] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:11:35] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:11:35] [Server thread/INFO]: Loaded 1373 recipes
+[17:11:35] [Server thread/INFO]: Loaded 1484 advancements
+[17:11:35] [Paper Async Command Builder Thread Pool - 2/ERROR]: Caught previously unhandled exception :
+[17:11:35] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:11:35] [Paper Async Command Builder Thread Pool - 2/ERROR]: Paper Async Command Builder Thread Pool - 2
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1056) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:499) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:619) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+[17:11:35] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:11:35] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 86ms.
+[17:11:35] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:11:35] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:11:35] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:11:35] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:11:35] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:11:35] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:11:35] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:11:35] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:11:35] [Server thread/INFO]: [BingoPlg] DeleteTeam - команда была загружена
+[17:11:35] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:11:35] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:11:35] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[17:11:35] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[17:11:35] [Server thread/INFO]: [BingoPlg] CreateTable - команда была загружена
+[17:11:35] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:11:35] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[17:11:35] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:11:35] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:11:38] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:11:38] [Server thread/INFO]: [BingoPlg] 2 Is Completed!
+[17:11:38] [Server thread/INFO]: [BingoPlg] 2 Is Completed!
+[17:11:38] [Server thread/INFO]: [BingoPlg] 2 Is Completed!
+[17:11:54] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:11:54] [Server thread/INFO]: [BingoPlg] 2 Is Completed!
+[17:11:54] [Server thread/INFO]: [BingoPlg] 2 Is Completed!
+[17:11:54] [Server thread/INFO]: [BingoPlg] 2 Is Completed!
+[17:11:59] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:11:59] [Server thread/INFO]: [BingoPlg] 2 Is Completed!
+[17:11:59] [Server thread/INFO]: [BingoPlg] 2 Is Completed!
+[17:11:59] [Server thread/INFO]: [BingoPlg] 2 Is Completed!
+[17:12:09] [Server thread/INFO]: DFather issued server command: /give DFather minecraft:copper_block
+[17:12:24] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:12:24] [Server thread/INFO]: [BingoPlg] 2 Is Completed!
+[17:12:24] [Server thread/INFO]: [BingoPlg] 2 Is Completed!
+[17:12:24] [Server thread/INFO]: [BingoPlg] 2 Is Completed!
+[17:13:20] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:13:20] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:13:20] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:13:20] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:13:20] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[17:13:20] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:13:20] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:13:20] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:13:20] [Server thread/INFO]: Loaded 1373 recipes
+[17:13:20] [Server thread/INFO]: Loaded 1484 advancements
+[17:13:20] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:13:20] [Paper Async Command Builder Thread Pool - 3/ERROR]: Caught previously unhandled exception :
+[17:13:20] [Paper Async Command Builder Thread Pool - 3/ERROR]: Paper Async Command Builder Thread Pool - 3
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1056) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:499) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:619) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+[17:13:20] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:13:20] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 134ms.
+[17:13:20] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:13:20] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:13:20] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:13:20] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:13:20] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:13:20] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:13:20] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:13:20] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:13:20] [Server thread/INFO]: [BingoPlg] DeleteTeam - команда была загружена
+[17:13:20] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:13:20] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:13:20] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[17:13:20] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[17:13:20] [Server thread/INFO]: [BingoPlg] CreateTable - команда была загружена
+[17:13:20] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:13:20] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[17:13:20] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:13:20] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:13:22] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:13:22] [Server thread/INFO]: [BingoPlg] 2 Is Completed!
+[17:13:22] [Server thread/INFO]: [BingoPlg] 2 Is Completed!
+[17:13:36] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:13:36] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:13:36] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:13:36] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:13:36] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[17:13:36] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:13:36] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:13:36] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:13:37] [Server thread/INFO]: Loaded 1373 recipes
+[17:13:37] [Server thread/INFO]: Loaded 1484 advancements
+[17:13:37] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:13:37] [Paper Async Command Builder Thread Pool - 4/ERROR]: Caught previously unhandled exception :
+[17:13:37] [Paper Async Command Builder Thread Pool - 4/ERROR]: Paper Async Command Builder Thread Pool - 4
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1056) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:499) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:619) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+[17:13:37] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:13:37] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 86ms.
+[17:13:37] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:13:37] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:13:37] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:13:37] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:13:37] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:13:37] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:13:37] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:13:37] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:13:37] [Server thread/INFO]: [BingoPlg] DeleteTeam - команда была загружена
+[17:13:37] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:13:37] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:13:37] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[17:13:37] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[17:13:37] [Server thread/INFO]: [BingoPlg] CreateTable - команда была загружена
+[17:13:37] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:13:37] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[17:13:37] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:13:37] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:13:39] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:13:39] [Server thread/INFO]: [BingoPlg] 0 Is Completed!
+[17:13:39] [Server thread/INFO]: [BingoPlg] 2 Is Completed!
+[17:13:44] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:13:44] [Server thread/INFO]: [BingoPlg] 0 Is Completed!
+[17:13:48] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:13:48] [Server thread/INFO]: [BingoPlg] 0 Is Completed!
+[17:13:48] [Server thread/INFO]: [BingoPlg] 2 Is Completed!
+[17:16:22] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:16:22] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:16:22] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:16:22] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:16:22] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[17:16:22] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:16:22] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:16:22] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:16:22] [Server thread/INFO]: Loaded 1373 recipes
+[17:16:22] [Server thread/INFO]: Loaded 1484 advancements
+[17:16:22] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:16:22] [Paper Async Command Builder Thread Pool - 5/ERROR]: Caught previously unhandled exception :
+[17:16:22] [Paper Async Command Builder Thread Pool - 5/ERROR]: Paper Async Command Builder Thread Pool - 5
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1056) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:499) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:619) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+[17:16:22] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:16:22] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 76ms.
+[17:16:22] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:16:22] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:16:22] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:16:22] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:16:22] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:16:22] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:16:22] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:16:22] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:16:22] [Server thread/INFO]: [BingoPlg] DeleteTeam - команда была загружена
+[17:16:22] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:16:22] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:16:22] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[17:16:22] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[17:16:22] [Server thread/INFO]: [BingoPlg] CreateTable - команда была загружена
+[17:16:22] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:16:22] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[17:16:22] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:16:22] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:16:25] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:16:25] [Server thread/INFO]: [BingoPlg] 0 Horizontal Line Is Completed!
+[17:16:25] [Server thread/INFO]: [BingoPlg] 2 Horizontal Line Is Completed!
+[17:16:26] [Server thread/INFO]: DFather lost connection: Disconnected
+[17:16:26] [Server thread/INFO]: DFather left the game
+[17:16:57] [User Authenticator #1/INFO]: UUID of player DFather is e8a82329-9e7d-3b17-87a6-f0647e994b8d
+[17:16:58] [Server thread/INFO]: [BingoPlg] DFather Is already in Database
+[17:16:58] [Server thread/INFO]: DFather joined the game
+[17:16:58] [Server thread/INFO]: DFather[/127.0.0.1:51777] logged in with entity id 1119 at ([world]-653.7640097912097, 63.0, -77.44844868510069)
+[17:16:59] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:16:59] [Server thread/INFO]: [BingoPlg] 0 Horizontal Line Is Completed!
+[17:16:59] [Server thread/INFO]: [BingoPlg] 2 Horizontal Line Is Completed!
+[17:17:07] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:17:07] [Server thread/INFO]: [BingoPlg] 0 Horizontal Line Is Completed!
+[17:17:07] [Server thread/INFO]: [BingoPlg] 2 Horizontal Line Is Completed!
+[17:17:07] [Server thread/INFO]: [BingoPlg] 0 Vertical Line Is Completed!
+[17:17:37] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:17:37] [Server thread/INFO]: [BingoPlg] 0 Horizontal Line Is Completed!
+[17:17:37] [Server thread/INFO]: [BingoPlg] 2 Horizontal Line Is Completed!
+[17:17:37] [Server thread/INFO]: [BingoPlg] 0 Vertical Line Is Completed!
+[17:17:37] [Server thread/INFO]: [BingoPlg] 1 Vertical Line Is Completed!
+[17:17:44] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:17:44] [Server thread/INFO]: [BingoPlg] 0 Horizontal Line Is Completed!
+[17:17:44] [Server thread/INFO]: [BingoPlg] 2 Horizontal Line Is Completed!
+[17:17:44] [Server thread/INFO]: [BingoPlg] 0 Vertical Line Is Completed!
+[17:17:44] [Server thread/INFO]: [BingoPlg] 1 Vertical Line Is Completed!
+[17:17:49] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:17:49] [Server thread/INFO]: [BingoPlg] 0 Horizontal Line Is Completed!
+[17:17:49] [Server thread/INFO]: [BingoPlg] 2 Horizontal Line Is Completed!
+[17:17:49] [Server thread/INFO]: [BingoPlg] 0 Vertical Line Is Completed!
+[17:17:49] [Server thread/INFO]: [BingoPlg] 1 Vertical Line Is Completed!
+[17:17:58] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:17:58] [Server thread/INFO]: [BingoPlg] 0 Horizontal Line Is Completed!
+[17:17:58] [Server thread/INFO]: [BingoPlg] 1 Horizontal Line Is Completed!
+[17:17:58] [Server thread/INFO]: [BingoPlg] 2 Horizontal Line Is Completed!
+[17:17:58] [Server thread/INFO]: [BingoPlg] 0 Vertical Line Is Completed!
+[17:17:58] [Server thread/INFO]: [BingoPlg] 1 Vertical Line Is Completed!
+[17:17:58] [Server thread/INFO]: [BingoPlg] 2 Vertical Line Is Completed!
+[17:25:52] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:25:52] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:25:52] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:25:52] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:25:52] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[17:25:52] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:25:52] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:25:52] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:25:52] [Server thread/INFO]: Loaded 1373 recipes
+[17:25:52] [Server thread/INFO]: Loaded 1484 advancements
+[17:25:52] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:25:52] [Paper Async Command Builder Thread Pool - 7/ERROR]: Caught previously unhandled exception :
+[17:25:52] [Paper Async Command Builder Thread Pool - 7/ERROR]: Paper Async Command Builder Thread Pool - 7
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1056) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:499) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:619) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+[17:25:52] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:25:53] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 158ms.
+[17:25:53] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:25:53] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:25:53] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:25:53] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:25:53] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:25:53] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:25:53] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:25:53] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:25:53] [Server thread/INFO]: [BingoPlg] DeleteTeam - команда была загружена
+[17:25:53] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:25:53] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:25:53] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[17:25:53] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[17:25:53] [Server thread/INFO]: [BingoPlg] CreateTable - команда была загружена
+[17:25:53] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:25:53] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[17:25:53] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:25:53] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:25:55] [Server thread/INFO]: DFather lost connection: Disconnected
+[17:25:55] [Server thread/INFO]: DFather left the game
+[17:27:32] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:27:32] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:27:32] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:27:32] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:27:32] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[17:27:32] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:27:32] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:27:32] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:27:32] [Server thread/INFO]: Loaded 1373 recipes
+[17:27:32] [Server thread/INFO]: Loaded 1484 advancements
+[17:27:32] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:27:32] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:27:32] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 114ms.
+[17:27:32] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:27:32] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:27:32] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:27:32] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:27:32] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:27:32] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:27:32] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:27:32] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:27:32] [Server thread/INFO]: [BingoPlg] DeleteTeam - команда была загружена
+[17:27:32] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:27:32] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:27:32] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[17:27:32] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[17:27:32] [Server thread/INFO]: [BingoPlg] CreateTable - команда была загружена
+[17:27:32] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:27:32] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[17:27:32] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:27:32] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:27:35] [User Authenticator #2/INFO]: UUID of player DFather is e8a82329-9e7d-3b17-87a6-f0647e994b8d
+[17:27:35] [Server thread/INFO]: [BingoPlg] DFather Is already in Database
+[17:27:35] [Server thread/INFO]: DFather joined the game
+[17:27:35] [Server thread/INFO]: DFather[/127.0.0.1:51862] logged in with entity id 1468 at ([world]-653.7640097912097, 63.0, -77.44844868510069)
+[17:27:36] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:27:36] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Horizontal Line Is Completed!
+[17:27:36] [Server thread/INFO]: [BingoPlg] Player <DFather> 1 Horizontal Line Is Completed!
+[17:27:36] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:27:36] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[17:27:36] [Server thread/INFO]: [BingoPlg] Player <DFather> 1 Vertical Line Is Completed!
+[17:27:36] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Vertical Line Is Completed!
+[17:27:36] [Server thread/INFO]: [BingoPlg] PLAYER WIN!
+[17:27:52] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:27:58] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:28:03] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:28:03] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:28:15] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:28:15] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:28:22] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:28:22] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:28:30] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:28:30] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Horizontal Line Is Completed!
+[17:28:30] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:28:40] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:28:40] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Horizontal Line Is Completed!
+[17:28:40] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:28:40] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[17:28:40] [Server thread/INFO]: [BingoPlg] PLAYER WIN!
+[17:28:46] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:28:46] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Horizontal Line Is Completed!
+[17:28:46] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:28:46] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[17:28:46] [Server thread/INFO]: [BingoPlg] PLAYER WIN!
+[17:28:48] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:28:48] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Horizontal Line Is Completed!
+[17:28:48] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:28:48] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[17:28:48] [Server thread/INFO]: [BingoPlg] PLAYER WIN!
+[17:28:53] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:28:53] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:28:53] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[17:28:53] [Server thread/INFO]: [BingoPlg] PLAYER WIN!
+[17:28:58] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:28:58] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:34:05] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:34:05] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:34:06] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:34:06] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:34:10] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:34:10] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:34:17] [Server thread/INFO]: [BingoPlg] <DFather> Has been clicked with Bingo_Compass
+[17:34:17] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Horizontal Line Is Completed!
+[17:34:17] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:34:17] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[17:34:17] [Server thread/INFO]: [BingoPlg] PLAYER WIN!
+[17:44:39] [Server thread/INFO]: DFather lost connection: Disconnected
+[17:44:39] [Server thread/INFO]: DFather left the game
+[17:44:41] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:44:41] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:44:41] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:44:41] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:44:41] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[17:44:41] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:44:41] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:44:41] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:44:41] [Server thread/INFO]: Loaded 1373 recipes
+[17:44:41] [Server thread/INFO]: Loaded 1484 advancements
+[17:44:41] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:44:41] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:44:41] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 123ms.
+[17:44:41] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:44:41] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:44:41] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:44:41] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:44:41] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:44:41] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:44:41] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:44:41] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:44:41] [Server thread/INFO]: [BingoPlg] DeleteTeam - команда была загружена
+[17:44:41] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:44:41] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:44:41] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[17:44:41] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[17:44:41] [Server thread/INFO]: [BingoPlg] CreateTable - команда была загружена
+[17:44:41] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:44:41] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[17:44:41] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:44:41] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:44:43] [User Authenticator #3/INFO]: UUID of player DFather is e8a82329-9e7d-3b17-87a6-f0647e994b8d
+[17:44:43] [Server thread/INFO]: [BingoPlg] DFather Is already in Database
+[17:44:43] [Server thread/INFO]: DFather joined the game
+[17:44:43] [Server thread/INFO]: DFather[/127.0.0.1:52053] logged in with entity id 2131 at ([world]-654.2771180193351, 63.0, -76.68277211472801)
+[17:44:44] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:44:44] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Horizontal Line Is Completed!
+[17:44:44] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:44:44] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[17:44:44] [Server thread/INFO]: [BingoPlg] PLAYER WIN!
+[17:45:14] [Server thread/INFO]: Unknown game mode: dfather
+...de dfather survival<--[HERE]
+[17:45:33] [Server thread/INFO]: Set DFather's game mode to Survival Mode
+[17:45:36] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:45:36] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Horizontal Line Is Completed!
+[17:45:36] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:45:36] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[17:45:36] [Server thread/INFO]: [BingoPlg] PLAYER WIN!
+[17:46:03] [Server thread/INFO]: DFather lost connection: Disconnected
+[17:46:04] [Server thread/INFO]: DFather left the game
+[17:46:07] [Server thread/INFO]: No player was found
+[17:46:09] [Server thread/INFO]: Unknown game mode: dfather
+...de dfather survival<--[HERE]
+[17:46:11] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:46:11] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:46:11] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:46:11] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:46:11] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[17:46:11] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:46:11] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:46:11] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:46:11] [Server thread/INFO]: Loaded 1373 recipes
+[17:46:11] [Server thread/INFO]: Loaded 1484 advancements
+[17:46:11] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:46:11] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:46:11] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 71ms.
+[17:46:11] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:46:11] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:46:11] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:46:11] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:46:11] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:46:11] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:46:11] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:46:11] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:46:11] [Server thread/INFO]: [BingoPlg] DeleteTeam - команда была загружена
+[17:46:11] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:46:11] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:46:11] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[17:46:11] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[17:46:11] [Server thread/INFO]: [BingoPlg] CreateTable - команда была загружена
+[17:46:11] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:46:11] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[17:46:11] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:46:11] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:46:14] [User Authenticator #4/INFO]: UUID of player DFather is e8a82329-9e7d-3b17-87a6-f0647e994b8d
+[17:46:14] [Server thread/INFO]: [BingoPlg] DFather Is already in Database
+[17:46:14] [Server thread/INFO]: DFather joined the game
+[17:46:14] [Server thread/INFO]: DFather[/127.0.0.1:52065] logged in with entity id 2141 at ([world]-652.3835327278027, 65.99442662744718, -77.34131401497561)
+[17:46:20] [Server thread/INFO]: Set DFather's game mode to Survival Mode
+[17:46:23] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:46:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Horizontal Line Is Completed!
+[17:46:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:46:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[17:46:23] [Server thread/INFO]: [BingoPlg] PLAYER WIN!
+[17:46:34] [Server thread/INFO]: Set DFather's game mode to Survival Mode
+[17:46:41] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:46:41] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:46:42] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:46:42] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:47:19] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:47:19] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:47:22] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:47:24] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:47:25] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:50:01] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:50:01] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:50:02] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:50:02] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Horizontal Line Is Completed!
+[17:50:02] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:50:02] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[17:50:02] [Server thread/INFO]: [BingoPlg] PLAYER WIN!
+[17:50:12] [Server thread/INFO]: Set DFather's game mode to Survival Mode
+[17:51:17] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:51:17] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Horizontal Line Is Completed!
+[17:51:17] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:51:17] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[17:51:17] [Server thread/INFO]: [BingoPlg] PLAYER WIN!
+[17:51:24] [Server thread/INFO]: Set DFather's game mode to Survival Mode
+[17:51:24] [Server thread/INFO]: DFather lost connection: Disconnected
+[17:51:24] [Server thread/INFO]: DFather left the game
+[17:51:31] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:51:31] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:51:31] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:51:31] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:51:31] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[17:51:31] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:51:31] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:51:31] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:51:31] [Server thread/INFO]: Loaded 1373 recipes
+[17:51:31] [Server thread/INFO]: Loaded 1484 advancements
+[17:51:31] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:51:31] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:51:31] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 120ms.
+[17:51:31] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:51:31] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:51:31] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:51:31] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:51:31] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:51:31] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:51:31] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:51:31] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:51:31] [Server thread/INFO]: [BingoPlg] DeleteTeam - команда была загружена
+[17:51:31] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:51:31] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:51:31] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[17:51:31] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[17:51:31] [Server thread/INFO]: [BingoPlg] CreateTable - команда была загружена
+[17:51:31] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:51:31] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[17:51:31] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:51:31] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:51:34] [User Authenticator #5/INFO]: UUID of player DFather is e8a82329-9e7d-3b17-87a6-f0647e994b8d
+[17:51:34] [Server thread/INFO]: [BingoPlg] DFather Is already in Database
+[17:51:34] [Server thread/INFO]: DFather joined the game
+[17:51:34] [Server thread/INFO]: DFather[/127.0.0.1:52109] logged in with entity id 2386 at ([world]-652.4159522999555, 63.0, -77.88060155144755)
+[17:51:39] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:51:39] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Horizontal Line Is Completed!
+[17:51:39] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:51:39] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[17:51:39] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[17:51:51] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:51:51] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Horizontal Line Is Completed!
+[17:51:51] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:51:51] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[17:51:51] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[17:51:54] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:51:54] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Horizontal Line Is Completed!
+[17:51:54] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:51:54] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[17:51:54] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[17:52:21] [Server thread/INFO]: DFather issued server command: /crtb
+[17:52:57] [Server thread/INFO]: Set DFather's game mode to Survival Mode
+[17:52:58] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:52:59] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:53:11] [Server thread/INFO]: Set DFather's game mode to Creative Mode
+[17:53:26] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:53:36] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:53:44] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:53:58] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:53:58] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:54:03] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:54:03] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:54:13] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:54:13] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:54:13] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Vertical Line Is Completed!
+[17:54:13] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[17:54:22] [Server thread/INFO]: Set DFather's game mode to Creative Mode
+[17:54:30] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:54:30] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:54:30] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Vertical Line Is Completed!
+[17:54:30] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[17:54:40] [Server thread/INFO]: Set DFather's game mode to Creative Mode
+[17:55:05] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[17:55:05] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[17:55:05] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:55:05] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:55:05] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[17:55:05] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:55:05] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[17:55:05] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[17:55:06] [Server thread/INFO]: Loaded 1373 recipes
+[17:55:06] [Server thread/INFO]: Loaded 1484 advancements
+[17:55:06] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:55:06] [Paper Async Command Builder Thread Pool - 6/ERROR]: Caught previously unhandled exception :
+[17:55:06] [Paper Async Command Builder Thread Pool - 6/ERROR]: Paper Async Command Builder Thread Pool - 6
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1056) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:499) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:619) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+[17:55:06] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[17:55:06] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 77ms.
+[17:55:06] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[17:55:06] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[17:55:06] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[17:55:06] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:55:06] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[17:55:06] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[17:55:06] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[17:55:06] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[17:55:06] [Server thread/INFO]: [BingoPlg] DeleteTeam - команда была загружена
+[17:55:06] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[17:55:06] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[17:55:06] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[17:55:06] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[17:55:06] [Server thread/INFO]: [BingoPlg] CreateTable - команда была загружена
+[17:55:06] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[17:55:06] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[17:55:06] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[17:55:06] [Server thread/INFO]: CONSOLE: Reload complete.
+[17:55:08] [Server thread/INFO]: DFather lost connection: Disconnected
+[17:55:08] [Server thread/INFO]: DFather left the game
+[17:55:09] [User Authenticator #6/INFO]: UUID of player DFather is e8a82329-9e7d-3b17-87a6-f0647e994b8d
+[17:55:09] [Server thread/INFO]: [BingoPlg] DFather Is already in Database
+[17:55:09] [Server thread/INFO]: DFather joined the game
+[17:55:09] [Server thread/INFO]: DFather[/127.0.0.1:52141] logged in with entity id 2530 at ([world]-652.4536230539566, 64.83026505290509, -77.18932459946095)
+[17:55:12] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:55:12] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:55:12] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Vertical Line Is Completed!
+[17:55:12] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[17:55:22] [Server thread/INFO]: Set DFather's game mode to Creative Mode
+[17:58:19] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[17:58:19] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[17:58:19] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Vertical Line Is Completed!
+[17:58:19] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:02:21] [Server thread/INFO]: Set DFather's game mode to Creative Mode
+[18:02:23] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:02:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:02:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Vertical Line Is Completed!
+[18:02:23] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:02:27] [Server thread/INFO]: Set DFather's game mode to Creative Mode
+[18:02:34] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:02:48] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:03:00] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:03:04] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:03:04] [Server thread/INFO]: [BingoPlg] Player <DFather> 1 Horizontal Line Is Completed!
+[18:03:08] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:03:08] [Server thread/INFO]: [BingoPlg] Player <DFather> 1 Horizontal Line Is Completed!
+[18:03:12] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:03:12] [Server thread/INFO]: [BingoPlg] Player <DFather> 1 Horizontal Line Is Completed!
+[18:03:12] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:03:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:03:21] [Server thread/INFO]: [BingoPlg] Player <DFather> 1 Horizontal Line Is Completed!
+[18:03:21] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:03:21] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Vertical Line Is Completed!
+[18:03:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:03:37] [Server thread/INFO]: Set DFather's game mode to Creative Mode
+[18:03:38] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:03:38] [Server thread/INFO]: [BingoPlg] Player <DFather> 1 Horizontal Line Is Completed!
+[18:03:38] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:03:38] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Vertical Line Is Completed!
+[18:03:38] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:03:50] [Server thread/INFO]: Set DFather's game mode to Creative Mode
+[18:04:09] [Server thread/INFO]: DFather issued server command: /die
+[18:04:10] [Server thread/INFO]: DFather issued server command: /die
+[18:04:11] [Server thread/INFO]: DFather issued server command: /die
+[18:04:12] [Server thread/INFO]: DFather issued server command: /die
+[18:04:13] [Server thread/INFO]: DFather issued server command: /die
+[18:04:16] [Server thread/INFO]: DFather issued server command: /die
+[18:04:31] [Server thread/INFO]: Made DFather a server operator
+[18:05:31] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.0 ambient @a ~ ~ ~ 100 0 0
+[18:05:31] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.0 to DFather]
+[18:05:40] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.1 ambient @a ~ ~ ~ 100 0 0
+[18:05:40] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.1 to DFather]
+[18:05:46] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.1 ambient @a ~ ~ ~ 100 2 0
+[18:05:46] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.1 to DFather]
+[18:05:48] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.1 ambient @a ~ ~ ~ 100 1 0
+[18:05:48] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.1 to DFather]
+[18:05:53] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.0 ambient @a ~ ~ ~ 100 1 0
+[18:05:53] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.0 to DFather]
+[18:05:58] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.3 ambient @a ~ ~ ~ 100 1 0
+[18:05:58] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.3 to DFather]
+[18:06:03] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.4 ambient @a ~ ~ ~ 100 1 0
+[18:06:03] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.4 to DFather]
+[18:06:08] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.5 ambient @a ~ ~ ~ 100 1 0
+[18:06:08] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.5 to DFather]
+[18:06:14] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.6 ambient @a ~ ~ ~ 100 1 0
+[18:06:14] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.6 to DFather]
+[18:06:28] [Server thread/INFO]: DFather issued server command: /playsound minecraft:music_disc.pigstep ambient @a ~ ~ ~ 100 1 0
+[18:06:28] [Server thread/INFO]: [DFather: Played sound minecraft:music_disc.pigstep to DFather]
+[18:06:51] [Server thread/INFO]: DFather issued server command: /playsound minecraft:music_disc.pigstep ambient @a ~ ~ ~ 100 3 0
+[18:06:53] [Server thread/INFO]: DFather issued server command: /playsound minecraft:music_disc.pigstep ambient @a ~ ~ ~ 100 2 0
+[18:06:53] [Server thread/INFO]: [DFather: Played sound minecraft:music_disc.pigstep to DFather]
+[18:07:01] [Server thread/INFO]: DFather lost connection: Disconnected
+[18:07:01] [Server thread/INFO]: DFather left the game
+[18:07:02] [User Authenticator #7/INFO]: UUID of player DFather is e8a82329-9e7d-3b17-87a6-f0647e994b8d
+[18:07:03] [Server thread/INFO]: [BingoPlg] DFather Is already in Database
+[18:07:03] [Server thread/INFO]: DFather joined the game
+[18:07:03] [Server thread/INFO]: DFather[/127.0.0.1:52273] logged in with entity id 2876 at ([world]-653.5456721544037, 63.0, -76.94309393194402)
+[18:07:06] [Server thread/INFO]: DFather issued server command: /playsound minecraft:music_disc.pigstep ambient @a ~ ~ ~ 100 2 0
+[18:07:06] [Server thread/INFO]: [DFather: Played sound minecraft:music_disc.pigstep to DFather]
+[18:07:20] [Server thread/INFO]: DFather issued server command: /stopsound
+[18:07:27] [Server thread/INFO]: DFather issued server command: /stopsound @a
+[18:07:27] [Server thread/INFO]: [DFather: Stopped all sounds]
+[18:07:29] [Server thread/INFO]: DFather issued server command: /playsound minecraft:music_disc.pigstep ambient @a ~ ~ ~ 100 2 0
+[18:07:29] [Server thread/INFO]: [DFather: Played sound minecraft:music_disc.pigstep to DFather]
+[18:07:31] [Server thread/INFO]: DFather issued server command: /stopsound @a
+[18:07:31] [Server thread/INFO]: [DFather: Stopped all sounds]
+[18:07:45] [Server thread/INFO]: DFather issued server command: /playsound cave ambient @a ~ ~ ~ 100 1 0
+[18:07:45] [Server thread/INFO]: [DFather: Played sound minecraft:cave to DFather]
+[18:07:49] [Server thread/INFO]: DFather issued server command: /playsound cave ambient @a ~ ~ ~ 100 2 0
+[18:07:49] [Server thread/INFO]: [DFather: Played sound minecraft:cave to DFather]
+[18:07:54] [Server thread/INFO]: DFather issued server command: /stopsound
+[18:07:56] [Server thread/INFO]: DFather issued server command: /stopsound @a
+[18:07:56] [Server thread/INFO]: [DFather: Stopped all sounds]
+[18:08:14] [Server thread/INFO]: DFather issued server command: /playsound minecraft:entity.villager.death ambient @a ~ ~ ~ 100 2 0
+[18:08:14] [Server thread/INFO]: [DFather: Played sound minecraft:entity.villager.death to DFather]
+[18:08:17] [Server thread/INFO]: DFather issued server command: /playsound minecraft:entity.villager.death ambient @a ~ ~ ~ 100 1 0
+[18:08:17] [Server thread/INFO]: [DFather: Played sound minecraft:entity.villager.death to DFather]
+[18:08:21] [Server thread/INFO]: DFather issued server command: /playsound minecraft:entity.villager.death ambient @a ~ ~ ~ 100 0 0
+[18:08:21] [Server thread/INFO]: [DFather: Played sound minecraft:entity.villager.death to DFather]
+[18:08:29] [Server thread/INFO]: DFather issued server command: /playsound minecraft:entity.villager.death ambient @a ~ ~ ~ 100 1 0
+[18:08:29] [Server thread/INFO]: [DFather: Played sound minecraft:entity.villager.death to DFather]
+[18:08:45] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.6 ambient @a ~ ~ ~ 100 1 0
+[18:08:45] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.6 to DFather]
+[18:08:51] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.7 ambient @a ~ ~ ~ 100 1 0
+[18:08:51] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.7 to DFather]
+[18:08:56] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.8 ambient @a ~ ~ ~ 100 1 0
+[18:08:56] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.8 to DFather]
+[18:09:04] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.0 ambient @a ~ ~ ~ 100 1 0
+[18:09:04] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.0 to DFather]
+[18:12:09] [Server thread/INFO]: DFather lost connection: Disconnected
+[18:12:10] [Server thread/INFO]: DFather left the game
+[18:12:12] [User Authenticator #8/INFO]: UUID of player DFather is e8a82329-9e7d-3b17-87a6-f0647e994b8d
+[18:12:12] [Server thread/INFO]: [BingoPlg] DFather Is already in Database
+[18:12:12] [Server thread/INFO]: DFather joined the game
+[18:12:12] [Server thread/INFO]: DFather[/127.0.0.1:52354] logged in with entity id 3113 at ([world]-653.5249920935981, 63.0, -77.72443637678019)
+[18:12:24] [Server thread/INFO]: DFather issued server command: /startbingo
+[18:12:24] [Server thread/INFO]: [BingoPlg] Game Bingo! Was Started By DFather
+[18:12:33] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[18:12:33] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[18:12:33] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:12:33] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:12:33] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[18:12:33] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[18:12:33] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[18:12:33] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[18:12:33] [Server thread/INFO]: Loaded 1373 recipes
+[18:12:33] [Server thread/INFO]: Loaded 1484 advancements
+[18:12:33] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:12:33] [Paper Async Command Builder Thread Pool - 8/ERROR]: Caught previously unhandled exception :
+[18:12:33] [Paper Async Command Builder Thread Pool - 8/ERROR]: Paper Async Command Builder Thread Pool - 8
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1056) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:499) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:619) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+[18:12:33] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[18:12:34] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 202ms.
+[18:12:34] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[18:12:34] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[18:12:34] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[18:12:34] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:12:34] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[18:12:34] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[18:12:34] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[18:12:34] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[18:12:34] [Server thread/INFO]: [BingoPlg] DeleteTeam - команда была загружена
+[18:12:34] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[18:12:34] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[18:12:34] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[18:12:34] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[18:12:34] [Server thread/INFO]: [BingoPlg] CreateTable - команда была загружена
+[18:12:34] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[18:12:34] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[18:12:34] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[18:12:34] [Server thread/INFO]: CONSOLE: Reload complete.
+[18:12:34] [Server thread/INFO]: DFather lost connection: Disconnected
+[18:12:34] [Server thread/INFO]: DFather left the game
+[18:12:35] [User Authenticator #8/INFO]: UUID of player DFather is e8a82329-9e7d-3b17-87a6-f0647e994b8d
+[18:12:35] [Server thread/INFO]: [BingoPlg] DFather Is already in Database
+[18:12:35] [Server thread/INFO]: DFather joined the game
+[18:12:35] [Server thread/INFO]: DFather[/127.0.0.1:52359] logged in with entity id 3130 at ([world]-653.5249920935981, 63.0, -77.72443637678019)
+[18:12:38] [Server thread/INFO]: DFather issued server command: /startbingo
+[18:12:38] [Server thread/INFO]: [BingoPlg] Game Bingo! Was Started By DFather
+[18:12:56] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.1 ambient @a ~ ~ ~ 100 1 0
+[18:12:56] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.1 to DFather]
+[18:13:10] [Server thread/INFO]: [BingoPlg] Game Bingo! Was Started By CONSOLE
+[18:13:24] [Server thread/INFO]: [BingoPlg] Game Bingo! Was Started By CONSOLE
+[18:13:28] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:13:30] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:13:32] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:13:42] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.1 ambient @a ~ ~ ~ 100 1 0
+[18:13:42] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.1 to DFather]
+[18:13:48] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.2 ambient @a ~ ~ ~ 100 1 0
+[18:13:48] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.2 to DFather]
+[18:13:52] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.3 ambient @a ~ ~ ~ 100 1 0
+[18:13:52] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.3 to DFather]
+[18:13:56] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.4 ambient @a ~ ~ ~ 100 1 0
+[18:13:56] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.4 to DFather]
+[18:14:03] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.1 ambient @a ~ ~ ~ 100 1 0
+[18:14:03] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.1 to DFather]
+[18:14:08] [Server thread/INFO]: DFather issued server command: /playsound minecraft:item.goat_horn.sound.0 ambient @a ~ ~ ~ 100 1 0
+[18:14:08] [Server thread/INFO]: [DFather: Played sound minecraft:item.goat_horn.sound.0 to DFather]
+[18:14:38] [Server thread/INFO]: [BingoPlg] Game Bingo! Was Started By CONSOLE
+[18:14:41] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[18:14:41] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[18:14:41] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:14:41] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:14:41] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[18:14:41] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[18:14:41] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[18:14:41] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[18:14:41] [Server thread/INFO]: Loaded 1373 recipes
+[18:14:41] [Server thread/INFO]: Loaded 1484 advancements
+[18:14:41] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:14:41] [Paper Async Command Builder Thread Pool - 10/ERROR]: Caught previously unhandled exception :
+[18:14:41] [Paper Async Command Builder Thread Pool - 10/ERROR]: Paper Async Command Builder Thread Pool - 10
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1056) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:499) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:619) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+[18:14:41] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[18:14:41] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[18:14:41] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[18:14:41] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:14:41] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[18:14:41] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[18:14:41] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[18:14:41] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[18:14:41] [Server thread/INFO]: [BingoPlg] DeleteTeam - команда была загружена
+[18:14:41] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[18:14:41] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[18:14:41] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[18:14:41] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[18:14:41] [Server thread/INFO]: [BingoPlg] CreateTable - команда была загружена
+[18:14:41] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[18:14:41] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[18:14:41] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[18:14:41] [Server thread/INFO]: CONSOLE: Reload complete.
+[18:14:50] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[18:14:50] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[18:14:50] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:14:50] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:14:50] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[18:14:50] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[18:14:50] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[18:14:50] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[18:14:51] [Server thread/INFO]: Loaded 1373 recipes
+[18:14:51] [Server thread/INFO]: Loaded 1484 advancements
+[18:14:51] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:14:51] [Paper Async Command Builder Thread Pool - 9/ERROR]: Caught previously unhandled exception :
+[18:14:51] [Paper Async Command Builder Thread Pool - 9/ERROR]: Paper Async Command Builder Thread Pool - 9
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1024) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1059) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1056) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:499) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:619) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-45-a7a76c8]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+[18:14:51] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\bingoplg.jar'...
+[18:14:51] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\bingoplg.jar' in 122ms.
+[18:14:51] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[18:14:51] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - BingoPlg (1.0)
+[18:14:51] [Server thread/INFO]: [BingoPlg] Loading server plugin BingoPlg v1.0
+[18:14:51] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:14:51] [Server thread/INFO]: [BingoPlg] Enabling BingoPlg v1.0
+[18:14:51] [Server thread/WARN]: [BingoPlg] Привет! BingoPlugin успешно загружен!
+[18:14:51] [Server thread/INFO]: [BingoPlg] Heal - команда была загружена
+[18:14:51] [Server thread/INFO]: [BingoPlg] CreateTeam - команда была загружена
+[18:14:51] [Server thread/INFO]: [BingoPlg] DeleteTeam - команда была загружена
+[18:14:51] [Server thread/INFO]: [BingoPlg] JoinTeam - команда была загружена
+[18:14:51] [Server thread/INFO]: [BingoPlg] TeleportTeam - команда была загружена
+[18:14:51] [Server thread/INFO]: [BingoPlg] Table - команда была загружена
+[18:14:51] [Server thread/INFO]: [BingoPlg] StartBingo - команда была загружена
+[18:14:51] [Server thread/INFO]: [BingoPlg] CreateTable - команда была загружена
+[18:14:51] [Server thread/INFO]: [BingoPlg] PlayerJoin event - событие было загружено
+[18:14:51] [Server thread/INFO]: [BingoPlg] PlayerInteractCompass event - событие было загружено
+[18:14:51] [Server thread/WARN]: [BingoPlg] Команды и События - успешно загружены!
+[18:14:51] [Server thread/INFO]: CONSOLE: Reload complete.
+[18:14:55] [Server thread/INFO]: [BingoPlg] Game Bingo! Was Started By CONSOLE
+[18:15:00] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:15:05] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:15:26] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:15:42] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:15:42] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:15:42] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:15:42] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:15:52] [Server thread/INFO]: Set DFather's game mode to Creative Mode
+[18:15:56] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:15:56] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:15:56] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:15:56] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:15:57] [Server thread/INFO]: DFather issued server command: /gamemode creative
+[18:15:57] [Server thread/INFO]: [DFather: Set own game mode to Creative Mode]
+[18:16:10] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:16:10] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:16:12] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:16:12] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:16:12] [Server thread/INFO]: [BingoPlg] PLAYER WIN!
+[18:16:16] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:16:16] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:16:18] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:16:18] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:16:18] [Server thread/INFO]: [BingoPlg] PLAYER WIN!
+[18:16:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:16:21] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:16:21] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:16:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:16:28] [Server thread/INFO]: DFather issued server command: /gamemode creative
+[18:16:28] [Server thread/INFO]: [DFather: Set own game mode to Creative Mode]
+[18:16:29] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:16:29] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:16:29] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:16:29] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:16:31] [Server thread/INFO]: DFather issued server command: /gamemode creative
+[18:16:31] [Server thread/INFO]: [DFather: Set own game mode to Creative Mode]
+[18:16:38] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:16:38] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:16:38] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:16:38] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:16:40] [Server thread/INFO]: DFather issued server command: /gamemode creative
+[18:16:40] [Server thread/INFO]: [DFather: Set own game mode to Creative Mode]
+[18:20:59] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:20:59] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:20:59] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:20:59] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:16] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:16] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:16] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:16] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:18] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:18] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:18] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:18] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:18] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:18] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:18] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:18] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:19] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:19] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:19] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:19] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:19] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:19] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:19] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:19] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:20] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:20] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:20] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:20] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:20] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:20] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:20] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:20] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:20] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:20] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:20] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:20] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:20] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:20] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:20] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:20] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:21] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:22] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:22] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:22] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:22] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:22] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:22] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:22] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:22] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:22] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:22] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:22] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:22] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:23] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:24] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:24] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:24] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:24] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:24] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:24] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:24] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:24] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:24] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:24] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:24] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:24] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:25] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:25] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:25] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:25] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:21:25] [Server thread/INFO]: [BingoPlg] Player <DFather> Has been clicked with Bingo_Compass
+[18:21:25] [Server thread/INFO]: [BingoPlg] Player <DFather> 2 Horizontal Line Is Completed!
+[18:21:25] [Server thread/INFO]: [BingoPlg] Player <DFather> 0 Vertical Line Is Completed!
+[18:21:25] [Server thread/INFO]: [BingoPlg] Player <DFather> Has collected Bindo!
+[18:28:46] [Server thread/INFO]: Stopping server
+[18:28:46] [Server thread/INFO]: [BingoPlg] Disabling BingoPlg v1.0
+[18:28:46] [Server thread/WARN]: [BingoPlg] >> Пока-пока( BingoPlugin успешно отключен!
+[18:28:46] [Server thread/INFO]: Saving players
+[18:28:46] [Server thread/INFO]: DFather lost connection: Server closed
+[18:28:46] [Server thread/INFO]: DFather left the game
+[18:28:46] [Server thread/INFO]: Saving worlds
+[18:28:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Saved 218 block chunks, 82 entity chunks, 0 poi chunks in world 'world' in 0,07s
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[18:28:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[18:28:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[18:28:46] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[18:28:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[18:28:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[18:28:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[18:28:46] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[18:28:46] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[18:28:46] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[18:28:46] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[18:28:46] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

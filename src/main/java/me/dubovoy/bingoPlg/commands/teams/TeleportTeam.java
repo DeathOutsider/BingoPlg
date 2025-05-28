@@ -28,7 +28,7 @@ public class TeleportTeam implements CommandExecutor, TabExecutor {
         }
 
         int tpX = 0;
-        int tpY = 300;
+        int tpY = 200;
         int tpZ = 0;
 
         if (strings.length < 1){

@@ -1,14 +1,11 @@
 package me.dubovoy.bingoPlg.database;
 
-import com.massivecraft.massivecore.store.Coll;
 import me.dubovoy.bingoPlg.BingoPlg;
 import me.dubovoy.bingoPlg.logic.Difficulty;
 import org.bukkit.Material;
-import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -17,28 +14,39 @@ public class BingoTable {
     private final BingoPlg bingoPlg;
     public BingoTable(BingoPlg bingoPlg) {this.bingoPlg = bingoPlg;}
 
-    public void CreateBingoTable(){
+    public void createBingoTable(){
         try{
             int itemsCount = getGridSize() * getGridSize();
             int quality = bingoPlg.getDb().getDifficulty();
 
             List<Material> items = new ArrayList<>();
-            List<Material> materials = Difficulty.readBingoFiles(bingoPlg.getDataFolder().getAbsolutePath(), quality);
-
+//            List<Material> materials = Difficulty.readBingoFiles(bingoPlg.getDataFolder().getAbsolutePath(), quality);
+            List<Material> materials = bingoPlg.getDb().getAllItemsForDifficulty(quality);
             Collections.shuffle(materials);
             for (int i = 0; i < itemsCount; i++) {
                 items.add(materials.get(i));
             }
-            bingoPlg.getDb().setItems(items);
+            bingoPlg.getDb().setBingoTablesItems(items);
         } catch (Exception e) {
             bingoPlg.LogErrorsMsg(e);
         }
     }
 
+    public boolean isBingoTableExists(){
+        try{
+            List<Material> ls = bingoPlg.getDb().getBingoTableItems();
+        } catch (Exception e) {
+//            bingoPlg.LogErrorsMsg(e);
+            return false;
+        }
+        return true;
+    }
+
+
     public List<Material> getBingoItems(){
         List<Material> items = new ArrayList<>();
         try{
-            items = bingoPlg.getDb().getItems();
+            items = bingoPlg.getDb().getBingoTableItems();
 
         } catch (Exception e) {
             bingoPlg.LogErrorsMsg(e);
@@ -100,11 +108,41 @@ public class BingoTable {
         return message;
     }
 
+    public String getBingoMode(){
+        String mode = "CROSS";
+        try{
+            mode = bingoPlg.getDb().getBingoMode();
+
+        } catch (Exception e) {
+            bingoPlg.LogErrorsMsg(e);
+        }
+        return mode;
+    }
+
+    public String setBingoMode(String mode){
+        String message = null;
+        List<String> modes = new ArrayList<>();
+        modes.add("CROSS");
+        modes.add("TABLE");
+        if (!modes.contains(mode)){
+            message = "Недопустимый режим бинго!";
+        } else
+            try{
+                bingoPlg.getDb().setBingoMode(mode);
+                message = "Режим Bingo теперь " + mode;
+                if (bingoPlg.bLog)
+                    bingoPlg.LogIMsg("Bingo Mode was set at " + mode);
+            } catch (Exception e) {
+                bingoPlg.LogErrorsMsg(e);
+            }
+        return message;
+    }
+
     public String getBingoItemsStringTable(){
         StringBuilder table = new StringBuilder();
 
         try{
-            List<Material> items = bingoPlg.getDb().getItems();
+            List<Material> items = bingoPlg.getDb().getBingoTableItems();
             int rowItems = bingoPlg.getDb().getGridSize();
             for (int i = 0; i < rowItems; i++) {
                 for (int j = 0; j < rowItems; j++) {

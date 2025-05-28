@@ -4,9 +4,8 @@ import me.dubovoy.bingoPlg.BingoPlg;
 import me.dubovoy.bingoPlg.Items.BingoItems;
 import me.dubovoy.bingoPlg.Msg;
 import me.dubovoy.bingoPlg.database.BingoTable;
-import me.dubovoy.bingoPlg.logic.Difficulty;
 import org.bukkit.Bukkit;
-import org.bukkit.Material;
+import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -16,9 +15,6 @@ import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class StartBingo implements CommandExecutor, TabExecutor {
@@ -30,24 +26,17 @@ public class StartBingo implements CommandExecutor, TabExecutor {
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String @NotNull [] strings) {
         try {
             for (Player p: Bukkit.getOnlinePlayers()){
-//                ItemStack startItem = new ItemStack(Material.DIRT);
                 ItemStack startItem = new BingoItems().BingoCompass();
                 p.getInventory().clear();
                 p.getInventory().addItem(startItem);
+                p.playSound(p, Sound.ITEM_GOAT_HORN_SOUND_1, 100, 1);
                 Msg.sendTitle(p, "§o§dBingo!", "§l§n§aНачалось!");
             }
 
-            try{
-                bingoPlg.getDb().insertGame();
-            } catch (SQLException e) {
-                bingoPlg.LogErrorsMsg(e);
-            }
-
             BingoTable table = new BingoTable(bingoPlg);
-            table.CreateBingoTable();
-
+            if (!table.isBingoTableExists())
+                table.createBingoTable();
             bingoPlg.LogIMsg("Game Bingo! Was Started By " + commandSender.getName());
-//            bingoPlg.LogIMsg(table.getBingoItemsStringTable());
         } catch (Exception e) {
             bingoPlg.LogErrorsMsg(e);
         }

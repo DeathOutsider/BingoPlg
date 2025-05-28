@@ -5,6 +5,7 @@ import me.dubovoy.bingoPlg.Msg;
 import org.bukkit.entity.Player;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class BingoTeam {
@@ -80,6 +81,42 @@ public class BingoTeam {
 
         return success;
     }
+
+    public int getTeamByPlayer(Player player){
+        int teamId = -1;
+        try {
+            teamId = bingoPlg.getDb().getTeamByPlayer(player);
+
+        } catch (SQLException e) {
+            bingoPlg.LogErrorsMsg(e);
+        }
+
+        return teamId;
+    }
+
+    public String getTeamName(int teamId){
+        String teamName = "";
+        try {
+            teamName = bingoPlg.getDb().getTeamById(teamId);
+
+        } catch (SQLException e) {
+            bingoPlg.LogErrorsMsg(e);
+        }
+
+        return teamName;
+    }
+
+//    public List<Player> getTeamPlayers(int teamId){
+//        List<Player> teamPlayers = new ArrayList<>();
+//        try {
+//            teamPlayers = bingoPlg.getDb().get;
+//
+//        } catch (SQLException e) {
+//            bingoPlg.LogErrorsMsg(e);
+//        }
+//
+//        return teamPlayers;
+//    }
 
     public List<String> getTeams(){
         List<String> success = null;

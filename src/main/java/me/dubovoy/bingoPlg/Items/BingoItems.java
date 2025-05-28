@@ -21,4 +21,16 @@ public class BingoItems {
         compass.setItemMeta(compassMeta);
         return compass;
     }
+
+    public ItemStack BingoClock(){
+        ItemStack clock = new ItemStack(Material.CLOCK);
+        ItemMeta clockMeta = clock.getItemMeta();
+        clockMeta.addEnchant(Enchantment.KNOCKBACK, 1, false);
+        clockMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+        clockMeta.setLore(Collections.singletonList(ChatColor.DARK_PURPLE + "Нажмите ПКМ по воздуху, чтобы увидеть меню настроек Bingo!"));
+        clockMeta.setDisplayName(ChatColor.GOLD + "Bingo! Settings");
+        clock.setItemMeta(clockMeta);
+        return clock;
+    }
+
 }

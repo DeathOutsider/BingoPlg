@@ -3,10 +3,12 @@ version: '1.0'
 main: me.dubovoy.bingoPlg.BingoPlg
 api-version: '1.21'
 authors: [ Dubovoy6211@gmail.com ]
+
 commands:
   heal:
     description: "Heals player"
     aliases: [ h ]
+    permissions: bingoPlg.heal
     usage: "/heal"
 
   createteam:
@@ -43,3 +45,15 @@ commands:
     description: ""
     aliases: [ sb ]
     usage: "/StartBingo"
+
+  permissions:
+    bingoPlg.*:
+      description: Gives access to all doorman commands
+      children:
+        bingoPlg.heal: op
+#        bingoPlg.ban: true
+#        bingoPlg.knock: true
+#        bingoPlg.denied: false
+    bingoPlg.heal:
+      description: "Право для использования команды /heal"
+      default: op
