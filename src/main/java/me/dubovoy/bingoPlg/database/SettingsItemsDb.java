@@ -27,7 +27,8 @@ public class SettingsItemsDb {
 
     public void fillBingo(){
         List<String> allItems = new ArrayList<>();
-        String[][] items = {{"Birch Button", "BIRCH_BUTTON", "1"}, {"Birch Button", "BIRCH_BUTTON", "1"}};
+        //ItemName, Material, Meta, Difficulty, MinecraftType, BingoType
+        String[][] items = {{"Birch Button", "BIRCH_BUTTON", "", "1"}, {"Birch Button", "BIRCH_BUTTON", "1"}};
 
     }
 

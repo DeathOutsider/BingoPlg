@@ -67,6 +67,7 @@ public class BingoDb {
                     id INTEGER PRIMARY KEY,
                     item TEXT UNIQUE,
                     material TEXT UNIQUE,
+                    meta TEXT,
                     difficulty INTEGER DEFAULT (-1),
                     minecraft_type TEXT,
                     bingo_type TEXT);
