@@ -25,6 +25,12 @@ public class SettingsItemsDb {
         }
     }
 
+    public void fillBingo(){
+        List<String> allItems = new ArrayList<>();
+        String[][] items = {{"Birch Button", "BIRCH_BUTTON", "1"}, {"Birch Button", "BIRCH_BUTTON", "1"}};
+
+    }
+
     public List<String> fillItems(){
         List<String> items = new ArrayList<>();
         items.add("Birch Button");

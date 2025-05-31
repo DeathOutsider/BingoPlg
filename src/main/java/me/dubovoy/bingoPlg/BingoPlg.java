@@ -7,8 +7,11 @@ import me.dubovoy.bingoPlg.commands.teams.JoinTeam;
 import me.dubovoy.bingoPlg.commands.teams.TeleportTeam;
 import me.dubovoy.bingoPlg.database.BingoDb;
 import me.dubovoy.bingoPlg.database.SettingsItemsDb;
+import me.dubovoy.bingoPlg.events.ClockClicking;
 import me.dubovoy.bingoPlg.events.CompassClicking;
 import me.dubovoy.bingoPlg.events.PlayerJoined;
+import me.dubovoy.bingoPlg.plgRecipes.CompassRecipe;
+import me.dubovoy.bingoPlg.plgRecipes.MusicDisksRecipes;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Listener;
@@ -21,12 +24,18 @@ public final class BingoPlg extends JavaPlugin {
 
     private BingoDb database;
     public boolean bLog = true;
+    public int maxGridSize = 6;
+    public int minGridSize = 1;
+    public int maxDifficulty = 5;
+    public int minDifficulty = 0;
+    public int deltaCoordinates = 1000;
 
     @Override
     public void onEnable() {
         // Plugin startup logic
-        LogWMsg("Привет! BingoPlugin успешно загружен!");
-        CustomRecipes.register();
+        LogWMsg("Привет! BingoPlugin v. 1.2.0 успешно загружен!");
+        CompassRecipe.register();
+        MusicDisksRecipes.register();
         InitCommand("Heal", new HealPlayer());
         InitCommand("CreateTeam", new CreateTeam(this));
         InitCommand("DeleteTeam", new DeleteTeam(this));
@@ -35,9 +44,11 @@ public final class BingoPlg extends JavaPlugin {
         InitCommand("Table", new CreateTableEx(this));
         InitCommand("StartBingo", new StartBingo(this));
         InitCommand("CreateTable", new GenerateTable(this));
+        InitCommand("SettingsClock", new SettingsClock());
 
         InitEvent("PlayerJoin event", new PlayerJoined(this));
         InitEvent("PlayerInteractCompass event", new CompassClicking(this));
+        InitEvent("PlayerInteractCompass event", new ClockClicking(this));
 
         LogWMsg("Команды и События - успешно загружены!");
 
@@ -85,8 +96,8 @@ public final class BingoPlg extends JavaPlugin {
     }
 
     public Integer RandomCoordinates(){
-        int max = 3000;
-        int min = -3000;
+        int max = deltaCoordinates;
+        int min = -1 * max;
         return (int) ((Math.random()*(max-min))+min);
     }
 

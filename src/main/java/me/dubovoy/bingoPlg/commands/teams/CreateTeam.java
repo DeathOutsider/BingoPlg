@@ -23,14 +23,20 @@ public class CreateTeam implements CommandExecutor, TabExecutor {
 
         if (strings.length != 1){
             Msg.send(commandSender, "§eВведите название новой команды!");
-            return true;
+            return false;
         }
 
         String teamName = strings[0].toLowerCase();
         BingoTeam bingoTeam = new BingoTeam(bingoPlg);
         String message = bingoTeam.createTeam(teamName);
         Msg.send(commandSender, message);
-
+        try{
+            Player player = (Player) commandSender;
+            bingoTeam.playerJoinTeam(player, teamName);
+            Msg.send(player, message);
+        } catch (Exception e) {
+            bingoPlg.LogErrorsMsg(e);
+        }
         return true;
     }
 

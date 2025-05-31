@@ -15,7 +15,12 @@ public class HealPlayer implements CommandExecutor, TabExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String @NotNull [] strings) {
         if (!(commandSender instanceof Player player)){
-            commandSender.sendMessage("Only players can use this command");
+            commandSender.sendMessage("Only players can use this command.");
+            return true;
+        }
+
+        if (!(player.hasPermission("bingoPlg.heal"))){
+            Msg.send(player, "§eТолько оператор может пользоваться этой командой.");
             return true;
         }
 

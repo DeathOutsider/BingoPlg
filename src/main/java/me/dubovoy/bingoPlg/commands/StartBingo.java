@@ -5,6 +5,8 @@ import me.dubovoy.bingoPlg.Items.BingoItems;
 import me.dubovoy.bingoPlg.Msg;
 import me.dubovoy.bingoPlg.database.BingoTable;
 import org.bukkit.Bukkit;
+import org.bukkit.GameMode;
+import org.bukkit.NamespacedKey;
 import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -24,11 +26,22 @@ public class StartBingo implements CommandExecutor, TabExecutor {
 
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String @NotNull [] strings) {
+
+        if (commandSender instanceof Player ){
+            if (!(commandSender.hasPermission("bingoPlg.start_bingo"))){
+                Msg.send(commandSender, "§eТолько оператор может пользоваться этой командой.");
+                return true;
+            }
+        }
+
         try {
             for (Player p: Bukkit.getOnlinePlayers()){
                 ItemStack startItem = new BingoItems().BingoCompass();
                 p.getInventory().clear();
                 p.getInventory().addItem(startItem);
+                p.setGameMode(GameMode.SURVIVAL);
+                p.setHealthScale(20);
+                p.setFoodLevel(20);
                 p.playSound(p, Sound.ITEM_GOAT_HORN_SOUND_1, 100, 1);
                 Msg.sendTitle(p, "§o§dBingo!", "§l§n§aНачалось!");
             }

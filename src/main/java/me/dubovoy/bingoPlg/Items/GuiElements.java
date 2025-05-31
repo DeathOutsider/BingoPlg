@@ -56,4 +56,28 @@ public class GuiElements {
         return spaceHolder;
     }
 
+    public ItemStack button(String name, Material material){
+        ItemStack redButton = new ItemStack(material);
+        ItemMeta redButtonMeta = redButton.getItemMeta();
+        redButtonMeta.setDisplayName(ChatColor.RESET + name);
+        redButton.setItemMeta(redButtonMeta);
+        return redButton;
+    }
+
+    public ItemStack redButton(String name){
+        ItemStack redButton = new ItemStack(Material.RED_CONCRETE);
+        ItemMeta redButtonMeta = redButton.getItemMeta();
+        redButtonMeta.setDisplayName(ChatColor.RESET + name);
+        redButton.setItemMeta(redButtonMeta);
+        return redButton;
+    }
+
+    public ItemStack greenButton(String name){
+        ItemStack greenButton = new ItemStack(Material.LIME_CONCRETE);
+        ItemMeta greenButtonMeta = greenButton.getItemMeta();
+        greenButtonMeta.setDisplayName(ChatColor.RESET + name);
+        greenButton.setItemMeta(greenButtonMeta);
+        return greenButton;
+    }
+
 }

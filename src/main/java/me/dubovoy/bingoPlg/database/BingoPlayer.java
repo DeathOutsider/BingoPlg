@@ -1,6 +1,7 @@
 package me.dubovoy.bingoPlg.database;
 
 import me.dubovoy.bingoPlg.BingoPlg;
+import me.dubovoy.bingoPlg.Items.BingoItems;
 import me.dubovoy.bingoPlg.Items.GuiElements;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -107,8 +108,6 @@ public class BingoPlayer {
         int[] indOfPlayer = bingoTable.checkBingoInvItems(getInvItemStack(playerInvMaterials), "");
         int[] indOfTeammates = bingoTable.checkBingoInvItems(getInvItemStack(teammateInvMaterials), "");
 
-
-
         Arrays.sort(indOfPlayer);
         Arrays.sort(indOfTeammates);
 
@@ -118,8 +117,6 @@ public class BingoPlayer {
         for (int i:indOfPlayer){
             guiPlayers.setItem(i, playerInvItem);
         }
-
-
 
         return guiPlayers;
     }
@@ -137,7 +134,6 @@ public class BingoPlayer {
             boolean horizontalLine = false;
             boolean verticalLine = false;
 
-
             //Horizontal Line Confirm
             for (int i = 0; i < gridSize; i++) {
                 int counter = 0;
@@ -145,6 +141,7 @@ public class BingoPlayer {
                     int ind = i * 9 + j;
                     if (playerInvItem.getType() == guiPlayers.getItem(ind).getType()){
                         counter ++;
+//                        bingoPlg.LogWMsg(Integer.toString(counter));
                         if (counter == gridSize){
                             horizontalLine = true;
                             if (bingoPlg.bLog)
@@ -161,6 +158,7 @@ public class BingoPlayer {
                     int ind = i  + j * 9;
                     if (playerInvItem.getType() == guiPlayers.getItem(ind).getType()){
                         counter ++;
+//                        bingoPlg.LogWMsg(Integer.toString(counter));
                         if (counter == gridSize){
                             verticalLine = true;
                             if (bingoPlg.bLog)
@@ -173,6 +171,33 @@ public class BingoPlayer {
         }
 
         return false;
+    }
+
+    public Inventory showSettingsGui(Player player){
+        Inventory settingsGui = showGui(player);
+        GuiElements guiElements = new GuiElements();
+        BingoTable bingoTable = new BingoTable(bingoPlg);
+        int difficulty = bingoTable.getDifficulty();
+        int gridSize = bingoTable.getGridSize();
+
+        ItemStack diffBtn = guiElements.button("Difficulty: 0", Material.RED_CONCRETE);
+        ItemStack sizeBtn = guiElements.button("Grid Size: 1", Material.RED_CONCRETE);
+        ItemStack tableBtn = guiElements.button("Generate Table", Material.BEACON);
+        ItemStack modeBtn = guiElements.button("Mode: " + bingoTable.getBingoMode(), Material.COMMAND_BLOCK);
+
+        if (difficulty > bingoPlg.minDifficulty){
+            diffBtn = guiElements.button("Difficulty: " + difficulty, Material.LIME_CONCRETE);
+            diffBtn.setAmount(difficulty);
+        }
+        if (gridSize > bingoPlg.minGridSize) {
+            sizeBtn = guiElements.button("Grid Size: " + gridSize, Material.LIME_CONCRETE);
+            sizeBtn.setAmount(gridSize);
+        }
+        settingsGui.setItem(7, diffBtn);
+        settingsGui.setItem(8, sizeBtn);
+        settingsGui.setItem(35, tableBtn);
+        settingsGui.setItem(26, modeBtn);
+        return settingsGui;
     }
 
 }

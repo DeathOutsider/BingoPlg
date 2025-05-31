@@ -7,6 +7,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
+import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -22,7 +23,14 @@ public class DeleteTeam implements CommandExecutor, TabExecutor {
 
         if (strings.length != 1){
             Msg.send(commandSender, "§eВведите название команды для удаления!");
-            return true;
+            return false;
+        }
+
+        if (commandSender instanceof Player ){
+            if (!(commandSender.hasPermission("bingoPlg.delete_team"))){
+                Msg.send(commandSender, "§eТолько оператор может пользоваться этой командой.");
+                return true;
+            }
         }
 
         String teamName = strings[0].toLowerCase();

@@ -1,5 +1,5 @@
 name: BingoPlg
-version: '1.0'
+version: '1.2.0'
 main: me.dubovoy.bingoPlg.BingoPlg
 api-version: '1.21'
 authors: [ Dubovoy6211@gmail.com ]
@@ -11,49 +11,68 @@ commands:
     permissions: bingoPlg.heal
     usage: "/heal"
 
-  createteam:
+  CreateTeam:
     description: ""
     aliases: [ crtm ]
-    usage: "/createteam"
+    usage: "/CreateTeam <Название вашей команды>"
 
-  deleteteam:
+  DeleteTeam:
     description: ""
     aliases: [ dltm ]
-    usage: "/deleteteam"
+    permissions: bingoPlg.delete_team
+    usage: "/DeleteTeam <Название команды>"
 
-  jointeam:
+  JoinTeam:
     description: ""
     aliases: [ jt, join ]
-    usage: "/jointeam"
+    usage: "/JoinTeam <Название вашей команды>"
 
-  teleportteam:
+  TeleportTeam:
     description: ""
-    aliases: [ tpt, tptm]
-    usage: "/teleportteam"
+    aliases: [ tptm ]
+    permissions: bingoPlg.teleport_team
+    usage: "/TeleportTeam <Название команды>"
 
-  table:
+  Table:
     description: ""
     aliases: [ ]
-    usage: "/table 0"
+    permissions: bingoPlg.table
+    usage: "/Table 0"
 
-  createtable:
+  CreateTable:
     description: ""
     aliases: [ crtb ]
-    usage: "/createtable"
+    permissions: bingoPlg.create_table
+    usage: "/CreateTable"
 
   StartBingo:
     description: ""
     aliases: [ sb ]
+    permission: bingoPlg.start_bingo
     usage: "/StartBingo"
+
+  SettingsClock:
+    description: ""
+    aliases: [ sc ]
+    permission: bingoPlg.settings_clock
+    usage: "/SettingsClock"
 
   permissions:
     bingoPlg.*:
       description: Gives access to all doorman commands
       children:
         bingoPlg.heal: op
-#        bingoPlg.ban: true
-#        bingoPlg.knock: true
-#        bingoPlg.denied: false
-    bingoPlg.heal:
-      description: "Право для использования команды /heal"
-      default: op
+
+        bingoPlg.delete_team: op
+        bingoPlg.teleport_team: op
+
+        bingoPlg.table: op
+        bingoPlg.create_table: op
+
+        bingoPlg.start_bingo: op
+
+        bingoPlg.settings_clock: op
+
+#    bingoPlg.heal:
+#      description: "Право для использования команды /heal"
+#      default: op

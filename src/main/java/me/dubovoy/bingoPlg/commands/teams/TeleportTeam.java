@@ -27,6 +27,11 @@ public class TeleportTeam implements CommandExecutor, TabExecutor {
             return true;
         }
 
+        if (!(commandSender.hasPermission("bingoPlg.teleport_team"))){
+            Msg.send(commandSender, "§eТолько оператор может пользоваться этой командой.");
+            return true;
+        }
+
         int tpX = 0;
         int tpY = 200;
         int tpZ = 0;

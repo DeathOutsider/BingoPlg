@@ -4,6 +4,7 @@ import me.dubovoy.bingoPlg.BingoPlg;
 import me.dubovoy.bingoPlg.logic.Difficulty;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -176,9 +177,12 @@ public class BingoTable {
         try{
             List<Material> bingoItems = getBingoItems();
             List<Material> invItems = new ArrayList<>();
+            List<Material> metas = new ArrayList<>();
             for (ItemStack itemStack: pInventory){
                 Material material = itemStack.getType();
+                ItemMeta meta = itemStack.getItemMeta();
                 if (!invItems.contains(material)){
+
                     invItems.add(material);
                     if (bingoItems.contains(material)){
                         int ind = bingoItems.indexOf(material);

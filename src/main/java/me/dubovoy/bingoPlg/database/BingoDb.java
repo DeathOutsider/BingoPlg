@@ -216,7 +216,7 @@ public class BingoDb {
         try (PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO game (id, title, gameMode) VALUES (?, ?, ?)")){
             preparedStatement.setInt(1, 0);
             preparedStatement.setString(2, "BINGO!");
-            preparedStatement.setString(3, "V H");
+            preparedStatement.setString(3, "CROSS");
             preparedStatement.executeUpdate();
         }
     }
