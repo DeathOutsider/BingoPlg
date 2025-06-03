@@ -18,7 +18,7 @@ public class BingoTable {
     public void createBingoTable(){
         try{
             int itemsCount = getGridSize() * getGridSize();
-            int quality = bingoPlg.getDb().getDifficulty();
+            int quality = getDifficulty();
 
             List<Material> items = new ArrayList<>();
 //            List<Material> materials = Difficulty.readBingoFiles(bingoPlg.getDataFolder().getAbsolutePath(), quality);
@@ -56,7 +56,7 @@ public class BingoTable {
     }
 
     public int getDifficulty(){
-        int difficulty = 0;
+        int difficulty = bingoPlg.minDifficulty;
         try{
             difficulty = bingoPlg.getDb().getDifficulty();
 
@@ -68,7 +68,7 @@ public class BingoTable {
 
     public String setDifficulty(int difficulty){
         String message = null;
-        if (difficulty<0 | difficulty>=6){
+        if (difficulty < bingoPlg.minDifficulty | difficulty > bingoPlg.maxDifficulty){
             message = "Недопустимая сложность сетки!";
         } else
             try{

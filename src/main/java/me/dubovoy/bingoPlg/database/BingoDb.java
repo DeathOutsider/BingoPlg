@@ -2,6 +2,7 @@ package me.dubovoy.bingoPlg.database;
 
 //import org.bukkit.Bukkit;
 //import org.bukkit.OfflinePlayer;
+import me.dubovoy.bingoPlg.BingoPlg;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -64,9 +65,9 @@ public class BingoDb {
         try (Statement statement = connection.createStatement()){
             statement.execute("""
                     CREATE TABLE IF NOT EXISTS settings(
-                    id INTEGER PRIMARY KEY,
-                    item TEXT UNIQUE,
-                    material TEXT UNIQUE,
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    item TEXT,
+                    material TEXT,
                     meta TEXT,
                     difficulty INTEGER DEFAULT (-1),
                     minecraft_type TEXT,
@@ -75,19 +76,22 @@ public class BingoDb {
         }
     }
 
-    public void addItemSetting(String item, String material, int difficulty) throws SQLException{
+    public void addItemSetting(String ItemName, String Material, String Meta, String Difficulty, String MinecraftType, String BingoType) throws SQLException{
         boolean noItem = false;
         try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM settings WHERE item = ?")){
-            preparedStatement.setString(1, item);
+            preparedStatement.setString(1, ItemName);
             ResultSet resultSet = preparedStatement.executeQuery();
             noItem = !resultSet.next();
         }
         if (!noItem)
             return;
-        try (PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO settings (item, material, difficulty) VALUES (?, ?, ?)")){
-            preparedStatement.setString(1, item);
-            preparedStatement.setString(2, material);
-            preparedStatement.setInt(3, difficulty);
+        try (PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO settings (item, material, meta, difficulty, minecraft_type, bingo_type) VALUES (?, ?, ?, ?, ?, ?)")){
+            preparedStatement.setString(1, ItemName);
+            preparedStatement.setString(2, Material);
+            preparedStatement.setString(3, Meta);
+            preparedStatement.setInt(4, Integer.parseInt(Difficulty));
+            preparedStatement.setString(5, MinecraftType);
+            preparedStatement.setString(6, BingoType);
             preparedStatement.executeUpdate();
 
         }
@@ -309,7 +313,7 @@ public class BingoDb {
     public List<Material> getAllItemsForDifficulty(int difficulty) throws SQLException{
         List<Material> materials = new ArrayList<>();
 
-        for (int i = 0; i < difficulty + 1; i++) {
+        for (int i = BingoPlg.getInstance().minDifficulty; i < difficulty + 1; i++) {
             materials.addAll(getItemsForDifficulty(i));
         }
 

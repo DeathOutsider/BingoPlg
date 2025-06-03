@@ -1,13 +1,19 @@
 package me.dubovoy.bingoPlg.database;
 
+import com.Zrips.CMI.Modules.AttachedCommands.CustomNBTListener;
 import me.dubovoy.bingoPlg.BingoPlg;
 import me.dubovoy.bingoPlg.Items.BingoItems;
 import me.dubovoy.bingoPlg.Items.GuiElements;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
+import org.bukkit.entity.TippedArrow;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.inventory.meta.OminousBottleMeta;
+import org.bukkit.inventory.meta.PotionMeta;
+import org.bukkit.potion.PotionType;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -129,11 +135,34 @@ public class BingoPlayer {
         Inventory guiPlayers = player.getOpenInventory().getTopInventory();
         ItemStack playerInvItem = guiElements.playerInvMarkerPotion();
 
+        boolean allBingoWin = false;
+        boolean horizontalLine = false;
+        boolean verticalLine = false;
+
+        if (bingoMode.equals("TABLE")){
+            int rowsCount = 0;
+            //Horizontal Line Confirm
+            for (int i = 0; i < gridSize; i++) {
+                int counter = 0;
+                for (int j = 0; j < gridSize; j++) {
+                    int ind = i * 9 + j;
+                    if (playerInvItem.getType() == guiPlayers.getItem(ind).getType()){
+                        counter ++;
+//                        bingoPlg.LogWMsg(Integer.toString(counter));
+                        if (counter == gridSize){
+                            rowsCount += 1;
+                            if (bingoPlg.bLog)
+                                bingoPlg.LogIMsg("Player <" + player.getName() + "> " + i + " Horizontal Line Is Completed!");
+                        }
+                    }
+                }
+            }
+            if (rowsCount == gridSize){
+                allBingoWin = true;
+            }
+        }
+
         if (bingoMode.equals("CROSS")){
-
-            boolean horizontalLine = false;
-            boolean verticalLine = false;
-
             //Horizontal Line Confirm
             for (int i = 0; i < gridSize; i++) {
                 int counter = 0;
@@ -167,10 +196,9 @@ public class BingoPlayer {
                     }
                 }
             }
-            return horizontalLine & verticalLine;
         }
 
-        return false;
+        return allBingoWin | (horizontalLine & verticalLine);
     }
 
     public Inventory showSettingsGui(Player player){
@@ -180,8 +208,8 @@ public class BingoPlayer {
         int difficulty = bingoTable.getDifficulty();
         int gridSize = bingoTable.getGridSize();
 
-        ItemStack diffBtn = guiElements.button("Difficulty: 0", Material.RED_CONCRETE);
-        ItemStack sizeBtn = guiElements.button("Grid Size: 1", Material.RED_CONCRETE);
+        ItemStack diffBtn = guiElements.button("Difficulty: " + difficulty, Material.RED_CONCRETE);
+        ItemStack sizeBtn = guiElements.button("Grid Size: " + gridSize, Material.RED_CONCRETE);
         ItemStack tableBtn = guiElements.button("Generate Table", Material.BEACON);
         ItemStack modeBtn = guiElements.button("Mode: " + bingoTable.getBingoMode(), Material.COMMAND_BLOCK);
 
@@ -193,10 +221,23 @@ public class BingoPlayer {
             sizeBtn = guiElements.button("Grid Size: " + gridSize, Material.LIME_CONCRETE);
             sizeBtn.setAmount(gridSize);
         }
+
+//        ItemStack it = new ItemStack(Material.OMINOUS_BOTTLE);
+//        OminousBottleMeta meta = (OminousBottleMeta) it.getItemMeta();
+//        meta.setAmplifier(2);
+//
+//        it.setItemMeta(meta);
+//        settingsGui.setItem(25, it);
+//        List<PotionType> ls = Arrays.stream(PotionType.values()).toList();
+//        for (PotionType pt: ls)
+//            bingoPlg.LogWMsg(pt.getKey().getKey());
+//        bingoPlg.LogWMsg(ls.toString());
+//        bingoPlg.LogWMsg(Integer.toString(ls.size()));
         settingsGui.setItem(7, diffBtn);
         settingsGui.setItem(8, sizeBtn);
         settingsGui.setItem(35, tableBtn);
         settingsGui.setItem(26, modeBtn);
+
         return settingsGui;
     }
 

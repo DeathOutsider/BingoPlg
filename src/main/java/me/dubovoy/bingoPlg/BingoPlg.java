@@ -26,8 +26,8 @@ public final class BingoPlg extends JavaPlugin {
     public boolean bLog = true;
     public int maxGridSize = 6;
     public int minGridSize = 1;
-    public int maxDifficulty = 5;
-    public int minDifficulty = 0;
+    public int maxDifficulty = 6;
+    public int minDifficulty = 1;
     public int deltaCoordinates = 1000;
 
     @Override

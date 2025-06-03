@@ -79,7 +79,21 @@ public class ClockClicking implements Listener {
 
             ItemMeta itemMeta = item.getItemMeta();
             String name = itemMeta.getDisplayName();
-//            bingoPlg.LogWMsg(item.toString());
+
+            if (event.isRightClick() | event.isLeftClick()){
+                if (name.contains("Mode")){
+                    String newMode = "";
+                    if (name.contains("CROSS"))
+                        newMode = "TABLE";
+                    else if (name.contains("TABLE"))
+                        newMode = "CROSS";
+                    bingoTable.setBingoMode(newMode);
+                    event.getClickedInventory().setContents(new BingoPlayer(bingoPlg).showSettingsGui(player).getContents());
+                    ItemStack btn = guiElements.button("Mode: " + newMode, Material.COMMAND_BLOCK);
+
+                    event.setCurrentItem(btn);
+                }
+            }
 
             if (event.isLeftClick()){
                 if (name.contains("Difficulty")){
@@ -142,6 +156,7 @@ public class ClockClicking implements Listener {
 
                     event.setCurrentItem(btn);
                 }
+
 
             }
 
