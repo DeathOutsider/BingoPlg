@@ -1,12 +1,15 @@
 package me.dubovoy.bingoPlg.database;
 
+import com.massivecraft.massivecore.store.Coll;
 import me.dubovoy.bingoPlg.BingoPlg;
 import me.dubovoy.bingoPlg.logic.Difficulty;
 import org.bukkit.Material;
+import org.bukkit.entity.Item;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -18,16 +21,34 @@ public class BingoTable {
     public void createBingoTable(){
         try{
             int itemsCount = getGridSize() * getGridSize();
-            int quality = getDifficulty();
+            int difficulty = getDifficulty();
 
-            List<Material> items = new ArrayList<>();
-//            List<Material> materials = Difficulty.readBingoFiles(bingoPlg.getDataFolder().getAbsolutePath(), quality);
-            List<Material> materials = bingoPlg.getDb().getAllItemsForDifficulty(quality);
-            Collections.shuffle(materials);
-            for (int i = 0; i < itemsCount; i++) {
-                items.add(materials.get(i));
-            }
-            bingoPlg.getDb().setBingoTablesItems(items);
+            List<ItemStack> items = bingoPlg.getDb().getAllListOfItems(difficulty);
+            Collections.shuffle(items);
+//            List<Material> materials = bingoPlg.getDb().getAllItemsForDifficulty(quality);
+//            Collections.shuffle(materials);
+//            for (int i = 0; i < itemsCount; i++) {
+//                items.add(materials.get(i));
+//            }
+            bingoPlg.getDb().setBingoTablesItems(items.subList(0, itemsCount+1));
+        } catch (Exception e) {
+            bingoPlg.LogWMsg("Error on Creator");
+            System.out.println(e);
+            bingoPlg.LogErrorsMsg(e);
+        }
+    }
+
+    public void generateBingoTable(){
+        try{
+            int itemsCount = getGridSize() * getGridSize();
+            int difficulty = getDifficulty();
+
+            List<Integer> items = bingoPlg.getDb().getIdItemsForDifficulty(difficulty);
+            Collections.shuffle(items);
+
+            bingoPlg.getDb().setIdItemsForGame(items.subList(0, itemsCount+1));
+            if (bingoPlg.bLog)
+                bingoPlg.LogIMsg("Bingo Table Was Generated With Difficulty: " + difficulty + " Size: " + getGridSize());
         } catch (Exception e) {
             bingoPlg.LogErrorsMsg(e);
         }
@@ -35,21 +56,21 @@ public class BingoTable {
 
     public boolean isBingoTableExists(){
         try{
-            List<Material> ls = bingoPlg.getDb().getBingoTableItems();
+            return !bingoPlg.getDb().noTableInDb();
         } catch (Exception e) {
-//            bingoPlg.LogErrorsMsg(e);
-            return false;
+            bingoPlg.LogErrorsMsg(e);
         }
-        return true;
+        return false;
     }
 
 
-    public List<Material> getBingoItems(){
-        List<Material> items = new ArrayList<>();
+    public List<ItemStack> getBingoItems(){
+        List<ItemStack> items = new ArrayList<>();
         try{
             items = bingoPlg.getDb().getBingoTableItems();
-
+//            bingoPlg.LogWMsg(items.toString());
         } catch (Exception e) {
+            bingoPlg.LogWMsg("FUNC GET BINGO ITEMS");
             bingoPlg.LogErrorsMsg(e);
         }
         return items;
@@ -139,24 +160,6 @@ public class BingoTable {
         return message;
     }
 
-    public String getBingoItemsStringTable(){
-        StringBuilder table = new StringBuilder();
-
-        try{
-            List<Material> items = bingoPlg.getDb().getBingoTableItems();
-            int rowItems = bingoPlg.getDb().getGridSize();
-            for (int i = 0; i < rowItems; i++) {
-                for (int j = 0; j < rowItems; j++) {
-                    table.append(items.get(i * rowItems + j).toString()).append(" ");
-                }
-                table.append("\n");
-            }
-        } catch (Exception e) {
-            bingoPlg.LogErrorsMsg(e);
-        }
-        return table.toString();
-    }
-
     public int convertIndToGui(int bingoInd) {
         int grid = getGridSize();
         int colInd = bingoInd % grid;
@@ -175,25 +178,26 @@ public class BingoTable {
         List<Integer> invIndexes = new ArrayList<>();
 
         try{
-            List<Material> bingoItems = getBingoItems();
-            List<Material> invItems = new ArrayList<>();
-            List<Material> metas = new ArrayList<>();
+            List<ItemStack> bingoItems = getBingoItems();
+//            Material[] availableMeta = {Material.POTION, Material.SPLASH_POTION, Material.LINGERING_POTION, Material.TIPPED_ARROW, Material.OMINOUS_BOTTLE};
+            List<String> invItems = new ArrayList<>();
+
             for (ItemStack itemStack: pInventory){
+                if (itemStack == null)
+                    continue;
                 Material material = itemStack.getType();
                 ItemMeta meta = itemStack.getItemMeta();
-                if (!invItems.contains(material)){
-
-                    invItems.add(material);
-                    if (bingoItems.contains(material)){
-                        int ind = bingoItems.indexOf(material);
+                String keyList = material.toString() + "<meta>" + meta.getAsString();
+//                System.out.println(keyList);
+                if (!invItems.contains(keyList)){
+                    invItems.add(keyList);
+                    if (bingoItems.contains(itemStack)){
+                        int ind = bingoItems.indexOf(itemStack);
                         ind = convertIndToGui(ind);
-
-//                        System.out.println(colInd);
-//                        System.out.println(rowInd*6);
+//                                System.out.println(ind);
                         invIndexes.add(ind);
-//                        System.out.println(ind);
-//                        System.out.println(convertIndToTable(ind));
                     }
+
                 }
             }
         } catch (Exception e) {

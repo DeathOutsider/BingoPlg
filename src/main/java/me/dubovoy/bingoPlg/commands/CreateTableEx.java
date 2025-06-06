@@ -13,6 +13,7 @@ import org.bukkit.command.TabExecutor;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.OminousBottleMeta;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -29,6 +30,16 @@ public class CreateTableEx implements CommandExecutor, TabExecutor {
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String @NotNull [] strings) {
         if (!(commandSender instanceof Player player)){
             Msg.send(commandSender, "Only players can use this command");
+            try {
+                if (strings.length != 1)
+                    return true;
+                int ind = Integer.parseInt(strings[0]);
+                System.out.println(bingoPlg.getDb().getIdItemsForDifficulty(ind));
+                System.out.println(bingoPlg.getDb().getIdItemsForDifficulty(ind).size());
+
+            } catch (SQLException e) {
+                bingoPlg.LogErrorsMsg(e);
+            }
             return true;
         }
 

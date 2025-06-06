@@ -56,12 +56,11 @@ public class CompassClicking implements Listener {
                     p.closeInventory();
                     p.setGameMode(GameMode.SPECTATOR);
                     p.playSound(p, Sound.ITEM_GOAT_HORN_SOUND_1, 100, 1);
-                    Msg.sendTitle(p, "§o§dПобедила команда §e" + teamName, "§l§n§aBingo Закончилось!");
+                    Msg.sendTitle(p, "§o§dПобедили §e" + teamName, "§l§n§aBingo Закончилось!");
                 }
 
                 if (bingoPlg.bLog)
                     bingoPlg.LogIMsg("Player <" + player.getName() + "> Has collected Bindo!");
-
             }
         } catch (Exception e) {
             bingoPlg.LogErrorsMsg(e);
@@ -80,7 +79,6 @@ public class CompassClicking implements Listener {
             Inventory inv = event.getClickedInventory();
             if (inv == null)
                 return;
-//            bingoPlg.LogIMsg(inv.getType().toString());
             int slot = event.getSlot();
             ItemStack item = inv.getItem(slot);
             if (item == null | inv.getType() != InventoryType.CHEST)
@@ -91,9 +89,9 @@ public class CompassClicking implements Listener {
 
             ItemStack playerMarker = guiElements.playerInvMarkerPotion();
             ItemStack teamMarker = guiElements.teamInvMarkerPotion();
-            List<Material> items = bingoTable.getBingoItems();
+            List<ItemStack> items = bingoTable.getBingoItems();
 
-            if (item.getType() == teamMarker.getType() | item.getType() == playerMarker.getType() | items.contains(item.getType())){
+            if (item.getType() == teamMarker.getType() | item.getType() == playerMarker.getType() | items.contains(item)){ //| items.contains(item.getType())
                 if (event.isLeftClick()){
                     int ind = bingoTable.convertIndToTable(slot);
                     event.setCurrentItem(new ItemStack(items.get(ind)));
@@ -104,8 +102,6 @@ public class CompassClicking implements Listener {
                     BingoPlayer bingoPlayer = new BingoPlayer(bingoPlg);
                     player.setMetadata("bingoGui", new FixedMetadataValue(bingoPlg, guiMeta));
                     player.openInventory(bingoPlayer.showGui(player));
-                    if (bingoPlayer.isPlayerWin(player))
-                        bingoPlg.LogIMsg("PLAYER WIN!");
                 }
             }
 

@@ -103,7 +103,7 @@ public class ClockClicking implements Listener {
                     bingoTable.setDifficulty(diff);
                     bingoTable.createBingoTable();
                     event.getClickedInventory().setContents(new BingoPlayer(bingoPlg).showSettingsGui(player).getContents());
-                    ItemStack btn = guiElements.button("Difficulty: " + diff, Material.LIME_CONCRETE);
+                    ItemStack btn = guiElements.button("Difficulty: " + diff, Material.CARVED_PUMPKIN);
                     btn.setAmount(diff);
                     event.setCurrentItem(btn);
                 }
@@ -114,7 +114,7 @@ public class ClockClicking implements Listener {
                     bingoTable.setGridSize(size);
                     bingoTable.createBingoTable();
                     event.getClickedInventory().setContents(new BingoPlayer(bingoPlg).showSettingsGui(player).getContents());
-                    ItemStack btn = guiElements.button("Grid Size: " + size, Material.LIME_CONCRETE);
+                    ItemStack btn = guiElements.button("Grid Size: " + size, Material.SPAWNER);
                     btn.setAmount(size);
                     event.setCurrentItem(btn);
                 }
@@ -131,12 +131,8 @@ public class ClockClicking implements Listener {
                     bingoTable.setDifficulty(diff);
                     bingoTable.createBingoTable();
                     event.getClickedInventory().setContents(new BingoPlayer(bingoPlg).showSettingsGui(player).getContents());
-                    ItemStack btn = guiElements.button("Difficulty: " + diff, Material.LIME_CONCRETE);
-
-                    if (diff > bingoPlg.minDifficulty)
-                        btn.setAmount(diff);
-                    else
-                        btn = guiElements.button("Difficulty: " + diff, Material.RED_CONCRETE);
+                    ItemStack btn = guiElements.button("Difficulty: " + diff, Material.CARVED_PUMPKIN);
+                    btn.setAmount(diff);
 
                     event.setCurrentItem(btn);
                 }
@@ -147,12 +143,8 @@ public class ClockClicking implements Listener {
                     bingoTable.setGridSize(size);
                     bingoTable.createBingoTable();
                     event.getClickedInventory().setContents(new BingoPlayer(bingoPlg).showSettingsGui(player).getContents());
-                    ItemStack btn = guiElements.button("Grid Size: " + size, Material.LIME_CONCRETE);
-
-                    if (size > bingoPlg.minGridSize)
-                        btn.setAmount(size);
-                    else
-                        btn = guiElements.button("Grid Size: " + size, Material.RED_CONCRETE);
+                    ItemStack btn = guiElements.button("Grid Size: " + size, Material.SPAWNER);
+                    btn.setAmount(size);
 
                     event.setCurrentItem(btn);
                 }
