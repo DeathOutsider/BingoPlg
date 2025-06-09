@@ -2,8 +2,6 @@ package me.dubovoy.bingoPlg.commands;
 
 import me.dubovoy.bingoPlg.BingoPlg;
 import me.dubovoy.bingoPlg.Msg;
-import me.dubovoy.bingoPlg.database.BingoDb;
-import me.dubovoy.bingoPlg.logic.Difficulty;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
@@ -13,7 +11,6 @@ import org.bukkit.command.TabExecutor;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.OminousBottleMeta;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -34,8 +31,8 @@ public class CreateTableEx implements CommandExecutor, TabExecutor {
                 if (strings.length != 1)
                     return true;
                 int ind = Integer.parseInt(strings[0]);
-                System.out.println(bingoPlg.getDb().getIdItemsForDifficulty(ind));
-                System.out.println(bingoPlg.getDb().getIdItemsForDifficulty(ind).size());
+                System.out.println(bingoPlg.getDb().getItemsIdForDifficulty(ind));
+                System.out.println(bingoPlg.getDb().getItemsIdForDifficulty(ind).size());
 
             } catch (SQLException e) {
                 bingoPlg.LogErrorsMsg(e);

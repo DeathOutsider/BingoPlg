@@ -29,11 +29,12 @@ public final class BingoPlg extends JavaPlugin {
     public int maxDifficulty = 6;
     public int minDifficulty = 1;
     public int deltaCoordinates = 1000;
+    public String dbSplitter = "\\";
 
     @Override
     public void onEnable() {
         // Plugin startup logic
-        LogWMsg("Привет! BingoPlugin v. 1.2.0 успешно загружен!");
+        LogWMsg("Привет! BingoPlugin v. 1.3.2 успешно загружен!");
         CompassRecipe.register();
         MusicDisksRecipes.register();
         InitCommand("Heal", new HealPlayer());

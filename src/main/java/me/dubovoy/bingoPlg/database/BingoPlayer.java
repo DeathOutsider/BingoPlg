@@ -16,7 +16,7 @@ public class BingoPlayer {
     private final BingoPlg bingoPlg;
     public BingoPlayer(BingoPlg bingoPlg) {this.bingoPlg = bingoPlg;}
 
-    public ItemStack[] getTeamInvItems(Player player){
+    public ItemStack[] getTeamInventoryItems(Player player){
         List<ItemStack> itemStacksList = new ArrayList<>();
         ItemStack[] itemStacks = new ItemStack[0];
         try{
@@ -66,9 +66,9 @@ public class BingoPlayer {
             }
         }
 
-        ItemStack[] teammateInvMaterials = getTeamInvItems(player);
-        int[] indOfPlayer = bingoTable.checkBingoInvItems(player.getInventory().getContents(), "");
-        int[] indOfTeammates = bingoTable.checkBingoInvItems(teammateInvMaterials, "");
+        ItemStack[] teammateInvMaterials = getTeamInventoryItems(player);
+        int[] indOfPlayer = bingoTable.checkBingoInvItems(player.getInventory().getContents());
+        int[] indOfTeammates = bingoTable.checkBingoInvItems(teammateInvMaterials);
 
         Arrays.sort(indOfPlayer);
         Arrays.sort(indOfTeammates);
@@ -168,14 +168,6 @@ public class BingoPlayer {
         ItemStack modeBtn = guiElements.button("Mode: " + bingoTable.getBingoMode(), Material.COMMAND_BLOCK);
         diffBtn.setAmount(difficulty);
         sizeBtn.setAmount(gridSize);
-//        if (difficulty > bingoPlg.minDifficulty){
-//            diffBtn = guiElements.button("Difficulty: " + difficulty, Material.LIME_CONCRETE);
-//            diffBtn.setAmount(difficulty);
-//        }
-//        if (gridSize > bingoPlg.minGridSize) {
-//            sizeBtn = guiElements.button("Grid Size: " + gridSize, Material.LIME_CONCRETE);
-//            sizeBtn.setAmount(gridSize);
-//        }
 
         settingsGui.setItem(7, diffBtn);
         settingsGui.setItem(8, sizeBtn);

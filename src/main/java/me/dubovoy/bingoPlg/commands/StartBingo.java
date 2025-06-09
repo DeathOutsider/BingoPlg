@@ -48,7 +48,7 @@ public class StartBingo implements CommandExecutor, TabExecutor {
 
             BingoTable table = new BingoTable(bingoPlg);
             if (!table.isBingoTableExists())
-                table.createBingoTable();
+                table.generateBingoTable();
             bingoPlg.LogIMsg("Game Bingo! Was Started By " + commandSender.getName());
         } catch (Exception e) {
             bingoPlg.LogErrorsMsg(e);

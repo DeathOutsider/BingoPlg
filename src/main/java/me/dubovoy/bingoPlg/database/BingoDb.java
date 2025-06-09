@@ -14,6 +14,7 @@ import org.bukkit.potion.PotionType;
 
 import java.sql.*;
 import java.util.*;
+import java.util.stream.Collectors;
 //import java.util.UUID;
 
 public class BingoDb {
@@ -272,139 +273,11 @@ public class BingoDb {
             preparedStatement.executeUpdate();
         }
     }
-
-    public void setBingoTablesItems(List<ItemStack> itemStacks) throws SQLException{
-        StringBuilder str_items = new StringBuilder();
-        List<Material> supportMetaMaterials = Arrays.asList(Material.OMINOUS_BOTTLE, Material.POTION, Material.SPLASH_POTION, Material.LINGERING_POTION, Material.TIPPED_ARROW);
-        for (ItemStack item: itemStacks){
-            String meta = "";
-            if (supportMetaMaterials.contains(item.getType())){
-                if (item.getType() == Material.OMINOUS_BOTTLE){
-                    OminousBottleMeta bottleMeta = (OminousBottleMeta) item.getItemMeta();
-                    meta = "AMPLIFIER:" + bottleMeta.getAmplifier();
-                } else {
-                    PotionMeta potionMeta = (PotionMeta) item.getItemMeta();
-                    meta = potionMeta.getBasePotionType().toString();
-                }
-            }
-            str_items.append(item.getType().toString()).append("<meta>").append(meta).append(" >, ");
-        }
-        try (PreparedStatement preparedStatement = connection.prepareStatement("UPDATE game SET items = ? WHERE id = 0")){
-            preparedStatement.setString(1, str_items.toString());
-            preparedStatement.executeUpdate();
-        }
-    }
+    
     public boolean noTableInDb() throws SQLException{
         try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM game WHERE id = 0")){
             ResultSet resultSet = preparedStatement.executeQuery();
             return resultSet.getString("items").isEmpty();
-        }
-    }
-
-    public List<ItemStack> getBingoTableItems() throws SQLException{
-        List<ItemStack> items = new ArrayList<>();
-        String str_items = "";
-        List<Material> supportMetaMaterials = Arrays.asList(Material.OMINOUS_BOTTLE, Material.POTION, Material.SPLASH_POTION, Material.LINGERING_POTION, Material.TIPPED_ARROW);
-
-        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT items FROM game WHERE id = 0")){
-            ResultSet resultSet = preparedStatement.executeQuery();
-            str_items = resultSet.getString("items");
-//            System.out.println("BingoDb> " + str_items);
-            for (String str_item: str_items.split(">, ")){
-                String str_material = str_item.split("<meta>")[0];
-                String str_meta = str_item.split("<meta>")[1];
-                str_meta = str_meta.strip();
-//                System.out.println(str_item);
-//                System.out.println(str_material);
-//                System.out.println(str_meta);
-                if (!str_material.isEmpty()){
-                    Material item_material = Material.getMaterial(str_material);
-                    if (item_material != null){
-                        ItemStack item = new ItemStack(item_material);
-                        if (supportMetaMaterials.contains(item_material)){
-                            ItemMeta meta = item.getItemMeta();
-                            if (item_material == Material.OMINOUS_BOTTLE){
-                                int amplifier = Integer.parseInt(str_meta.replace("AMPLIFIER:", ""));
-                                ((OminousBottleMeta) meta).setAmplifier(amplifier);
-                            } else {
-                                str_meta = str_meta.strip();
-//                                System.out.println(str_meta);
-//                                System.out.println("AWKWARD".equals(str_meta));
-                                PotionType potionType = PotionType.valueOf(str_meta);
-//                                System.out.println("Potion Created");
-                                ((PotionMeta) meta).setBasePotionType(potionType);
-
-
-                            }
-
-                            item.setItemMeta(meta);
-                        }
-                        items.add(item);
-                    }
-                }
-            }
-            return items;
-        }
-    }
-
-    public List<ItemStack> getListOfItems(int difficulty) throws SQLException{
-        List<ItemStack> items = new ArrayList<>();
-        List<Material> supportMetaMaterials = Arrays.asList(Material.OMINOUS_BOTTLE, Material.POTION, Material.SPLASH_POTION, Material.LINGERING_POTION, Material.TIPPED_ARROW);
-        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM settings WHERE difficulty = ?")){
-            preparedStatement.setInt(1, difficulty);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()){
-                String db_material = resultSet.getString("material");
-                String db_meta = resultSet.getString("meta");
-                db_meta = db_meta.strip();
-
-                if (db_material != null){
-                    Material item_material = Material.getMaterial(db_material);
-                    if (item_material != null) {
-                        ItemStack item = new ItemStack(item_material);
-                        if (supportMetaMaterials.contains(item_material)){
-                            ItemMeta meta = item.getItemMeta();
-
-                            if (item_material == Material.OMINOUS_BOTTLE){
-
-                                db_meta = db_meta.replace("AMPLIFIER:", "");
-                                int amplifier = Integer.parseInt(db_meta);
-                                ((OminousBottleMeta) meta).setAmplifier(amplifier);
-                                if (!((OminousBottleMeta) meta).hasAmplifier())
-                                    ((OminousBottleMeta) meta).setAmplifier(0);
-
-                            } else {
-                                db_meta = db_meta.strip();
-                                ((PotionMeta) meta).setBasePotionType(PotionType.valueOf(db_meta));
-                            }
-
-                            item.setItemMeta(meta);
-                        }
-
-                        items.add(item);
-                    }
-                }
-            }
-            return items;
-        }
-    }
-
-    public List<ItemStack> getAllListOfItems(int difficulty) throws SQLException{
-        List<ItemStack> items = new ArrayList<>();
-
-        for (int i = BingoPlg.getInstance().minDifficulty; i < difficulty + 1; i++) {
-            items.addAll(getListOfItems(i));
-        }
-
-        return items;
-    }
-
-    public String getItemDbMeta(ItemStack item) throws SQLException{
-        Material material = item.getType();
-        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM settings WHERE material = ?")){
-            preparedStatement.setString(1, material.toString());
-            ResultSet resultSet = preparedStatement.executeQuery();
-            return resultSet.getString("meta");
         }
     }
 
@@ -416,7 +289,9 @@ public class BingoDb {
             String dbMeta = resultSet.getString(4);
 
             Material itemMaterial = Material.getMaterial(dbMaterial);
-
+            if (itemMaterial == null){
+                BingoPlg.getInstance().LogWMsg("Trouble with item: " + itemId);
+            }
             assert itemMaterial != null;
             ItemStack itemStack = new ItemStack(itemMaterial);
             ItemMeta itemMeta = itemStack.getItemMeta();
@@ -432,7 +307,7 @@ public class BingoDb {
         }
     }
 
-    public List<Integer> getIdItemsForDifficulty(int difficulty) throws SQLException{
+    public List<Integer> getItemsIdForDifficulty(int difficulty) throws SQLException{
         List<Integer> ids = new ArrayList<>();
         try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM settings WHERE difficulty = ?")){
             preparedStatement.setInt(1, difficulty);
@@ -446,7 +321,7 @@ public class BingoDb {
     }
 
     public void setIdItemsForGame(List<Integer> ids) throws SQLException{
-        String bingoItemsString = String.join(" | ", ids.toString());
+        String bingoItemsString = String.join(BingoPlg.getInstance().dbSplitter, ids.stream().map(i -> i.toString()).collect(Collectors.toList()));
         try (PreparedStatement preparedStatement = connection.prepareStatement("UPDATE game SET items = ? WHERE id = 0")){
             preparedStatement.setString(1, bingoItemsString);
             preparedStatement.executeUpdate();
@@ -479,5 +354,21 @@ public class BingoDb {
         return materials;
     }
 
+    public List<ItemStack> getItemsFromTable() throws SQLException {
+        List<ItemStack> items = new ArrayList<>();
+        String str_items = "";
 
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT items FROM game WHERE id = 0")){
+            ResultSet resultSet = preparedStatement.executeQuery();
+            str_items = resultSet.getString("items");
+            while (resultSet.next()) {
+                List<Integer> bingoItemsIds = Arrays.stream(str_items.split("\\%s".formatted(BingoPlg.getInstance().dbSplitter))).map(i -> Integer.parseInt(i)).toList();
+//                System.out.println(bingoItemsIds);
+                for (Integer index: bingoItemsIds)
+                    items.add(getItemFromDb(index));
+            }
+            return items;
+        }
+
+    }
 }

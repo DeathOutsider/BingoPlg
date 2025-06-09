@@ -20,7 +20,7 @@ public class GenerateTable implements CommandExecutor, TabExecutor {
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String @NotNull [] strings) {
         BingoTable bingoTable = new BingoTable(bingoPlg);
 
-        bingoTable.createBingoTable();
+        bingoTable.generateBingoTable();
 
         return true;
     }
