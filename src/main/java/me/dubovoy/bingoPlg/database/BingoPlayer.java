@@ -84,6 +84,72 @@ public class BingoPlayer {
         return guiPlayers;
     }
 
+    public Inventory showSettingsGui(Player player){
+        Inventory settingsGui = showGui(player);
+        GuiElements guiElements = new GuiElements();
+        BingoTable bingoTable = new BingoTable(bingoPlg);
+        int difficulty = bingoTable.getDifficulty();
+        int gridSize = bingoTable.getGridSize();
+
+        ItemStack diffBtn = guiElements.button("Difficulty: " + difficulty, Material.CARVED_PUMPKIN);
+        ItemStack sizeBtn = guiElements.button("Grid Size: " + gridSize, Material.SPAWNER);
+        ItemStack tableBtn = guiElements.button("Generate Table", Material.BEACON);
+        ItemStack modeBtn = guiElements.button("Mode: " + bingoTable.getBingoMode(), Material.COMMAND_BLOCK);
+        ItemStack allItemsBtn = guiElements.button("Items Config", Material.VAULT);
+        diffBtn.setAmount(difficulty);
+        sizeBtn.setAmount(gridSize);
+
+        settingsGui.setItem(7, diffBtn);
+        settingsGui.setItem(8, sizeBtn);
+        settingsGui.setItem(25, modeBtn);
+        settingsGui.setItem(26, tableBtn);
+        settingsGui.setItem(35, allItemsBtn);
+
+        return settingsGui;
+    }
+
+    public Inventory showItemsGui(Player player, int page){
+        Inventory itemConfigGui = Bukkit.createInventory(player, 6*9, "Bingo! Items Config! Page: " + page);
+        GuiElements guiElements = new GuiElements();
+        BingoTable bingoTable = new BingoTable(bingoPlg);
+        int lastIndex = bingoPlg.lastItemIndex + 1;
+        int startIndex = (page-1)*9;
+        int counter = 0;
+        int lines = 0;
+        ItemStack diffBtn;
+        for (int itemInd = startIndex; itemInd < startIndex + 23; itemInd++) {
+            ItemStack item = bingoTable.getItem(itemInd);
+            int itemDifficulty = bingoTable.getItemDifficulty(itemInd);
+            if (itemDifficulty <= 0) {
+                diffBtn = guiElements.button("Difficulty: " + itemDifficulty, Material.RED_CONCRETE);
+            } else {
+                diffBtn = guiElements.button("Difficulty: " + itemDifficulty, Material.LIME_CONCRETE);
+            }
+            lines = counter/9;
+
+            itemConfigGui.setItem(counter + lines * 9, item);
+            itemConfigGui.setItem(counter + 9 + lines * 9, diffBtn);
+
+            counter += 1;
+
+        }
+//        ItemStack diffBtn = guiElements.button("Difficulty: " + difficulty, Material.CARVED_PUMPKIN);
+//        ItemStack sizeBtn = guiElements.button("Grid Size: " + gridSize, Material.SPAWNER);
+//        ItemStack tableBtn = guiElements.button("Generate Table", Material.BEACON);
+//        ItemStack modeBtn = guiElements.button("Mode: " + bingoTable.getBingoMode(), Material.COMMAND_BLOCK);
+//        ItemStack allItemsBtn = guiElements.button("Items Config", Material.VAULT);
+//        diffBtn.setAmount(difficulty);
+//        sizeBtn.setAmount(gridSize);
+//
+//        settingsGui.setItem(7, diffBtn);
+//        settingsGui.setItem(8, sizeBtn);
+//        settingsGui.setItem(25, modeBtn);
+        itemConfigGui.setItem(52, guiElements.button("Previous Page", Material.TRIAL_KEY));
+        itemConfigGui.setItem(53, guiElements.button("Next Page", Material.OMINOUS_TRIAL_KEY));
+
+        return itemConfigGui;
+    }
+
     public boolean isPlayerWin (Player player){
         BingoTable bingoTable = new BingoTable(bingoPlg);
         GuiElements guiElements = new GuiElements();
@@ -153,28 +219,6 @@ public class BingoPlayer {
         }
 
         return allBingoWin | (horizontalLine & verticalLine);
-    }
-
-    public Inventory showSettingsGui(Player player){
-        Inventory settingsGui = showGui(player);
-        GuiElements guiElements = new GuiElements();
-        BingoTable bingoTable = new BingoTable(bingoPlg);
-        int difficulty = bingoTable.getDifficulty();
-        int gridSize = bingoTable.getGridSize();
-
-        ItemStack diffBtn = guiElements.button("Difficulty: " + difficulty, Material.CARVED_PUMPKIN);
-        ItemStack sizeBtn = guiElements.button("Grid Size: " + gridSize, Material.SPAWNER);
-        ItemStack tableBtn = guiElements.button("Generate Table", Material.BEACON);
-        ItemStack modeBtn = guiElements.button("Mode: " + bingoTable.getBingoMode(), Material.COMMAND_BLOCK);
-        diffBtn.setAmount(difficulty);
-        sizeBtn.setAmount(gridSize);
-
-        settingsGui.setItem(7, diffBtn);
-        settingsGui.setItem(8, sizeBtn);
-        settingsGui.setItem(35, tableBtn);
-        settingsGui.setItem(26, modeBtn);
-
-        return settingsGui;
     }
 
 }

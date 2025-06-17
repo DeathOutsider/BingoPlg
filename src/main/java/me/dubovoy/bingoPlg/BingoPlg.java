@@ -29,6 +29,7 @@ public final class BingoPlg extends JavaPlugin {
     public int maxDifficulty = 6;
     public int minDifficulty = 1;
     public int deltaCoordinates = 1000;
+    public int lastItemIndex = 1480;
     public String dbSplitter = "\\";
 
     @Override

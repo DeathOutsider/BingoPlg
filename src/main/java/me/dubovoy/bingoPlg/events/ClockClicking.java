@@ -122,6 +122,12 @@ public class ClockClicking implements Listener {
                     bingoTable.generateBingoTable();
                     event.getClickedInventory().setContents(new BingoPlayer(bingoPlg).showSettingsGui(player).getContents());
                 }
+                if (name.contains("Items Config")){
+                    event.getClickedInventory().close();
+                    Inventory configInv =new BingoPlayer(bingoPlg).showItemsGui(player, 1);
+                    player.setMetadata("configItemsGui", new FixedMetadataValue(bingoPlg, configInv));
+                    player.openInventory(configInv);
+                }
 
             }else if (event.isRightClick()){
                 if (name.contains("Difficulty")){

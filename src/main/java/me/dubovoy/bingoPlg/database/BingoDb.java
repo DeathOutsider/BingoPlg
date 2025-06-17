@@ -273,7 +273,7 @@ public class BingoDb {
             preparedStatement.executeUpdate();
         }
     }
-    
+
     public boolean noTableInDb() throws SQLException{
         try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM game WHERE id = 0")){
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -317,6 +317,25 @@ public class BingoDb {
             }
 
             return ids;
+        }
+    }
+
+    public int getItemDifficulty(int id) throws SQLException{
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM settings WHERE id = ?")){
+            preparedStatement.setInt(1, id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            return resultSet.getInt("difficulty");
+        }
+    }
+
+    public int setItemDifficulty(int id, int difficulty) throws SQLException{
+        try (PreparedStatement preparedStatement = connection.prepareStatement("UPDATE settings SET difficulty = ? WHERE id = ?")){
+            preparedStatement.setInt(1, difficulty);
+            preparedStatement.setInt(2, id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            return resultSet.getInt("difficulty");
         }
     }
 

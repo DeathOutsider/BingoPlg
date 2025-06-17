@@ -19,8 +19,7 @@ public class BingoTable {
             int itemsCount = getGridSize() * getGridSize();
             int difficulty = getDifficulty();
 
-            List<Integer> items = bingoPlg.getDb().getItemsIdForDifficulty(difficulty);
-            Collections.shuffle(items);
+            List<Integer> items = randomizeTable(difficulty);
 
             bingoPlg.getDb().setIdItemsForGame(items.subList(0, itemsCount+1));
             if (bingoPlg.bLog)
@@ -29,6 +28,39 @@ public class BingoTable {
         } catch (Exception e) {
             bingoPlg.LogErrorsMsg(e);
         }
+    }
+
+    public List<Integer> randomizeTable(int difficulty){
+        List<Integer> items = new ArrayList<>();
+        try{
+            for (int i = 1; i < difficulty + 1; i++) {
+                items.addAll(bingoPlg.getDb().getItemsIdForDifficulty(i));
+            }
+
+            Collections.shuffle(items);
+
+        } catch (Exception e) {
+            bingoPlg.LogErrorsMsg(e);
+        }
+        return items;
+    }
+
+    public ItemStack getItem(int id){
+        try{
+            return bingoPlg.getDb().getItemFromDb(id);
+        } catch (Exception e) {
+            bingoPlg.LogErrorsMsg(e);
+        }
+        return null;
+    }
+
+    public int getItemDifficulty(int id){
+        try{
+            return bingoPlg.getDb().getItemDifficulty(id);
+        } catch (Exception e) {
+            bingoPlg.LogErrorsMsg(e);
+        }
+        return 0;
     }
 
     public boolean isBingoTableExists(){
@@ -162,13 +194,20 @@ public class BingoTable {
             for (ItemStack itemStack: pInventory){
                 if (itemStack == null)
                     continue;
-                Material material = itemStack.getType();
-                ItemMeta meta = itemStack.getItemMeta();
-                String keyList = material.toString() + "<meta>" + meta.getAsString();
+                ItemStack isolated_item = itemStack.clone();
+                Material material = isolated_item.getType();
+                ItemMeta meta = isolated_item.getItemMeta();
+
+                isolated_item.setAmount(1);
+//                System.out.println(isolated_item);
+                if (isolated_item.getDurability() > 0)
+                    isolated_item.setDurability((short) 0);
+
+                String keyList = material + "<meta>" + meta.getAsString();
                 if (!invItems.contains(keyList)){
                     invItems.add(keyList);
-                    if (bingoItems.contains(itemStack)){
-                        int ind = bingoItems.indexOf(itemStack);
+                    if (bingoItems.contains(isolated_item)){
+                        int ind = bingoItems.indexOf(isolated_item);
                         ind = convertIndToGui(ind);
                         invIndexes.add(ind);
                     }
