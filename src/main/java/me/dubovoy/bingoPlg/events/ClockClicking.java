@@ -79,7 +79,7 @@ public class ClockClicking implements Listener {
 
             ItemMeta itemMeta = item.getItemMeta();
             String name = itemMeta.getDisplayName();
-
+            String message = "";
             if (event.isRightClick() | event.isLeftClick()){
                 if (name.contains("Mode")){
                     String newMode = "";
@@ -87,7 +87,7 @@ public class ClockClicking implements Listener {
                         newMode = "TABLE";
                     else if (name.contains("TABLE"))
                         newMode = "CROSS";
-                    bingoTable.setBingoMode(newMode);
+                    message = bingoTable.setBingoMode(newMode);
                     event.getClickedInventory().setContents(new BingoPlayer(bingoPlg).showSettingsGui(player).getContents());
                     ItemStack btn = guiElements.button("Mode: " + newMode, Material.COMMAND_BLOCK);
 
@@ -100,7 +100,7 @@ public class ClockClicking implements Listener {
                     int diff = bingoTable.getDifficulty() + 1;
                     if (diff > bingoPlg.maxDifficulty)
                         diff = bingoPlg.maxDifficulty;
-                    bingoTable.setDifficulty(diff);
+                    message = bingoTable.setDifficulty(diff);
                     bingoTable.generateBingoTable();
                     event.getClickedInventory().setContents(new BingoPlayer(bingoPlg).showSettingsGui(player).getContents());
                     ItemStack btn = guiElements.button("Difficulty: " + diff, Material.CARVED_PUMPKIN);
@@ -111,7 +111,7 @@ public class ClockClicking implements Listener {
                     int size = bingoTable.getGridSize() + 1;
                     if (size > bingoPlg.maxGridSize)
                         size = bingoPlg.maxGridSize;
-                    bingoTable.setGridSize(size);
+                    message = bingoTable.setGridSize(size);
                     bingoTable.generateBingoTable();
                     event.getClickedInventory().setContents(new BingoPlayer(bingoPlg).showSettingsGui(player).getContents());
                     ItemStack btn = guiElements.button("Grid Size: " + size, Material.SPAWNER);
@@ -134,7 +134,7 @@ public class ClockClicking implements Listener {
                     int diff = bingoTable.getDifficulty() - 1;
                     if (diff < bingoPlg.minDifficulty)
                         diff = bingoPlg.minDifficulty;
-                    bingoTable.setDifficulty(diff);
+                    message = bingoTable.setDifficulty(diff);
                     bingoTable.generateBingoTable();
                     event.getClickedInventory().setContents(new BingoPlayer(bingoPlg).showSettingsGui(player).getContents());
                     ItemStack btn = guiElements.button("Difficulty: " + diff, Material.CARVED_PUMPKIN);
@@ -146,7 +146,7 @@ public class ClockClicking implements Listener {
                     int size = bingoTable.getGridSize() - 1;
                     if (size < bingoPlg.minGridSize)
                         size = bingoPlg.minGridSize;
-                    bingoTable.setGridSize(size);
+                    message = bingoTable.setGridSize(size);
                     bingoTable.generateBingoTable();
                     event.getClickedInventory().setContents(new BingoPlayer(bingoPlg).showSettingsGui(player).getContents());
                     ItemStack btn = guiElements.button("Grid Size: " + size, Material.SPAWNER);
@@ -155,7 +155,9 @@ public class ClockClicking implements Listener {
                     event.setCurrentItem(btn);
                 }
 
-
+            }
+            if (!message.isEmpty()){
+                Msg.send(player, message);
             }
 
         }
