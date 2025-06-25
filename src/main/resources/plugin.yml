@@ -11,27 +11,27 @@ commands:
     permissions: bingoPlg.heal
     usage: "/heal"
 
-  CreateTeam:
+  CreateGroup:
     description: ""
     aliases: [ crtm ]
-    usage: "/CreateTeam <Название вашей команды>"
+    usage: "/CreateGroup <Название вашей команды>"
 
-  DeleteTeam:
+  DeleteGroup:
     description: ""
     aliases: [ dltm ]
-    permissions: bingoPlg.delete_team
-    usage: "/DeleteTeam <Название команды>"
+    permissions: bingoPlg.delete_Group
+    usage: "/DeleteGroup <Название команды>"
 
-  JoinTeam:
+  JoinGroup:
     description: ""
     aliases: [ jt, join ]
-    usage: "/JoinTeam <Название вашей команды>"
+    usage: "/JoinGroup <Название вашей команды>"
 
-  TeleportTeam:
+  TeleportGroup:
     description: ""
     aliases: [ tptm ]
-    permissions: bingoPlg.teleport_team
-    usage: "/TeleportTeam <Название команды>"
+    permissions: bingoPlg.teleport_Group
+    usage: "/TeleportGroup <Название команды>"
 
   Table:
     description: ""
@@ -63,8 +63,8 @@ commands:
       children:
         bingoPlg.heal: op
 
-        bingoPlg.delete_team: op
-        bingoPlg.teleport_team: op
+        bingoPlg.delete_group: op
+        bingoPlg.teleport_group: op
 
         bingoPlg.table: op
         bingoPlg.create_table: op
@@ -72,7 +72,3 @@ commands:
         bingoPlg.start_bingo: op
 
         bingoPlg.settings_clock: op
-
-#    bingoPlg.heal:
-#      description: "Право для использования команды /heal"
-#      default: op

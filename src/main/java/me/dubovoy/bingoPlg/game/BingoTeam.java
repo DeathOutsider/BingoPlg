@@ -1,11 +1,9 @@
-package me.dubovoy.bingoPlg.database;
+package me.dubovoy.bingoPlg.game;
 
 import me.dubovoy.bingoPlg.BingoPlg;
-import me.dubovoy.bingoPlg.Msg;
 import org.bukkit.entity.Player;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class BingoTeam {

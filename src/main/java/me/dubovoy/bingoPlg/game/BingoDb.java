@@ -1,4 +1,4 @@
-package me.dubovoy.bingoPlg.database;
+package me.dubovoy.bingoPlg.game;
 
 //import org.bukkit.Bukkit;
 //import org.bukkit.OfflinePlayer;

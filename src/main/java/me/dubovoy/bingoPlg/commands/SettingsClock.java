@@ -16,7 +16,6 @@ import java.util.List;
 public class SettingsClock implements CommandExecutor, TabExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String @NotNull [] strings) {
-
         if (!(commandSender instanceof Player player)){
             Msg.send(commandSender, "Only players can use this command");
             return true;

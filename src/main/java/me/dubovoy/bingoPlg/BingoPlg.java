@@ -1,12 +1,12 @@
 package me.dubovoy.bingoPlg;
 
 import me.dubovoy.bingoPlg.commands.*;
-import me.dubovoy.bingoPlg.commands.teams.CreateTeam;
-import me.dubovoy.bingoPlg.commands.teams.DeleteTeam;
-import me.dubovoy.bingoPlg.commands.teams.JoinTeam;
-import me.dubovoy.bingoPlg.commands.teams.TeleportTeam;
-import me.dubovoy.bingoPlg.database.BingoDb;
-import me.dubovoy.bingoPlg.database.SettingsItemsDb;
+import me.dubovoy.bingoPlg.commands.groups.CreateGroup;
+import me.dubovoy.bingoPlg.commands.groups.DeleteGroup;
+import me.dubovoy.bingoPlg.commands.groups.JoinGroup;
+import me.dubovoy.bingoPlg.commands.groups.TeleportGroup;
+import me.dubovoy.bingoPlg.game.BingoDb;
+import me.dubovoy.bingoPlg.game.SettingsItemsDb;
 import me.dubovoy.bingoPlg.events.ClockClicking;
 import me.dubovoy.bingoPlg.events.CompassClicking;
 import me.dubovoy.bingoPlg.events.PlayerJoined;
@@ -39,10 +39,10 @@ public final class BingoPlg extends JavaPlugin {
         CompassRecipe.register();
         MusicDisksRecipes.register();
         InitCommand("Heal", new HealPlayer());
-        InitCommand("CreateTeam", new CreateTeam(this));
-        InitCommand("DeleteTeam", new DeleteTeam(this));
-        InitCommand("JoinTeam", new JoinTeam(this));
-        InitCommand("TeleportTeam", new TeleportTeam(this));
+        InitCommand("CreateGroup", new CreateGroup(this));
+        InitCommand("DeleteGroup", new DeleteGroup(this));
+        InitCommand("JoinGroup", new JoinGroup(this));
+        InitCommand("TeleportGroup", new TeleportGroup(this));
         InitCommand("Table", new CreateTableEx(this));
         InitCommand("StartBingo", new StartBingo(this));
         InitCommand("CreateTable", new GenerateTable(this));
@@ -58,19 +58,16 @@ public final class BingoPlg extends JavaPlugin {
             if (!getDataFolder().exists())
                 getDataFolder().mkdirs();
             database = new BingoDb(getDataFolder().getAbsolutePath()+"/bingoPlugin.db");
-
         } catch (SQLException e) {
             getLogger().severe("Error: " + e.getMessage());
             Bukkit.getPluginManager().disablePlugin(this);
         }
         SettingsItemsDb settings = new SettingsItemsDb(this);
         settings.fillSettings();
-
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
         try {
             database.closeConnection();
         } catch (SQLException e) {
@@ -82,19 +79,9 @@ public final class BingoPlg extends JavaPlugin {
     public static BingoPlg getInstance() {
         return getPlugin(BingoPlg.class);
     }
-    public static String getScbTimerName(){
-        return BingoPlg.getInstance().getName()+"_timer";
-    }
 
     public BingoDb getDb(){
         return this.database;
-    }
-
-    public boolean RandomChance(int chance){
-        int max = 100;
-        int min = 0;
-        int random = (int) ((Math.random()*(max-min))+min);
-        return random <= chance;
     }
 
     public Integer RandomCoordinates(){
@@ -113,7 +100,6 @@ public final class BingoPlg extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(eventListener, this);
         if (!event.isEmpty())
             LogIMsg(event + " - событие было загружено");
-
     }
 
     public void LogWMsg(String text){
@@ -124,6 +110,5 @@ public final class BingoPlg extends JavaPlugin {
     }
     public void LogErrorsMsg(Exception e){
         getLogger().severe("Ошибка! " + e.getMessage());
-        getLogger().severe(e.toString());
     }
 }

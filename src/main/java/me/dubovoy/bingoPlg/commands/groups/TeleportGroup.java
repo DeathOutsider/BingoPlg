@@ -1,4 +1,4 @@
-package me.dubovoy.bingoPlg.commands.teams;
+package me.dubovoy.bingoPlg.commands.groups;
 
 import me.dubovoy.bingoPlg.BingoPlg;
 import me.dubovoy.bingoPlg.Msg;
@@ -15,10 +15,10 @@ import org.jetbrains.annotations.Nullable;
 import java.sql.SQLException;
 import java.util.List;
 
-public class TeleportTeam implements CommandExecutor, TabExecutor {
+public class TeleportGroup implements CommandExecutor, TabExecutor {
 
     private final BingoPlg bingoPlg;
-    public TeleportTeam(BingoPlg bingoPlg) {this.bingoPlg = bingoPlg;}
+    public TeleportGroup(BingoPlg bingoPlg) {this.bingoPlg = bingoPlg;}
 
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String @NotNull [] strings) {
@@ -27,7 +27,7 @@ public class TeleportTeam implements CommandExecutor, TabExecutor {
             return true;
         }
 
-        if (!(commandSender.hasPermission("bingoPlg.teleport_team"))){
+        if (!(commandSender.hasPermission("bingoPlg.teleport_group"))){
             Msg.send(commandSender, "§eТолько оператор может пользоваться этой командой.");
             return true;
         }
@@ -37,7 +37,7 @@ public class TeleportTeam implements CommandExecutor, TabExecutor {
         int tpZ = 0;
 
         if (strings.length < 1){
-            Msg.send(player, "Введите название вашей команды!");
+            Msg.send(player, "Введите название группы для телепортации всех её членов!");
             return true;
         } else if (strings.length == 1){
             tpX = bingoPlg.RandomCoordinates();
@@ -84,7 +84,7 @@ public class TeleportTeam implements CommandExecutor, TabExecutor {
                 location.add(axis-1,2,-axis);
                 for (Player p: teamPlayers){
                     p.teleport(location);
-                    Msg.send(p, "Ваша телепортация от команды \"" + teamName + "\" прошла успешно", "&a");
+                    Msg.send(p, "Ваша телепортация от группы \"" + teamName + "\" прошла успешно", "&a");
                     location.add(0, 1, 0);
                     p.setRespawnLocation(location, true);
                     p.getInventory().clear();

@@ -3,13 +3,9 @@ package me.dubovoy.bingoPlg.events;
 import me.dubovoy.bingoPlg.BingoPlg;
 import me.dubovoy.bingoPlg.Items.GuiElements;
 import me.dubovoy.bingoPlg.Msg;
-import me.dubovoy.bingoPlg.database.BingoPlayer;
-import me.dubovoy.bingoPlg.database.BingoTable;
-import me.dubovoy.bingoPlg.database.BingoTeam;
-import org.bukkit.Bukkit;
-import org.bukkit.GameMode;
+import me.dubovoy.bingoPlg.game.BingoPlayer;
+import me.dubovoy.bingoPlg.game.BingoTable;
 import org.bukkit.Material;
-import org.bukkit.Sound;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -23,8 +19,6 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.metadata.FixedMetadataValue;
-
-import java.util.List;
 
 public class ClockClicking implements Listener {
 

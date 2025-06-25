@@ -1,8 +1,8 @@
-package me.dubovoy.bingoPlg.commands.teams;
+package me.dubovoy.bingoPlg.commands.groups;
 
 import me.dubovoy.bingoPlg.BingoPlg;
 import me.dubovoy.bingoPlg.Msg;
-import me.dubovoy.bingoPlg.database.BingoTeam;
+import me.dubovoy.bingoPlg.game.BingoTeam;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -13,10 +13,10 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class JoinTeam implements CommandExecutor, TabExecutor {
+public class JoinGroup implements CommandExecutor, TabExecutor {
 
     private final BingoPlg bingoPlg;
-    public JoinTeam(BingoPlg bingoPlg) {this.bingoPlg = bingoPlg;}
+    public JoinGroup(BingoPlg bingoPlg) {this.bingoPlg = bingoPlg;}
 
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String @NotNull [] strings) {
@@ -26,7 +26,7 @@ public class JoinTeam implements CommandExecutor, TabExecutor {
         }
 
         if (strings.length != 1){
-            Msg.send(player, "Введите название вашей команды!");
+            Msg.send(player, "Введите название вашей группы к которой хотите присоединится!");
             return true;
         }
 

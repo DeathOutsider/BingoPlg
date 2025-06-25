@@ -1,13 +1,12 @@
 package me.dubovoy.bingoPlg.events;
 
 import me.dubovoy.bingoPlg.BingoPlg;
-import me.dubovoy.bingoPlg.Items.BingoItems;
 import me.dubovoy.bingoPlg.Msg;
-import me.dubovoy.bingoPlg.database.BingoPlayer;
-import me.dubovoy.bingoPlg.database.BingoTable;
+import me.dubovoy.bingoPlg.game.BingoPlayer;
+import me.dubovoy.bingoPlg.game.BingoTable;
 import me.dubovoy.bingoPlg.Items.GuiElements;
 
-import me.dubovoy.bingoPlg.database.BingoTeam;
+import me.dubovoy.bingoPlg.game.BingoTeam;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Material;

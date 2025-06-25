@@ -25,6 +25,8 @@ public class HealPlayer implements CommandExecutor, TabExecutor {
         }
 
         player.setHealth(20.0d);
+        player.setSaturation(20.0F);
+
         Msg.send(player, "You were successfully healed", "&a");
         return true;
     }

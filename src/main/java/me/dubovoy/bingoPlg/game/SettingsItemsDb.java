@@ -1,4 +1,4 @@
-package me.dubovoy.bingoPlg.database;
+package me.dubovoy.bingoPlg.game;
 
 import me.dubovoy.bingoPlg.BingoPlg;
 

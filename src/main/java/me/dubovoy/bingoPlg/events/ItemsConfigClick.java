@@ -2,10 +2,9 @@ package me.dubovoy.bingoPlg.events;
 
 import me.dubovoy.bingoPlg.BingoPlg;
 import me.dubovoy.bingoPlg.Items.GuiElements;
-import me.dubovoy.bingoPlg.database.BingoPlayer;
-import me.dubovoy.bingoPlg.database.BingoTable;
+import me.dubovoy.bingoPlg.game.BingoPlayer;
+import me.dubovoy.bingoPlg.game.BingoTable;
 import org.bukkit.Material;
-import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -13,11 +12,9 @@ import org.bukkit.event.inventory.InventoryAction;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.inventory.InventoryType;
-import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.metadata.FixedMetadataValue;
 
 public class ItemsConfigClick implements Listener {
 

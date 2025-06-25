@@ -1,8 +1,8 @@
-package me.dubovoy.bingoPlg.commands.teams;
+package me.dubovoy.bingoPlg.commands.groups;
 
 import me.dubovoy.bingoPlg.BingoPlg;
 import me.dubovoy.bingoPlg.Msg;
-import me.dubovoy.bingoPlg.database.BingoTeam;
+import me.dubovoy.bingoPlg.game.BingoTeam;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -13,35 +13,39 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class CreateTeam implements CommandExecutor, TabExecutor {
+public class DeleteGroup implements CommandExecutor, TabExecutor {
 
     private final BingoPlg bingoPlg;
-    public CreateTeam(BingoPlg bingoPlg) {this.bingoPlg = bingoPlg;}
+    public DeleteGroup(BingoPlg bingoPlg) {this.bingoPlg = bingoPlg;}
 
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String @NotNull [] strings) {
 
         if (strings.length != 1){
-            Msg.send(commandSender, "§eВведите название новой команды!");
+            Msg.send(commandSender, "§eВведите название группы для удаления!");
             return false;
+        }
+
+        if (commandSender instanceof Player ){
+            if (!(commandSender.hasPermission("bingoPlg.delete_group"))){
+                Msg.send(commandSender, "§eТолько оператор может пользоваться этой командой.");
+                return true;
+            }
         }
 
         String teamName = strings[0].toLowerCase();
         BingoTeam bingoTeam = new BingoTeam(bingoPlg);
-        String message = bingoTeam.createTeam(teamName);
+        String message = bingoTeam.deleteTeam(teamName);
         Msg.send(commandSender, message);
-        try{
-            Player player = (Player) commandSender;
-            bingoTeam.playerJoinTeam(player, teamName);
-            Msg.send(player, message);
-        } catch (Exception e) {
-            bingoPlg.LogErrorsMsg(e);
-        }
+
         return true;
     }
 
     @Override
     public @Nullable List<String> onTabComplete(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String @NotNull [] strings) {
+        if (strings.length == 1) {
+            return new BingoTeam(bingoPlg).getTeams();
+        }
         return List.of();
     }
 }

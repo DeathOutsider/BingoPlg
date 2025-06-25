@@ -1,7 +1,7 @@
 package me.dubovoy.bingoPlg.commands;
 
 import me.dubovoy.bingoPlg.BingoPlg;
-import me.dubovoy.bingoPlg.database.BingoTable;
+import me.dubovoy.bingoPlg.game.BingoTable;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -19,7 +19,6 @@ public class GenerateTable implements CommandExecutor, TabExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String @NotNull [] strings) {
         BingoTable bingoTable = new BingoTable(bingoPlg);
-
         bingoTable.generateBingoTable();
 
         return true;
