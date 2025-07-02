@@ -71,10 +71,6 @@ public class ItemsConfigClick implements Listener {
                     btn.setAmount(diff);
                     event.setCurrentItem(btn);
                 }
-                if (name.contains("Next")){
-
-                }
-
 
             }else if (event.isRightClick()){
                 if (name.contains("Difficulty")){
