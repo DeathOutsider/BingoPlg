@@ -38,7 +38,6 @@ public final class BingoPlg extends JavaPlugin {
         LogWMsg("Привет! BingoPlugin v. 1.3.2 успешно загружен!");
         CompassRecipe.register();
         MusicDisksRecipes.register();
-        InitCommand("Heal", new HealPlayer());
         InitCommand("CreateGroup", new CreateGroup(this));
         InitCommand("DeleteGroup", new DeleteGroup(this));
         InitCommand("JoinGroup", new JoinGroup(this));
