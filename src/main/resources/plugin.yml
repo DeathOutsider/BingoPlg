@@ -55,8 +55,6 @@ commands:
     bingoPlg.*:
       description: Gives access to all doorman commands
       children:
-        bingoPlg.heal: op
-
         bingoPlg.delete_group: op
         bingoPlg.teleport_group: op
 

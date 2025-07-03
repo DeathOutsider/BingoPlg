@@ -35,10 +35,9 @@ public class MusicDisksRecipes {
         musics.add(new ItemStack(Material.MUSIC_DISC_STRAD));
         musics.add(new ItemStack(Material.MUSIC_DISC_WAIT));
         musics.add(new ItemStack(Material.MUSIC_DISC_WARD));
+        musics.add(new ItemStack(Material.MUSIC_DISC_LAVA_CHICKEN));
+        musics.add(new ItemStack(Material.MUSIC_DISC_TEARS));
 
-        int counter = 0;
-
-        //Music disk 13
         Material[] disk13M = {Material.YELLOW_DYE, Material.WHITE_DYE};
         Material[] diskCatM = {Material.LIME_DYE};
         Material[] disk11M = {Material.GRAY_DYE};
