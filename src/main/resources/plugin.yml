@@ -1,5 +1,5 @@
 name: BingoPlg
-version: '1.3.2'
+version: '1.4'
 main: me.dubovoy.bingoPlg.BingoPlg
 api-version: '1.21'
 authors: [ Dubovoy6211@gmail.com ]

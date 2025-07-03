@@ -1506,7 +1506,26 @@ public class SettingsItemsDb {
                 {"1467", "Wheat", "WHEAT", "", "2", "Ingredients", ""},
                 {"1468", "White Dye", "WHITE_DYE", "", "1", "Ingredients", ""},
                 {"1469", "Wild Armour Trim", "WILD_ARMOR_TRIM_SMITHING_TEMPLATE", "", "4", "Ingredients", ""},
-                {"1470", "Yellow Dye", "YELLOW_DYE", "", "1", "Ingredients", ""}
+                {"1470", "Yellow Dye", "YELLOW_DYE", "", "1", "Ingredients", ""},
+                {"1471", "Black Harness", "BLACK_HARNESS", "", "2", "Tool & Utilities", ""},
+                {"1472", "Blue Harness", "BLUE_HARNESS", "", "2", "Tool & Utilities", ""},
+                {"1473", "Brown Harness", "BROWN_HARNESS", "", "4", "Tool & Utilities", ""},
+                {"1474", "Cyan Harness", "CYAN_HARNESS", "", "4", "Tool & Utilities", ""},
+                {"1475", "Dried Ghast", "DRIED_GHAST", "", "4", "Natural Blocks", ""},
+                {"1476", "Gray Harness", "GRAY_HARNESS", "", "2", "Tool & Utilities", ""},
+                {"1477", "Green Harness", "GREEN_HARNESS", "", "4", "Tool & Utilities", ""},
+                {"1478", "Light Blue Harness", "LIGHT_HARNESS", "", "2", "Tool & Utilities", ""},
+                {"1479", "Light Gray Harness", "LIGHT_HARNESS", "", "2", "Tool & Utilities", ""},
+                {"1480", "Lime Harness", "LIME_HARNESS", "", "4", "Tool & Utilities", ""},
+                {"1481", "Magenta Harness", "MAGENTA_HARNESS", "", "2", "Tool & Utilities", ""},
+                {"1482", "Orange Harness", "ORANGE_HARNESS", "", "2", "Tool & Utilities", ""},
+                {"1483", "Pink Harness", "PINK_HARNESS", "", "2", "Tool & Utilities", ""},
+                {"1484", "Purple Harness", "PURPLE_HARNESS", "", "2", "Tool & Utilities", ""},
+                {"1485", "Red Harness", "RED_HARNESS", "", "2", "Tool & Utilities", ""},
+                {"1486", "White Harness", "WHITE_HARNESS", "", "2", "Tool & Utilities", ""},
+                {"1487", "Yellow Harness", "YELLOW_HARNESS", "", "2", "Tool & Utilities", ""},
+                {"1488", "Music Disc Tears", "MUSIC_DISC_TEARS", "", "4", "Tool & Utilities", "Music Disk"},
+                {"1489", "Music Disc Lava Chicken", "MUSIC_DISC_LAVA_CHICKEN", "", "4", "Tool & Utilities", "Music Disk"}
         };
         return items;
     }
