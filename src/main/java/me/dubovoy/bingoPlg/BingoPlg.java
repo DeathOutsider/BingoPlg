@@ -21,7 +21,7 @@ import java.sql.SQLException;
 import java.util.Objects;
 
 public final class BingoPlg extends JavaPlugin {
-
+    private final String version = "1.4";
     private BingoDb database;
     public boolean bLog = true;
     public int maxGridSize = 6;
@@ -35,7 +35,7 @@ public final class BingoPlg extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        LogWMsg("Привет! BingoPlugin v. 1.3.2 успешно загружен!");
+        LogWMsg("Привет! BingoPlugin v." + version + " успешно загружен!");
         CompassRecipe.register();
         MusicDisksRecipes.register();
         InitCommand("CreateGroup", new CreateGroup(this));

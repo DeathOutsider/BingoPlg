@@ -197,12 +197,18 @@ public class BingoTable {
                 ItemStack isolated_item = itemStack.clone();
                 Material material = isolated_item.getType();
                 ItemMeta meta = isolated_item.getItemMeta();
-
+                String str_meta = meta.getAsString();
                 isolated_item.setAmount(1);
 //                System.out.println(isolated_item);
                 if (isolated_item.getDurability() > 0)
                     isolated_item.setDurability((short) 0);
 
+                if (str_meta.contains("bucket_entity_data") || str_meta.contains("map_id")){
+                    meta = new ItemStack(Material.PURPLE_STAINED_GLASS_PANE).getItemMeta();
+//                    bingoPlg.LogIMsg("CORRECTED!");
+                }
+//                bingoPlg.LogIMsg(">>"+ material +"<<>>" + meta.getAsString());
+                isolated_item.setItemMeta(meta);
                 String keyList = material + "<meta>" + meta.getAsString();
                 if (!invItems.contains(keyList)){
                     invItems.add(keyList);

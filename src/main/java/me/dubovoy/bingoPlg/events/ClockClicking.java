@@ -62,8 +62,6 @@ public class ClockClicking implements Listener {
             Inventory inv = event.getClickedInventory();
             if (inv == null)
                 return;
-//            bingoPlg.LogIMsg(inv.getType().toString());
-            int slot = event.getSlot();
             ItemStack item = event.getCurrentItem();
             if (item == null | inv.getType() != InventoryType.CHEST)
                 return;
